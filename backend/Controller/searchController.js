@@ -18,7 +18,7 @@ router.get("/all-users/:id", auth, async (req, res) => {
 
             if (user) {
                 // Take only the id and username from the User details
-                response = user.map(({ _id, username }) => ({ _id, username }));
+                response = user.filter(u => u._id.toString() !== req.user.id).map(({ _id, username }) => ({ _id, username }));
             }
 
             // Set Ok Status

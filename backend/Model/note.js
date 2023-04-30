@@ -2,6 +2,8 @@
 const mongoose = require('mongoose');
 // Import Validator
 const validator = require('validator');
+// Import Moment Timezone for User Local Time
+const moment = require('moment-timezone');
 
 // Create Note Schema
 const noteSchema = mongoose.Schema({
@@ -49,11 +51,11 @@ const noteSchema = mongoose.Schema({
             ],
             createdAt: {
                 type: Date,
-                default: Date.now
+                default: () => moment().tz(moment.tz.guess())
             },
             updatedAt: {
                 type: Date,
-                default: Date.now
+                default: () => moment().tz(moment.tz.guess())
             },
             edit: [
                 {

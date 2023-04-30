@@ -4,6 +4,8 @@ const express = require('express');
 const router = new express.Router();
 // Import Multer
 const multer = require('multer');
+// Import Moment Timezone for User Local Time
+const moment = require('moment-timezone');
 // Import User Collection/Model
 const User = require("../Model/user");
 // Import Note Collection/Model
@@ -176,12 +178,48 @@ router.patch('/edit-note/:id', auth, async (req, res) => {
             note.notesArr[noteId].title = req.body.title;
             note.notesArr[noteId].description = req.body.description;
             note.notesArr[noteId].view = req.body.view;
+            note.notesArr[noteId].tag = req.body.tag;
+            note.notesArr[noteId].updatedAt = new Date(moment().tz(moment.tz.guess()));
 
             //  Save the Document in the Note Collection
             const setNote = await note.save();
 
             // Set Ok Status
             res.status(200).json(setNote);
+        } else {
+            // Set Internal Server Error Status
+            res.status(500).send("You can only view your own account !!");
+        }
+    } catch (error) {
+        // Set Internal Server Error Status
+        res.status(500).send("Server Error !!");
+    }
+})
+
+// API for Get Perticular Note Details of a perticular User by id
+router.get('/note/:id', auth, async (req, res) => {
+    try {
+        // If the user id and params id match
+        if (req.user.id === req.params.id) {
+            const user_id = req.user.id;
+
+            // Find the User by User id
+            let user = await User.findOne({ _id: user_id });
+            // Find all Notes of that User by User id
+            let note = await Note.findOne({ user_id: user_id });
+
+            if (note && note.notesArr.length !== 0) {
+                // Find that perticular Note index by using note id
+                let noteId = await note.notesArr.findIndex(n => n._id.toString() === req.body._id);
+
+                // Set Ok Status
+                res.status(200).json(note.notesArr[noteId]);
+            }
+            else {
+                // Set Ok Status
+                res.status(200).send("No note has been created yet");
+            }
+
         } else {
             // Set Internal Server Error Status
             res.status(500).send("You can only view your own account !!");
@@ -245,6 +283,38 @@ router.get('/all-note/:id', auth, async (req, res) => {
                 // Set Ok Status
                 res.status(200).send("No note has been created yet");
             }
+
+        } else {
+            // Set Internal Server Error Status
+            res.status(500).send("You can only view your own account !!");
+        }
+    } catch (error) {
+        // Set Internal Server Error Status
+        res.status(500).send("Server Error !!");
+    }
+})
+
+// API for Get all the Note Details of a perticular User by id
+router.delete('/delete-all-note/:id', auth, async (req, res) => {
+    try {
+
+        // If the user id and params id match
+        if (req.user.id === req.params.id) {
+            const user_id = req.user.id;
+
+            // Find the User by User id
+            let user = await User.findOne({ _id: user_id });
+            // Find all Notes of that User by User id
+            let note = await Note.findOne({ user_id: user_id });
+
+            // Remove All Note from the Note array from the Database
+            note.notesArr.splice(0, note.notesArr.length);
+
+            //  Save the Document in the Note Collection
+            const setNote = await note.save();
+
+            // Set Ok Status
+            res.status(200).send(setNote);
 
         } else {
             // Set Internal Server Error Status
