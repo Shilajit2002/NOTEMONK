@@ -25,37 +25,43 @@ const Navbar = () => {
 
     return (
         <>
-                <nav className="navbar navbar-expand-lg navbar-dark">
-                    <div className="container-fluid">
-                        {/* Logo  */}
-                        <NavLink className="navbar-brand" to='/'><img
-                            src={logo}
-                            alt="BS5 Logo" />
-                            <span className="navbar-text m-2">NOTEmonk</span>
-                        </NavLink>
+            {/* Navbar */}
+            <nav className="navbar navbar-expand-lg navbar-dark">
+                <div className="container-fluid">
+                    {/* Logo  */}
+                    <NavLink className="navbar-brand" to='/'><img
+                        src={logo}
+                        alt="BS5 Logo" />
+                        {/* Name */}
+                        <span className="navbar-text m-2">NOTEmonk</span>
+                    </NavLink>
 
-                        {/* Collapsiable  */}
-                        <p className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style={{ borderStyle: 'none' }}>
-                            <MenuIcon />
-                        </p>
-                        <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                            <ul className="navbar-nav">
-                                <NavLink className="nav-item" style={navLinkStyle} to='/'>
-                                    Home
-                                </NavLink>
-                                <NavLink className="nav-item" style={navLinkStyle} to='/about'>
-                                    About
-                                </NavLink>
-                                <NavLink className="nav-item" style={navLinkStyle} to='/signup'>
-                                    SignUp
-                                </NavLink>
-                                <NavLink className="nav-item" style={navLinkStyle} to='/signin'>
-                                    SignIn
-                                </NavLink>
-                            </ul>
-                        </div>
+                    {/* Collapsiable  */}
+                    <p className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style={{ borderStyle: 'none' }}>
+                        <MenuIcon />
+                    </p>
+
+                    {/* Collapse Part */}
+                    <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        {/* Unordered List */}
+                        <ul className="navbar-nav">
+                            {/* NavLink Items */}
+                            <NavLink className="nav-item" style={navLinkStyle} to='/'>
+                                Home
+                            </NavLink>
+                            <NavLink className="nav-item" style={navLinkStyle} to='/about'>
+                                About
+                            </NavLink>
+                            <NavLink className="nav-item" style={navLinkStyle} to='/signup'>
+                                SignUp
+                            </NavLink>
+                            <NavLink className="nav-item" style={navLinkStyle} to='/signin'>
+                                SignIn
+                            </NavLink>
+                        </ul>
                     </div>
-                </nav>
+                </div>
+            </nav>
         </>
     )
 }

@@ -1,5 +1,7 @@
+/* Pacifico Font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* Main Navbar */
 .navbar {
     width: 100%;
     background: linear-gradient(to right, #181712, #15140F, #15140F);
@@ -8,6 +10,7 @@
     z-index: 99999;
 }
 
+/* Navbar Logo Portion */
 .navbar .navbar-brand {
     display: flex;
     justify-content: center;
@@ -16,12 +19,14 @@
     cursor: pointer;
 }
 
+/* Navbar Logo */
 .navbar .navbar-brand img {
     width: 60px;
     box-shadow: rgba(0, 0, 0, 0.788) 0px 2px 4px 0px, rgba(14, 30, 37, 0.726) 0px 2px 16px 0px;
     border-radius: 50%;
 }
 
+/* Navbar Website Name */
 .navbar .navbar-brand .navbar-text {
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
@@ -31,6 +36,7 @@
     text-shadow: 1px 1px 2px rgb(255, 0, 98), 0 0 1em blue;
 }
 
+/* Navbar List Items */
 .navbar .nav-item {
     width: fit-content;
     text-decoration: none;
@@ -52,11 +58,13 @@
     color: rgb(50, 163, 255);
 }
 
+/* Navbar List Items Hover Effect */
 .navbar .nav-item:hover {
     background-position: 100% 100%;
     color: white;
 }
 
+/* Media Query for Responsive */
 @media only screen and (max-width:991px) {
     .navbar .navbar-nav {
         width: 100%;
