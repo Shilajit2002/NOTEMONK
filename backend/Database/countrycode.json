@@ -1,1914 +1,1248 @@
 [
     {
-        "country": "Andorra",
-        "code": "376",
-        "iso": "AD",
-        "emoji": "🇦🇩",
-        "unicode": "U+1F1E6 U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AD.svg"
-    },
-    {
-        "country": "United Arab Emirates",
-        "code": "971",
-        "iso": "AE",
-        "emoji": "🇦🇪",
-        "unicode": "U+1F1E6 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AE.svg"
-    },
-    {
-        "country": "Afghanistan",
-        "code": "93",
-        "iso": "AF",
-        "emoji": "🇦🇫",
-        "unicode": "U+1F1E6 U+1F1EB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AF.svg"
-    },
-    {
-        "country": "Antigua & Barbuda",
-        "code": "1-268",
-        "iso": "AG",
-        "emoji": "🇦🇬",
-        "unicode": "U+1F1E6 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AG.svg"
-    },
-    {
-        "country": "Anguilla",
-        "code": "1-264",
-        "iso": "AI",
-        "emoji": "🇦🇮",
-        "unicode": "U+1F1E6 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AI.svg"
-    },
-    {
-        "country": "Albania",
-        "code": "355",
-        "iso": "AL",
-        "emoji": "🇦🇱",
-        "unicode": "U+1F1E6 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AL.svg"
-    },
-    {
-        "country": "Armenia",
-        "code": "374",
-        "iso": "AM",
-        "emoji": "🇦🇲",
-        "unicode": "U+1F1E6 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AM.svg"
-    },
-    {
-        "country": "Angola",
-        "code": "244",
-        "iso": "AO",
-        "emoji": "🇦🇴",
-        "unicode": "U+1F1E6 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AO.svg"
-    },
-    {
-        "country": "Antarctica",
-        "code": "672",
-        "iso": "AQ",
-        "emoji": "🇦🇶",
-        "unicode": "U+1F1E6 U+1F1F6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AQ.svg"
-    },
-    {
-        "country": "Argentina",
-        "code": "54",
-        "iso": "AR",
-        "emoji": "🇦🇷",
-        "unicode": "U+1F1E6 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AR.svg"
-    },
-    {
-        "country": "American Samoa",
-        "code": "1-684",
-        "iso": "AS",
-        "emoji": "🇦🇸",
-        "unicode": "U+1F1E6 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AS.svg"
-    },
-    {
-        "country": "Austria",
-        "code": "43",
-        "iso": "AT",
-        "emoji": "🇦🇹",
-        "unicode": "U+1F1E6 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AT.svg"
-    },
-    {
-        "country": "Australia",
-        "code": "61",
-        "iso": "AU",
-        "emoji": "🇦🇺",
-        "unicode": "U+1F1E6 U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AU.svg"
+        "code": "AD",
+        "label": "Andorra",
+        "phone": "376"
     },
     {
-        "country": "Aruba",
-        "code": "297",
-        "iso": "AW",
-        "emoji": "🇦🇼",
-        "unicode": "U+1F1E6 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AW.svg"
+        "code": "AE",
+        "label": "United Arab Emirates",
+        "phone": "971"
     },
     {
-        "country": "Azerbaijan",
-        "code": "994",
-        "iso": "AZ",
-        "emoji": "🇦🇿",
-        "unicode": "U+1F1E6 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AZ.svg"
+        "code": "AF",
+        "label": "Afghanistan",
+        "phone": "93"
     },
     {
-        "country": "Bosnia & Herzegovina",
-        "code": "387",
-        "iso": "BA",
-        "emoji": "🇧🇦",
-        "unicode": "U+1F1E7 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BA.svg"
+        "code": "AG",
+        "label": "Antigua and Barbuda",
+        "phone": "1-268"
     },
     {
-        "country": "Barbados",
-        "code": "1-246",
-        "iso": "BB",
-        "emoji": "🇧🇧",
-        "unicode": "U+1F1E7 U+1F1E7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BB.svg"
+        "code": "AI",
+        "label": "Anguilla",
+        "phone": "1-264"
     },
     {
-        "country": "Bangladesh",
-        "code": "880",
-        "iso": "BD",
-        "emoji": "🇧🇩",
-        "unicode": "U+1F1E7 U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BD.svg"
+        "code": "AL",
+        "label": "Albania",
+        "phone": "355"
     },
     {
-        "country": "Belgium",
-        "code": "32",
-        "iso": "BE",
-        "emoji": "🇧🇪",
-        "unicode": "U+1F1E7 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BE.svg"
+        "code": "AM",
+        "label": "Armenia",
+        "phone": "374"
     },
     {
-        "country": "Burkina Faso",
-        "code": "226",
-        "iso": "BF",
-        "emoji": "🇧🇫",
-        "unicode": "U+1F1E7 U+1F1EB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BF.svg"
+        "code": "AO",
+        "label": "Angola",
+        "phone": "244"
     },
     {
-        "country": "Bulgaria",
-        "code": "359",
-        "iso": "BG",
-        "emoji": "🇧🇬",
-        "unicode": "U+1F1E7 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BG.svg"
+        "code": "AQ",
+        "label": "Antarctica",
+        "phone": "672"
     },
     {
-        "country": "Bahrain",
-        "code": "973",
-        "iso": "BH",
-        "emoji": "🇧🇭",
-        "unicode": "U+1F1E7 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BH.svg"
+        "code": "AR",
+        "label": "Argentina",
+        "phone": "54"
     },
     {
-        "country": "Burundi",
-        "code": "257",
-        "iso": "BI",
-        "emoji": "🇧🇮",
-        "unicode": "U+1F1E7 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BI.svg"
+        "code": "AS",
+        "label": "American Samoa",
+        "phone": "1-684"
     },
     {
-        "country": "Benin",
-        "code": "229",
-        "iso": "BJ",
-        "emoji": "🇧🇯",
-        "unicode": "U+1F1E7 U+1F1EF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BJ.svg"
+        "code": "AT",
+        "label": "Austria",
+        "phone": "43"
     },
     {
-        "country": "St. Barthélemy",
-        "code": "590",
-        "iso": "BL",
-        "emoji": "🇧🇱",
-        "unicode": "U+1F1E7 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BL.svg"
+        "code": "AU",
+        "label": "Australia",
+        "phone": "61",
+        "suggested": true
     },
     {
-        "country": "Bermuda",
-        "code": "1-441",
-        "iso": "BM",
-        "emoji": "🇧🇲",
-        "unicode": "U+1F1E7 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BM.svg"
+        "code": "AW",
+        "label": "Aruba",
+        "phone": "297"
     },
     {
-        "country": "Brunei",
-        "code": "673",
-        "iso": "BN",
-        "emoji": "🇧🇳",
-        "unicode": "U+1F1E7 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BN.svg"
+        "code": "AX",
+        "label": "Alland Islands",
+        "phone": "358"
     },
     {
-        "country": "Bolivia",
-        "code": "591",
-        "iso": "BO",
-        "emoji": "🇧🇴",
-        "unicode": "U+1F1E7 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BO.svg"
+        "code": "AZ",
+        "label": "Azerbaijan",
+        "phone": "994"
     },
     {
-        "country": "Brazil",
-        "code": "55",
-        "iso": "BR",
-        "emoji": "🇧🇷",
-        "unicode": "U+1F1E7 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BR.svg"
+        "code": "BA",
+        "label": "Bosnia and Herzegovina",
+        "phone": "387"
     },
     {
-        "country": "Bahamas",
-        "code": "1-242",
-        "iso": "BS",
-        "emoji": "🇧🇸",
-        "unicode": "U+1F1E7 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BS.svg"
+        "code": "BB",
+        "label": "Barbados",
+        "phone": "1-246"
     },
     {
-        "country": "Bhutan",
-        "code": "975",
-        "iso": "BT",
-        "emoji": "🇧🇹",
-        "unicode": "U+1F1E7 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BT.svg"
+        "code": "BD",
+        "label": "Bangladesh",
+        "phone": "880"
     },
     {
-        "country": "Botswana",
-        "code": "267",
-        "iso": "BW",
-        "emoji": "🇧🇼",
-        "unicode": "U+1F1E7 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BW.svg"
+        "code": "BE",
+        "label": "Belgium",
+        "phone": "32"
     },
     {
-        "country": "Belarus",
-        "code": "375",
-        "iso": "BY",
-        "emoji": "🇧🇾",
-        "unicode": "U+1F1E7 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BY.svg"
+        "code": "BF",
+        "label": "Burkina Faso",
+        "phone": "226"
     },
     {
-        "country": "Belize",
-        "code": "501",
-        "iso": "BZ",
-        "emoji": "🇧🇿",
-        "unicode": "U+1F1E7 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BZ.svg"
+        "code": "BG",
+        "label": "Bulgaria",
+        "phone": "359"
     },
     {
-        "country": "Canada",
-        "code": "1",
-        "iso": "CA",
-        "emoji": "🇨🇦",
-        "unicode": "U+1F1E8 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CA.svg"
+        "code": "BH",
+        "label": "Bahrain",
+        "phone": "973"
     },
     {
-        "country": "Cocos (Keeling) Islands",
-        "code": "61",
-        "iso": "CC",
-        "emoji": "🇨🇨",
-        "unicode": "U+1F1E8 U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CC.svg"
+        "code": "BI",
+        "label": "Burundi",
+        "phone": "257"
     },
     {
-        "country": "Congo - Kinshasa",
-        "code": "243",
-        "iso": "CD",
-        "emoji": "🇨🇩",
-        "unicode": "U+1F1E8 U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CD.svg"
+        "code": "BJ",
+        "label": "Benin",
+        "phone": "229"
     },
     {
-        "country": "Central African Republic",
-        "code": "236",
-        "iso": "CF",
-        "emoji": "🇨🇫",
-        "unicode": "U+1F1E8 U+1F1EB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CF.svg"
+        "code": "BL",
+        "label": "Saint Barthelemy",
+        "phone": "590"
     },
     {
-        "country": "Congo - Brazzaville",
-        "code": "242",
-        "iso": "CG",
-        "emoji": "🇨🇬",
-        "unicode": "U+1F1E8 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CG.svg"
+        "code": "BM",
+        "label": "Bermuda",
+        "phone": "1-441"
     },
     {
-        "country": "Switzerland",
-        "code": "41",
-        "iso": "CH",
-        "emoji": "🇨🇭",
-        "unicode": "U+1F1E8 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CH.svg"
+        "code": "BN",
+        "label": "Brunei Darussalam",
+        "phone": "673"
     },
     {
-        "country": "Côte d’Ivoire",
-        "code": "225",
-        "iso": "CI",
-        "emoji": "🇨🇮",
-        "unicode": "U+1F1E8 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CI.svg"
+        "code": "BO",
+        "label": "Bolivia",
+        "phone": "591"
     },
     {
-        "country": "Cook Islands",
-        "code": "682",
-        "iso": "CK",
-        "emoji": "🇨🇰",
-        "unicode": "U+1F1E8 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CK.svg"
+        "code": "BR",
+        "label": "Brazil",
+        "phone": "55"
     },
     {
-        "country": "Chile",
-        "code": "56",
-        "iso": "CL",
-        "emoji": "🇨🇱",
-        "unicode": "U+1F1E8 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CL.svg"
+        "code": "BS",
+        "label": "Bahamas",
+        "phone": "1-242"
     },
     {
-        "country": "Cameroon",
-        "code": "237",
-        "iso": "CM",
-        "emoji": "🇨🇲",
-        "unicode": "U+1F1E8 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CM.svg"
+        "code": "BT",
+        "label": "Bhutan",
+        "phone": "975"
     },
     {
-        "country": "China",
-        "code": "86",
-        "iso": "CN",
-        "emoji": "🇨🇳",
-        "unicode": "U+1F1E8 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CN.svg"
+        "code": "BV",
+        "label": "Bouvet Island",
+        "phone": "47"
     },
     {
-        "country": "Colombia",
-        "code": "57",
-        "iso": "CO",
-        "emoji": "🇨🇴",
-        "unicode": "U+1F1E8 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CO.svg"
+        "code": "BW",
+        "label": "Botswana",
+        "phone": "267"
     },
     {
-        "country": "Costa Rica",
-        "code": "506",
-        "iso": "CR",
-        "emoji": "🇨🇷",
-        "unicode": "U+1F1E8 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CR.svg"
+        "code": "BY",
+        "label": "Belarus",
+        "phone": "375"
     },
     {
-        "country": "Cuba",
-        "code": "53",
-        "iso": "CU",
-        "emoji": "🇨🇺",
-        "unicode": "U+1F1E8 U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CU.svg"
+        "code": "BZ",
+        "label": "Belize",
+        "phone": "501"
     },
     {
-        "country": "Cape Verde",
-        "code": "238",
-        "iso": "CV",
-        "emoji": "🇨🇻",
-        "unicode": "U+1F1E8 U+1F1FB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CV.svg"
+        "code": "CA",
+        "label": "Canada",
+        "phone": "1",
+        "suggested": true
     },
     {
-        "country": "Curaçao",
-        "code": "599",
-        "iso": "CW",
-        "emoji": "🇨🇼",
-        "unicode": "U+1F1E8 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CW.svg"
+        "code": "CC",
+        "label": "Cocos (Keeling) Islands",
+        "phone": "61"
     },
     {
-        "country": "Christmas Island",
-        "code": "61",
-        "iso": "CX",
-        "emoji": "🇨🇽",
-        "unicode": "U+1F1E8 U+1F1FD",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CX.svg"
+        "code": "CD",
+        "label": "Congo, Democratic Republic of the",
+        "phone": "243"
     },
     {
-        "country": "Cyprus",
-        "code": "357",
-        "iso": "CY",
-        "emoji": "🇨🇾",
-        "unicode": "U+1F1E8 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CY.svg"
+        "code": "CF",
+        "label": "Central African Republic",
+        "phone": "236"
     },
     {
-        "country": "Czechia",
-        "code": "420",
-        "iso": "CZ",
-        "emoji": "🇨🇿",
-        "unicode": "U+1F1E8 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/CZ.svg"
+        "code": "CG",
+        "label": "Congo, Republic of the",
+        "phone": "242"
     },
     {
-        "country": "Germany",
-        "code": "49",
-        "iso": "DE",
-        "emoji": "🇩🇪",
-        "unicode": "U+1F1E9 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DE.svg"
+        "code": "CH",
+        "label": "Switzerland",
+        "phone": "41"
     },
     {
-        "country": "Djibouti",
-        "code": "253",
-        "iso": "DJ",
-        "emoji": "🇩🇯",
-        "unicode": "U+1F1E9 U+1F1EF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DJ.svg"
+        "code": "CI",
+        "label": "Cote d'Ivoire",
+        "phone": "225"
     },
     {
-        "country": "Denmark",
-        "code": "45",
-        "iso": "DK",
-        "emoji": "🇩🇰",
-        "unicode": "U+1F1E9 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DK.svg"
+        "code": "CK",
+        "label": "Cook Islands",
+        "phone": "682"
     },
     {
-        "country": "Dominica",
-        "code": "1-767",
-        "iso": "DM",
-        "emoji": "🇩🇲",
-        "unicode": "U+1F1E9 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DM.svg"
+        "code": "CL",
+        "label": "Chile",
+        "phone": "56"
     },
     {
-        "country": "Dominican Republic",
-        "code": "1-809, 1-829, 1-849",
-        "iso": "DO",
-        "emoji": "🇩🇴",
-        "unicode": "U+1F1E9 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DO.svg"
+        "code": "CM",
+        "label": "Cameroon",
+        "phone": "237"
     },
     {
-        "country": "Algeria",
-        "code": "213",
-        "iso": "DZ",
-        "emoji": "🇩🇿",
-        "unicode": "U+1F1E9 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/DZ.svg"
+        "code": "CN",
+        "label": "China",
+        "phone": "86"
     },
     {
-        "country": "Ecuador",
-        "code": "593",
-        "iso": "EC",
-        "emoji": "🇪🇨",
-        "unicode": "U+1F1EA U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EC.svg"
+        "code": "CO",
+        "label": "Colombia",
+        "phone": "57"
     },
     {
-        "country": "Estonia",
-        "code": "372",
-        "iso": "EE",
-        "emoji": "🇪🇪",
-        "unicode": "U+1F1EA U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EE.svg"
+        "code": "CR",
+        "label": "Costa Rica",
+        "phone": "506"
     },
     {
-        "country": "Egypt",
-        "code": "20",
-        "iso": "EG",
-        "emoji": "🇪🇬",
-        "unicode": "U+1F1EA U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EG.svg"
+        "code": "CU",
+        "label": "Cuba",
+        "phone": "53"
     },
     {
-        "country": "Western Sahara",
-        "code": "212",
-        "iso": "EH",
-        "emoji": "🇪🇭",
-        "unicode": "U+1F1EA U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EH.svg"
+        "code": "CV",
+        "label": "Cape Verde",
+        "phone": "238"
     },
     {
-        "country": "Eritrea",
-        "code": "291",
-        "iso": "ER",
-        "emoji": "🇪🇷",
-        "unicode": "U+1F1EA U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ER.svg"
+        "code": "CW",
+        "label": "Curacao",
+        "phone": "599"
     },
     {
-        "country": "Spain",
-        "code": "34",
-        "iso": "ES",
-        "emoji": "🇪🇸",
-        "unicode": "U+1F1EA U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ES.svg"
+        "code": "CX",
+        "label": "Christmas Island",
+        "phone": "61"
     },
     {
-        "country": "Ethiopia",
-        "code": "251",
-        "iso": "ET",
-        "emoji": "🇪🇹",
-        "unicode": "U+1F1EA U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ET.svg"
+        "code": "CY",
+        "label": "Cyprus",
+        "phone": "357"
     },
     {
-        "country": "Finland",
-        "code": "358",
-        "iso": "FI",
-        "emoji": "🇫🇮",
-        "unicode": "U+1F1EB U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FI.svg"
+        "code": "CZ",
+        "label": "Czech Republic",
+        "phone": "420"
     },
     {
-        "country": "Fiji",
-        "code": "679",
-        "iso": "FJ",
-        "emoji": "🇫🇯",
-        "unicode": "U+1F1EB U+1F1EF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FJ.svg"
+        "code": "DE",
+        "label": "Germany",
+        "phone": "49",
+        "suggested": true
     },
     {
-        "country": "Falkland Islands",
-        "code": "500",
-        "iso": "FK",
-        "emoji": "🇫🇰",
-        "unicode": "U+1F1EB U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FK.svg"
+        "code": "DJ",
+        "label": "Djibouti",
+        "phone": "253"
     },
     {
-        "country": "Micronesia",
-        "code": "691",
-        "iso": "FM",
-        "emoji": "🇫🇲",
-        "unicode": "U+1F1EB U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FM.svg"
+        "code": "DK",
+        "label": "Denmark",
+        "phone": "45"
     },
     {
-        "country": "Faroe Islands",
-        "code": "298",
-        "iso": "FO",
-        "emoji": "🇫🇴",
-        "unicode": "U+1F1EB U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FO.svg"
+        "code": "DM",
+        "label": "Dominica",
+        "phone": "1-767"
     },
     {
-        "country": "France",
-        "code": "33",
-        "iso": "FR",
-        "emoji": "🇫🇷",
-        "unicode": "U+1F1EB U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FR.svg"
+        "code": "DO",
+        "label": "Dominican Republic",
+        "phone": "1-809"
     },
     {
-        "country": "Gabon",
-        "code": "241",
-        "iso": "GA",
-        "emoji": "🇬🇦",
-        "unicode": "U+1F1EC U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GA.svg"
+        "code": "DZ",
+        "label": "Algeria",
+        "phone": "213"
     },
     {
-        "country": "United Kingdom",
-        "code": "44",
-        "iso": "GB",
-        "emoji": "🇬🇧",
-        "unicode": "U+1F1EC U+1F1E7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GB.svg"
+        "code": "EC",
+        "label": "Ecuador",
+        "phone": "593"
     },
     {
-        "country": "Grenada",
-        "code": "1-473",
-        "iso": "GD",
-        "emoji": "🇬🇩",
-        "unicode": "U+1F1EC U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GD.svg"
+        "code": "EE",
+        "label": "Estonia",
+        "phone": "372"
     },
     {
-        "country": "Georgia",
-        "code": "995",
-        "iso": "GE",
-        "emoji": "🇬🇪",
-        "unicode": "U+1F1EC U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GE.svg"
+        "code": "EG",
+        "label": "Egypt",
+        "phone": "20"
     },
     {
-        "country": "Guernsey",
-        "code": "44-1481",
-        "iso": "GG",
-        "emoji": "🇬🇬",
-        "unicode": "U+1F1EC U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GG.svg"
+        "code": "EH",
+        "label": "Western Sahara",
+        "phone": "212"
     },
     {
-        "country": "Ghana",
-        "code": "233",
-        "iso": "GH",
-        "emoji": "🇬🇭",
-        "unicode": "U+1F1EC U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GH.svg"
+        "code": "ER",
+        "label": "Eritrea",
+        "phone": "291"
     },
     {
-        "country": "Gibraltar",
-        "code": "350",
-        "iso": "GI",
-        "emoji": "🇬🇮",
-        "unicode": "U+1F1EC U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GI.svg"
+        "code": "ES",
+        "label": "Spain",
+        "phone": "34"
     },
     {
-        "country": "Greenland",
-        "code": "299",
-        "iso": "GL",
-        "emoji": "🇬🇱",
-        "unicode": "U+1F1EC U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GL.svg"
+        "code": "ET",
+        "label": "Ethiopia",
+        "phone": "251"
     },
     {
-        "country": "Gambia",
-        "code": "220",
-        "iso": "GM",
-        "emoji": "🇬🇲",
-        "unicode": "U+1F1EC U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GM.svg"
+        "code": "FI",
+        "label": "Finland",
+        "phone": "358"
     },
     {
-        "country": "Guinea",
-        "code": "224",
-        "iso": "GN",
-        "emoji": "🇬🇳",
-        "unicode": "U+1F1EC U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GN.svg"
+        "code": "FJ",
+        "label": "Fiji",
+        "phone": "679"
     },
     {
-        "country": "Equatorial Guinea",
-        "code": "240",
-        "iso": "GQ",
-        "emoji": "🇬🇶",
-        "unicode": "U+1F1EC U+1F1F6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GQ.svg"
+        "code": "FK",
+        "label": "Falkland Islands (Malvinas)",
+        "phone": "500"
     },
     {
-        "country": "Greece",
-        "code": "30",
-        "iso": "GR",
-        "emoji": "🇬🇷",
-        "unicode": "U+1F1EC U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GR.svg"
+        "code": "FM",
+        "label": "Micronesia, Federated States of",
+        "phone": "691"
     },
     {
-        "country": "Guatemala",
-        "code": "502",
-        "iso": "GT",
-        "emoji": "🇬🇹",
-        "unicode": "U+1F1EC U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GT.svg"
+        "code": "FO",
+        "label": "Faroe Islands",
+        "phone": "298"
     },
     {
-        "country": "Guam",
-        "code": "1-671",
-        "iso": "GU",
-        "emoji": "🇬🇺",
-        "unicode": "U+1F1EC U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GU.svg"
+        "code": "FR",
+        "label": "France",
+        "phone": "33",
+        "suggested": true
     },
     {
-        "country": "Guinea-Bissau",
-        "code": "245",
-        "iso": "GW",
-        "emoji": "🇬🇼",
-        "unicode": "U+1F1EC U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GW.svg"
+        "code": "GA",
+        "label": "Gabon",
+        "phone": "241"
     },
     {
-        "country": "Guyana",
-        "code": "592",
-        "iso": "GY",
-        "emoji": "🇬🇾",
-        "unicode": "U+1F1EC U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/GY.svg"
+        "code": "GB",
+        "label": "United Kingdom",
+        "phone": "44"
     },
     {
-        "country": "Hong Kong SAR China",
-        "code": "852",
-        "iso": "HK",
-        "emoji": "🇭🇰",
-        "unicode": "U+1F1ED U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HK.svg"
+        "code": "GD",
+        "label": "Grenada",
+        "phone": "1-473"
     },
     {
-        "country": "Honduras",
-        "code": "504",
-        "iso": "HN",
-        "emoji": "🇭🇳",
-        "unicode": "U+1F1ED U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HN.svg"
+        "code": "GE",
+        "label": "Georgia",
+        "phone": "995"
     },
     {
-        "country": "Croatia",
-        "code": "385",
-        "iso": "HR",
-        "emoji": "🇭🇷",
-        "unicode": "U+1F1ED U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HR.svg"
+        "code": "GF",
+        "label": "French Guiana",
+        "phone": "594"
     },
     {
-        "country": "Haiti",
-        "code": "509",
-        "iso": "HT",
-        "emoji": "🇭🇹",
-        "unicode": "U+1F1ED U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HT.svg"
+        "code": "GG",
+        "label": "Guernsey",
+        "phone": "44"
     },
     {
-        "country": "Hungary",
-        "code": "36",
-        "iso": "HU",
-        "emoji": "🇭🇺",
-        "unicode": "U+1F1ED U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/HU.svg"
+        "code": "GH",
+        "label": "Ghana",
+        "phone": "233"
     },
     {
-        "country": "Indonesia",
-        "code": "62",
-        "iso": "ID",
-        "emoji": "🇮🇩",
-        "unicode": "U+1F1EE U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ID.svg"
+        "code": "GI",
+        "label": "Gibraltar",
+        "phone": "350"
     },
     {
-        "country": "Ireland",
-        "code": "353",
-        "iso": "IE",
-        "emoji": "🇮🇪",
-        "unicode": "U+1F1EE U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IE.svg"
+        "code": "GL",
+        "label": "Greenland",
+        "phone": "299"
     },
     {
-        "country": "Israel",
-        "code": "972",
-        "iso": "IL",
-        "emoji": "🇮🇱",
-        "unicode": "U+1F1EE U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IL.svg"
+        "code": "GM",
+        "label": "Gambia",
+        "phone": "220"
     },
     {
-        "country": "Isle of Man",
-        "code": "44-1624",
-        "iso": "IM",
-        "emoji": "🇮🇲",
-        "unicode": "U+1F1EE U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IM.svg"
+        "code": "GN",
+        "label": "Guinea",
+        "phone": "224"
     },
     {
-        "country": "India",
-        "code": "91",
-        "iso": "IN",
-        "emoji": "🇮🇳",
-        "unicode": "U+1F1EE U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IN.svg"
+        "code": "GP",
+        "label": "Guadeloupe",
+        "phone": "590"
     },
     {
-        "country": "British Indian Ocean Territory",
-        "code": "246",
-        "iso": "IO",
-        "emoji": "🇮🇴",
-        "unicode": "U+1F1EE U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IO.svg"
+        "code": "GQ",
+        "label": "Equatorial Guinea",
+        "phone": "240"
     },
     {
-        "country": "Iraq",
-        "code": "964",
-        "iso": "IQ",
-        "emoji": "🇮🇶",
-        "unicode": "U+1F1EE U+1F1F6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IQ.svg"
+        "code": "GR",
+        "label": "Greece",
+        "phone": "30"
     },
     {
-        "country": "Iran",
-        "code": "98",
-        "iso": "IR",
-        "emoji": "🇮🇷",
-        "unicode": "U+1F1EE U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IR.svg"
+        "code": "GS",
+        "label": "South Georgia and the South Sandwich Islands",
+        "phone": "500"
     },
     {
-        "country": "Iceland",
-        "code": "354",
-        "iso": "IS",
-        "emoji": "🇮🇸",
-        "unicode": "U+1F1EE U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IS.svg"
+        "code": "GT",
+        "label": "Guatemala",
+        "phone": "502"
     },
     {
-        "country": "Italy",
-        "code": "39",
-        "iso": "IT",
-        "emoji": "🇮🇹",
-        "unicode": "U+1F1EE U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IT.svg"
+        "code": "GU",
+        "label": "Guam",
+        "phone": "1-671"
     },
     {
-        "country": "Jersey",
-        "code": "44-1534",
-        "iso": "JE",
-        "emoji": "🇯🇪",
-        "unicode": "U+1F1EF U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JE.svg"
+        "code": "GW",
+        "label": "Guinea-Bissau",
+        "phone": "245"
     },
     {
-        "country": "Jamaica",
-        "code": "1-876",
-        "iso": "JM",
-        "emoji": "🇯🇲",
-        "unicode": "U+1F1EF U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JM.svg"
+        "code": "GY",
+        "label": "Guyana",
+        "phone": "592"
     },
     {
-        "country": "Jordan",
-        "code": "962",
-        "iso": "JO",
-        "emoji": "🇯🇴",
-        "unicode": "U+1F1EF U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JO.svg"
+        "code": "HK",
+        "label": "Hong Kong",
+        "phone": "852"
     },
     {
-        "country": "Japan",
-        "code": "81",
-        "iso": "JP",
-        "emoji": "🇯🇵",
-        "unicode": "U+1F1EF U+1F1F5",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/JP.svg"
+        "code": "HM",
+        "label": "Heard Island and McDonald Islands",
+        "phone": "672"
     },
     {
-        "country": "Kenya",
-        "code": "254",
-        "iso": "KE",
-        "emoji": "🇰🇪",
-        "unicode": "U+1F1F0 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KE.svg"
+        "code": "HN",
+        "label": "Honduras",
+        "phone": "504"
     },
     {
-        "country": "Kyrgyzstan",
-        "code": "996",
-        "iso": "KG",
-        "emoji": "🇰🇬",
-        "unicode": "U+1F1F0 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KG.svg"
+        "code": "HR",
+        "label": "Croatia",
+        "phone": "385"
     },
     {
-        "country": "Cambodia",
-        "code": "855",
-        "iso": "KH",
-        "emoji": "🇰🇭",
-        "unicode": "U+1F1F0 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KH.svg"
+        "code": "HT",
+        "label": "Haiti",
+        "phone": "509"
     },
     {
-        "country": "Kiribati",
-        "code": "686",
-        "iso": "KI",
-        "emoji": "🇰🇮",
-        "unicode": "U+1F1F0 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KI.svg"
+        "code": "HU",
+        "label": "Hungary",
+        "phone": "36"
     },
     {
-        "country": "Comoros",
-        "code": "269",
-        "iso": "KM",
-        "emoji": "🇰🇲",
-        "unicode": "U+1F1F0 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KM.svg"
+        "code": "ID",
+        "label": "Indonesia",
+        "phone": "62"
     },
     {
-        "country": "St. Kitts & Nevis",
-        "code": "1-869",
-        "iso": "KN",
-        "emoji": "🇰🇳",
-        "unicode": "U+1F1F0 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KN.svg"
+        "code": "IE",
+        "label": "Ireland",
+        "phone": "353"
     },
     {
-        "country": "North Korea",
-        "code": "850",
-        "iso": "KP",
-        "emoji": "🇰🇵",
-        "unicode": "U+1F1F0 U+1F1F5",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KP.svg"
+        "code": "IL",
+        "label": "Israel",
+        "phone": "972"
     },
     {
-        "country": "South Korea",
-        "code": "82",
-        "iso": "KR",
-        "emoji": "🇰🇷",
-        "unicode": "U+1F1F0 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KR.svg"
+        "code": "IM",
+        "label": "Isle of Man",
+        "phone": "44"
     },
     {
-        "country": "Kuwait",
-        "code": "965",
-        "iso": "KW",
-        "emoji": "🇰🇼",
-        "unicode": "U+1F1F0 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KW.svg"
+        "code": "IN",
+        "label": "India",
+        "phone": "91"
     },
     {
-        "country": "Cayman Islands",
-        "code": "1-345",
-        "iso": "KY",
-        "emoji": "🇰🇾",
-        "unicode": "U+1F1F0 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KY.svg"
+        "code": "IO",
+        "label": "British Indian Ocean Territory",
+        "phone": "246"
     },
     {
-        "country": "Kazakhstan",
-        "code": "7",
-        "iso": "KZ",
-        "emoji": "🇰🇿",
-        "unicode": "U+1F1F0 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/KZ.svg"
+        "code": "IQ",
+        "label": "Iraq",
+        "phone": "964"
     },
     {
-        "country": "Laos",
-        "code": "856",
-        "iso": "LA",
-        "emoji": "🇱🇦",
-        "unicode": "U+1F1F1 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LA.svg"
+        "code": "IR",
+        "label": "Iran, Islamic Republic of",
+        "phone": "98"
     },
     {
-        "country": "Lebanon",
-        "code": "961",
-        "iso": "LB",
-        "emoji": "🇱🇧",
-        "unicode": "U+1F1F1 U+1F1E7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LB.svg"
+        "code": "IS",
+        "label": "Iceland",
+        "phone": "354"
     },
     {
-        "country": "St. Lucia",
-        "code": "1-758",
-        "iso": "LC",
-        "emoji": "🇱🇨",
-        "unicode": "U+1F1F1 U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LC.svg"
+        "code": "IT",
+        "label": "Italy",
+        "phone": "39"
     },
     {
-        "country": "Liechtenstein",
-        "code": "423",
-        "iso": "LI",
-        "emoji": "🇱🇮",
-        "unicode": "U+1F1F1 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LI.svg"
+        "code": "JE",
+        "label": "Jersey",
+        "phone": "44"
     },
     {
-        "country": "Sri Lanka",
-        "code": "94",
-        "iso": "LK",
-        "emoji": "🇱🇰",
-        "unicode": "U+1F1F1 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LK.svg"
+        "code": "JM",
+        "label": "Jamaica",
+        "phone": "1-876"
     },
     {
-        "country": "Liberia",
-        "code": "231",
-        "iso": "LR",
-        "emoji": "🇱🇷",
-        "unicode": "U+1F1F1 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LR.svg"
+        "code": "JO",
+        "label": "Jordan",
+        "phone": "962"
     },
     {
-        "country": "Lesotho",
-        "code": "266",
-        "iso": "LS",
-        "emoji": "🇱🇸",
-        "unicode": "U+1F1F1 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LS.svg"
+        "code": "JP",
+        "label": "Japan",
+        "phone": "81",
+        "suggested": true
     },
     {
-        "country": "Lithuania",
-        "code": "370",
-        "iso": "LT",
-        "emoji": "🇱🇹",
-        "unicode": "U+1F1F1 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LT.svg"
+        "code": "KE",
+        "label": "Kenya",
+        "phone": "254"
     },
     {
-        "country": "Luxembourg",
-        "code": "352",
-        "iso": "LU",
-        "emoji": "🇱🇺",
-        "unicode": "U+1F1F1 U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LU.svg"
+        "code": "KG",
+        "label": "Kyrgyzstan",
+        "phone": "996"
     },
     {
-        "country": "Latvia",
-        "code": "371",
-        "iso": "LV",
-        "emoji": "🇱🇻",
-        "unicode": "U+1F1F1 U+1F1FB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LV.svg"
+        "code": "KH",
+        "label": "Cambodia",
+        "phone": "855"
     },
     {
-        "country": "Libya",
-        "code": "218",
-        "iso": "LY",
-        "emoji": "🇱🇾",
-        "unicode": "U+1F1F1 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/LY.svg"
+        "code": "KI",
+        "label": "Kiribati",
+        "phone": "686"
     },
     {
-        "country": "Morocco",
-        "code": "212",
-        "iso": "MA",
-        "emoji": "🇲🇦",
-        "unicode": "U+1F1F2 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MA.svg"
+        "code": "KM",
+        "label": "Comoros",
+        "phone": "269"
     },
     {
-        "country": "Monaco",
-        "code": "377",
-        "iso": "MC",
-        "emoji": "🇲🇨",
-        "unicode": "U+1F1F2 U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MC.svg"
+        "code": "KN",
+        "label": "Saint Kitts and Nevis",
+        "phone": "1-869"
     },
     {
-        "country": "Moldova",
-        "code": "373",
-        "iso": "MD",
-        "emoji": "🇲🇩",
-        "unicode": "U+1F1F2 U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MD.svg"
+        "code": "KP",
+        "label": "Korea, Democratic People's Republic of",
+        "phone": "850"
     },
     {
-        "country": "Montenegro",
-        "code": "382",
-        "iso": "ME",
-        "emoji": "🇲🇪",
-        "unicode": "U+1F1F2 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ME.svg"
+        "code": "KR",
+        "label": "Korea, Republic of",
+        "phone": "82"
     },
     {
-        "country": "St. Martin",
-        "code": "590",
-        "iso": "MF",
-        "emoji": "🇲🇫",
-        "unicode": "U+1F1F2 U+1F1EB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MF.svg"
+        "code": "KW",
+        "label": "Kuwait",
+        "phone": "965"
     },
     {
-        "country": "Madagascar",
-        "code": "261",
-        "iso": "MG",
-        "emoji": "🇲🇬",
-        "unicode": "U+1F1F2 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MG.svg"
+        "code": "KY",
+        "label": "Cayman Islands",
+        "phone": "1-345"
     },
     {
-        "country": "Marshall Islands",
-        "code": "692",
-        "iso": "MH",
-        "emoji": "🇲🇭",
-        "unicode": "U+1F1F2 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MH.svg"
+        "code": "KZ",
+        "label": "Kazakhstan",
+        "phone": "7"
     },
     {
-        "country": "North Macedonia",
-        "code": "389",
-        "iso": "MK",
-        "emoji": "🇲🇰",
-        "unicode": "U+1F1F2 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MK.svg"
+        "code": "LA",
+        "label": "Lao People's Democratic Republic",
+        "phone": "856"
     },
     {
-        "country": "Mali",
-        "code": "223",
-        "iso": "ML",
-        "emoji": "🇲🇱",
-        "unicode": "U+1F1F2 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ML.svg"
+        "code": "LB",
+        "label": "Lebanon",
+        "phone": "961"
     },
     {
-        "country": "Myanmar (Burma)",
-        "code": "95",
-        "iso": "MM",
-        "emoji": "🇲🇲",
-        "unicode": "U+1F1F2 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MM.svg"
+        "code": "LC",
+        "label": "Saint Lucia",
+        "phone": "1-758"
     },
     {
-        "country": "Mongolia",
-        "code": "976",
-        "iso": "MN",
-        "emoji": "🇲🇳",
-        "unicode": "U+1F1F2 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MN.svg"
+        "code": "LI",
+        "label": "Liechtenstein",
+        "phone": "423"
     },
     {
-        "country": "Macao SAR China",
-        "code": "853",
-        "iso": "MO",
-        "emoji": "🇲🇴",
-        "unicode": "U+1F1F2 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MO.svg"
+        "code": "LK",
+        "label": "Sri Lanka",
+        "phone": "94"
     },
     {
-        "country": "Northern Mariana Islands",
-        "code": "1-670",
-        "iso": "MP",
-        "emoji": "🇲🇵",
-        "unicode": "U+1F1F2 U+1F1F5",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MP.svg"
+        "code": "LR",
+        "label": "Liberia",
+        "phone": "231"
     },
     {
-        "country": "Mauritania",
-        "code": "222",
-        "iso": "MR",
-        "emoji": "🇲🇷",
-        "unicode": "U+1F1F2 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MR.svg"
+        "code": "LS",
+        "label": "Lesotho",
+        "phone": "266"
     },
     {
-        "country": "Montserrat",
-        "code": "1-664",
-        "iso": "MS",
-        "emoji": "🇲🇸",
-        "unicode": "U+1F1F2 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MS.svg"
+        "code": "LT",
+        "label": "Lithuania",
+        "phone": "370"
     },
     {
-        "country": "Malta",
-        "code": "356",
-        "iso": "MT",
-        "emoji": "🇲🇹",
-        "unicode": "U+1F1F2 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MT.svg"
+        "code": "LU",
+        "label": "Luxembourg",
+        "phone": "352"
     },
     {
-        "country": "Mauritius",
-        "code": "230",
-        "iso": "MU",
-        "emoji": "🇲🇺",
-        "unicode": "U+1F1F2 U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MU.svg"
+        "code": "LV",
+        "label": "Latvia",
+        "phone": "371"
     },
     {
-        "country": "Maldives",
-        "code": "960",
-        "iso": "MV",
-        "emoji": "🇲🇻",
-        "unicode": "U+1F1F2 U+1F1FB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MV.svg"
+        "code": "LY",
+        "label": "Libya",
+        "phone": "218"
     },
     {
-        "country": "Malawi",
-        "code": "265",
-        "iso": "MW",
-        "emoji": "🇲🇼",
-        "unicode": "U+1F1F2 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MW.svg"
+        "code": "MA",
+        "label": "Morocco",
+        "phone": "212"
     },
     {
-        "country": "Mexico",
-        "code": "52",
-        "iso": "MX",
-        "emoji": "🇲🇽",
-        "unicode": "U+1F1F2 U+1F1FD",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MX.svg"
+        "code": "MC",
+        "label": "Monaco",
+        "phone": "377"
     },
     {
-        "country": "Malaysia",
-        "code": "60",
-        "iso": "MY",
-        "emoji": "🇲🇾",
-        "unicode": "U+1F1F2 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MY.svg"
+        "code": "MD",
+        "label": "Moldova, Republic of",
+        "phone": "373"
     },
     {
-        "country": "Mozambique",
-        "code": "258",
-        "iso": "MZ",
-        "emoji": "🇲🇿",
-        "unicode": "U+1F1F2 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/MZ.svg"
+        "code": "ME",
+        "label": "Montenegro",
+        "phone": "382"
     },
     {
-        "country": "Namibia",
-        "code": "264",
-        "iso": "NA",
-        "emoji": "🇳🇦",
-        "unicode": "U+1F1F3 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NA.svg"
+        "code": "MF",
+        "label": "Saint Martin (French part)",
+        "phone": "590"
     },
     {
-        "country": "New Caledonia",
-        "code": "687",
-        "iso": "NC",
-        "emoji": "🇳🇨",
-        "unicode": "U+1F1F3 U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NC.svg"
+        "code": "MG",
+        "label": "Madagascar",
+        "phone": "261"
     },
     {
-        "country": "Niger",
-        "code": "227",
-        "iso": "NE",
-        "emoji": "🇳🇪",
-        "unicode": "U+1F1F3 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NE.svg"
+        "code": "MH",
+        "label": "Marshall Islands",
+        "phone": "692"
     },
     {
-        "country": "Nigeria",
-        "code": "234",
-        "iso": "NG",
-        "emoji": "🇳🇬",
-        "unicode": "U+1F1F3 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NG.svg"
+        "code": "MK",
+        "label": "Macedonia, the Former Yugoslav Republic of",
+        "phone": "389"
     },
     {
-        "country": "Nicaragua",
-        "code": "505",
-        "iso": "NI",
-        "emoji": "🇳🇮",
-        "unicode": "U+1F1F3 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NI.svg"
+        "code": "ML",
+        "label": "Mali",
+        "phone": "223"
     },
     {
-        "country": "Netherlands",
-        "code": "31",
-        "iso": "NL",
-        "emoji": "🇳🇱",
-        "unicode": "U+1F1F3 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NL.svg"
+        "code": "MM",
+        "label": "Myanmar",
+        "phone": "95"
     },
     {
-        "country": "Norway",
-        "code": "47",
-        "iso": "NO",
-        "emoji": "🇳🇴",
-        "unicode": "U+1F1F3 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NO.svg"
+        "code": "MN",
+        "label": "Mongolia",
+        "phone": "976"
     },
     {
-        "country": "Nepal",
-        "code": "977",
-        "iso": "NP",
-        "emoji": "🇳🇵",
-        "unicode": "U+1F1F3 U+1F1F5",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NP.svg"
+        "code": "MO",
+        "label": "Macao",
+        "phone": "853"
     },
     {
-        "country": "Nauru",
-        "code": "674",
-        "iso": "NR",
-        "emoji": "🇳🇷",
-        "unicode": "U+1F1F3 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NR.svg"
+        "code": "MP",
+        "label": "Northern Mariana Islands",
+        "phone": "1-670"
     },
     {
-        "country": "Niue",
-        "code": "683",
-        "iso": "NU",
-        "emoji": "🇳🇺",
-        "unicode": "U+1F1F3 U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NU.svg"
+        "code": "MQ",
+        "label": "Martinique",
+        "phone": "596"
     },
     {
-        "country": "New Zealand",
-        "code": "64",
-        "iso": "NZ",
-        "emoji": "🇳🇿",
-        "unicode": "U+1F1F3 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/NZ.svg"
+        "code": "MR",
+        "label": "Mauritania",
+        "phone": "222"
     },
     {
-        "country": "Oman",
-        "code": "968",
-        "iso": "OM",
-        "emoji": "🇴🇲",
-        "unicode": "U+1F1F4 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/OM.svg"
+        "code": "MS",
+        "label": "Montserrat",
+        "phone": "1-664"
     },
     {
-        "country": "Panama",
-        "code": "507",
-        "iso": "PA",
-        "emoji": "🇵🇦",
-        "unicode": "U+1F1F5 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PA.svg"
+        "code": "MT",
+        "label": "Malta",
+        "phone": "356"
     },
     {
-        "country": "Peru",
-        "code": "51",
-        "iso": "PE",
-        "emoji": "🇵🇪",
-        "unicode": "U+1F1F5 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PE.svg"
+        "code": "MU",
+        "label": "Mauritius",
+        "phone": "230"
     },
     {
-        "country": "French Polynesia",
-        "code": "689",
-        "iso": "PF",
-        "emoji": "🇵🇫",
-        "unicode": "U+1F1F5 U+1F1EB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PF.svg"
+        "code": "MV",
+        "label": "Maldives",
+        "phone": "960"
     },
     {
-        "country": "Papua New Guinea",
-        "code": "675",
-        "iso": "PG",
-        "emoji": "🇵🇬",
-        "unicode": "U+1F1F5 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PG.svg"
+        "code": "MW",
+        "label": "Malawi",
+        "phone": "265"
     },
     {
-        "country": "Philippines",
-        "code": "63",
-        "iso": "PH",
-        "emoji": "🇵🇭",
-        "unicode": "U+1F1F5 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PH.svg"
+        "code": "MX",
+        "label": "Mexico",
+        "phone": "52"
     },
     {
-        "country": "Pakistan",
-        "code": "92",
-        "iso": "PK",
-        "emoji": "🇵🇰",
-        "unicode": "U+1F1F5 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PK.svg"
+        "code": "MY",
+        "label": "Malaysia",
+        "phone": "60"
     },
     {
-        "country": "Poland",
-        "code": "48",
-        "iso": "PL",
-        "emoji": "🇵🇱",
-        "unicode": "U+1F1F5 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PL.svg"
+        "code": "MZ",
+        "label": "Mozambique",
+        "phone": "258"
     },
     {
-        "country": "St. Pierre & Miquelon",
-        "code": "508",
-        "iso": "PM",
-        "emoji": "🇵🇲",
-        "unicode": "U+1F1F5 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PM.svg"
+        "code": "NA",
+        "label": "Namibia",
+        "phone": "264"
     },
     {
-        "country": "Pitcairn Islands",
-        "code": "64",
-        "iso": "PN",
-        "emoji": "🇵🇳",
-        "unicode": "U+1F1F5 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PN.svg"
+        "code": "NC",
+        "label": "New Caledonia",
+        "phone": "687"
     },
     {
-        "country": "Puerto Rico",
-        "code": "1-787, 1-939",
-        "iso": "PR",
-        "emoji": "🇵🇷",
-        "unicode": "U+1F1F5 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PR.svg"
+        "code": "NE",
+        "label": "Niger",
+        "phone": "227"
     },
     {
-        "country": "Palestinian Territories",
-        "code": "970",
-        "iso": "PS",
-        "emoji": "🇵🇸",
-        "unicode": "U+1F1F5 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PS.svg"
+        "code": "NF",
+        "label": "Norfolk Island",
+        "phone": "672"
     },
     {
-        "country": "Portugal",
-        "code": "351",
-        "iso": "PT",
-        "emoji": "🇵🇹",
-        "unicode": "U+1F1F5 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PT.svg"
+        "code": "NG",
+        "label": "Nigeria",
+        "phone": "234"
     },
     {
-        "country": "Palau",
-        "code": "680",
-        "iso": "PW",
-        "emoji": "🇵🇼",
-        "unicode": "U+1F1F5 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PW.svg"
+        "code": "NI",
+        "label": "Nicaragua",
+        "phone": "505"
     },
     {
-        "country": "Paraguay",
-        "code": "595",
-        "iso": "PY",
-        "emoji": "🇵🇾",
-        "unicode": "U+1F1F5 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/PY.svg"
+        "code": "NL",
+        "label": "Netherlands",
+        "phone": "31"
     },
     {
-        "country": "Qatar",
-        "code": "974",
-        "iso": "QA",
-        "emoji": "🇶🇦",
-        "unicode": "U+1F1F6 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/QA.svg"
+        "code": "NO",
+        "label": "Norway",
+        "phone": "47"
     },
     {
-        "country": "Réunion",
-        "code": "262",
-        "iso": "RE",
-        "emoji": "🇷🇪",
-        "unicode": "U+1F1F7 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RE.svg"
+        "code": "NP",
+        "label": "Nepal",
+        "phone": "977"
     },
     {
-        "country": "Romania",
-        "code": "40",
-        "iso": "RO",
-        "emoji": "🇷🇴",
-        "unicode": "U+1F1F7 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RO.svg"
+        "code": "NR",
+        "label": "Nauru",
+        "phone": "674"
     },
     {
-        "country": "Serbia",
-        "code": "381",
-        "iso": "RS",
-        "emoji": "🇷🇸",
-        "unicode": "U+1F1F7 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RS.svg"
+        "code": "NU",
+        "label": "Niue",
+        "phone": "683"
     },
     {
-        "country": "Russia",
-        "code": "7",
-        "iso": "RU",
-        "emoji": "🇷🇺",
-        "unicode": "U+1F1F7 U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RU.svg"
+        "code": "NZ",
+        "label": "New Zealand",
+        "phone": "64"
     },
     {
-        "country": "Rwanda",
-        "code": "250",
-        "iso": "RW",
-        "emoji": "🇷🇼",
-        "unicode": "U+1F1F7 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/RW.svg"
+        "code": "OM",
+        "label": "Oman",
+        "phone": "968"
     },
     {
-        "country": "Saudi Arabia",
-        "code": "966",
-        "iso": "SA",
-        "emoji": "🇸🇦",
-        "unicode": "U+1F1F8 U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SA.svg"
+        "code": "PA",
+        "label": "Panama",
+        "phone": "507"
     },
     {
-        "country": "Solomon Islands",
-        "code": "677",
-        "iso": "SB",
-        "emoji": "🇸🇧",
-        "unicode": "U+1F1F8 U+1F1E7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SB.svg"
+        "code": "PE",
+        "label": "Peru",
+        "phone": "51"
     },
     {
-        "country": "Seychelles",
-        "code": "248",
-        "iso": "SC",
-        "emoji": "🇸🇨",
-        "unicode": "U+1F1F8 U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SC.svg"
+        "code": "PF",
+        "label": "French Polynesia",
+        "phone": "689"
     },
     {
-        "country": "Sudan",
-        "code": "249",
-        "iso": "SD",
-        "emoji": "🇸🇩",
-        "unicode": "U+1F1F8 U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SD.svg"
+        "code": "PG",
+        "label": "Papua New Guinea",
+        "phone": "675"
     },
     {
-        "country": "Sweden",
-        "code": "46",
-        "iso": "SE",
-        "emoji": "🇸🇪",
-        "unicode": "U+1F1F8 U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SE.svg"
+        "code": "PH",
+        "label": "Philippines",
+        "phone": "63"
     },
     {
-        "country": "Singapore",
-        "code": "65",
-        "iso": "SG",
-        "emoji": "🇸🇬",
-        "unicode": "U+1F1F8 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SG.svg"
+        "code": "PK",
+        "label": "Pakistan",
+        "phone": "92"
     },
     {
-        "country": "St. Helena",
-        "code": "290",
-        "iso": "SH",
-        "emoji": "🇸🇭",
-        "unicode": "U+1F1F8 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SH.svg"
+        "code": "PL",
+        "label": "Poland",
+        "phone": "48"
     },
     {
-        "country": "Slovenia",
-        "code": "386",
-        "iso": "SI",
-        "emoji": "🇸🇮",
-        "unicode": "U+1F1F8 U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SI.svg"
+        "code": "PM",
+        "label": "Saint Pierre and Miquelon",
+        "phone": "508"
     },
     {
-        "country": "Svalbard & Jan Mayen",
-        "code": "47",
-        "iso": "SJ",
-        "emoji": "🇸🇯",
-        "unicode": "U+1F1F8 U+1F1EF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SJ.svg"
+        "code": "PN",
+        "label": "Pitcairn",
+        "phone": "870"
     },
     {
-        "country": "Slovakia",
-        "code": "421",
-        "iso": "SK",
-        "emoji": "🇸🇰",
-        "unicode": "U+1F1F8 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SK.svg"
+        "code": "PR",
+        "label": "Puerto Rico",
+        "phone": "1"
     },
     {
-        "country": "Sierra Leone",
-        "code": "232",
-        "iso": "SL",
-        "emoji": "🇸🇱",
-        "unicode": "U+1F1F8 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SL.svg"
+        "code": "PS",
+        "label": "Palestine, State of",
+        "phone": "970"
     },
     {
-        "country": "San Marino",
-        "code": "378",
-        "iso": "SM",
-        "emoji": "🇸🇲",
-        "unicode": "U+1F1F8 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SM.svg"
+        "code": "PT",
+        "label": "Portugal",
+        "phone": "351"
     },
     {
-        "country": "Senegal",
-        "code": "221",
-        "iso": "SN",
-        "emoji": "🇸🇳",
-        "unicode": "U+1F1F8 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SN.svg"
+        "code": "PW",
+        "label": "Palau",
+        "phone": "680"
     },
     {
-        "country": "Somalia",
-        "code": "252",
-        "iso": "SO",
-        "emoji": "🇸🇴",
-        "unicode": "U+1F1F8 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SO.svg"
+        "code": "PY",
+        "label": "Paraguay",
+        "phone": "595"
     },
     {
-        "country": "Suriname",
-        "code": "597",
-        "iso": "SR",
-        "emoji": "🇸🇷",
-        "unicode": "U+1F1F8 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SR.svg"
+        "code": "QA",
+        "label": "Qatar",
+        "phone": "974"
     },
     {
-        "country": "South Sudan",
-        "code": "211",
-        "iso": "SS",
-        "emoji": "🇸🇸",
-        "unicode": "U+1F1F8 U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SS.svg"
+        "code": "RE",
+        "label": "Reunion",
+        "phone": "262"
     },
     {
-        "country": "São Tomé & Príncipe",
-        "code": "239",
-        "iso": "ST",
-        "emoji": "🇸🇹",
-        "unicode": "U+1F1F8 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ST.svg"
+        "code": "RO",
+        "label": "Romania",
+        "phone": "40"
     },
     {
-        "country": "El Salvador",
-        "code": "503",
-        "iso": "SV",
-        "emoji": "🇸🇻",
-        "unicode": "U+1F1F8 U+1F1FB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SV.svg"
+        "code": "RS",
+        "label": "Serbia",
+        "phone": "381"
     },
     {
-        "country": "Sint Maarten",
-        "code": "1-721",
-        "iso": "SX",
-        "emoji": "🇸🇽",
-        "unicode": "U+1F1F8 U+1F1FD",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SX.svg"
+        "code": "RU",
+        "label": "Russian Federation",
+        "phone": "7"
     },
     {
-        "country": "Syria",
-        "code": "963",
-        "iso": "SY",
-        "emoji": "🇸🇾",
-        "unicode": "U+1F1F8 U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SY.svg"
+        "code": "RW",
+        "label": "Rwanda",
+        "phone": "250"
     },
     {
-        "country": "Eswatini",
-        "code": "268",
-        "iso": "SZ",
-        "emoji": "🇸🇿",
-        "unicode": "U+1F1F8 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/SZ.svg"
+        "code": "SA",
+        "label": "Saudi Arabia",
+        "phone": "966"
     },
     {
-        "country": "Turks & Caicos Islands",
-        "code": "1-649",
-        "iso": "TC",
-        "emoji": "🇹🇨",
-        "unicode": "U+1F1F9 U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TC.svg"
+        "code": "SB",
+        "label": "Solomon Islands",
+        "phone": "677"
     },
     {
-        "country": "Chad",
-        "code": "235",
-        "iso": "TD",
-        "emoji": "🇹🇩",
-        "unicode": "U+1F1F9 U+1F1E9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TD.svg"
+        "code": "SC",
+        "label": "Seychelles",
+        "phone": "248"
     },
     {
-        "country": "Togo",
-        "code": "228",
-        "iso": "TG",
-        "emoji": "🇹🇬",
-        "unicode": "U+1F1F9 U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TG.svg"
+        "code": "SD",
+        "label": "Sudan",
+        "phone": "249"
     },
     {
-        "country": "Thailand",
-        "code": "66",
-        "iso": "TH",
-        "emoji": "🇹🇭",
-        "unicode": "U+1F1F9 U+1F1ED",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TH.svg"
+        "code": "SE",
+        "label": "Sweden",
+        "phone": "46"
     },
     {
-        "country": "Tajikistan",
-        "code": "992",
-        "iso": "TJ",
-        "emoji": "🇹🇯",
-        "unicode": "U+1F1F9 U+1F1EF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TJ.svg"
+        "code": "SG",
+        "label": "Singapore",
+        "phone": "65"
     },
     {
-        "country": "Tokelau",
-        "code": "690",
-        "iso": "TK",
-        "emoji": "🇹🇰",
-        "unicode": "U+1F1F9 U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TK.svg"
+        "code": "SH",
+        "label": "Saint Helena",
+        "phone": "290"
     },
     {
-        "country": "Timor-Leste",
-        "code": "670",
-        "iso": "TL",
-        "emoji": "🇹🇱",
-        "unicode": "U+1F1F9 U+1F1F1",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TL.svg"
+        "code": "SI",
+        "label": "Slovenia",
+        "phone": "386"
     },
     {
-        "country": "Turkmenistan",
-        "code": "993",
-        "iso": "TM",
-        "emoji": "🇹🇲",
-        "unicode": "U+1F1F9 U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TM.svg"
+        "code": "SJ",
+        "label": "Svalbard and Jan Mayen",
+        "phone": "47"
     },
     {
-        "country": "Tunisia",
-        "code": "216",
-        "iso": "TN",
-        "emoji": "🇹🇳",
-        "unicode": "U+1F1F9 U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TN.svg"
+        "code": "SK",
+        "label": "Slovakia",
+        "phone": "421"
     },
     {
-        "country": "Tonga",
-        "code": "676",
-        "iso": "TO",
-        "emoji": "🇹🇴",
-        "unicode": "U+1F1F9 U+1F1F4",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TO.svg"
+        "code": "SL",
+        "label": "Sierra Leone",
+        "phone": "232"
     },
     {
-        "country": "Turkey",
-        "code": "90",
-        "iso": "TR",
-        "emoji": "🇹🇷",
-        "unicode": "U+1F1F9 U+1F1F7",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TR.svg"
+        "code": "SM",
+        "label": "San Marino",
+        "phone": "378"
     },
     {
-        "country": "Trinidad & Tobago",
-        "code": "1-868",
-        "iso": "TT",
-        "emoji": "🇹🇹",
-        "unicode": "U+1F1F9 U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TT.svg"
+        "code": "SN",
+        "label": "Senegal",
+        "phone": "221"
     },
     {
-        "country": "Tuvalu",
-        "code": "688",
-        "iso": "TV",
-        "emoji": "🇹🇻",
-        "unicode": "U+1F1F9 U+1F1FB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TV.svg"
+        "code": "SO",
+        "label": "Somalia",
+        "phone": "252"
     },
     {
-        "country": "Taiwan",
-        "code": "886",
-        "iso": "TW",
-        "emoji": "🇹🇼",
-        "unicode": "U+1F1F9 U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TW.svg"
+        "code": "SR",
+        "label": "Suriname",
+        "phone": "597"
     },
     {
-        "country": "Tanzania",
-        "code": "255",
-        "iso": "TZ",
-        "emoji": "🇹🇿",
-        "unicode": "U+1F1F9 U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/TZ.svg"
+        "code": "SS",
+        "label": "South Sudan",
+        "phone": "211"
     },
     {
-        "country": "Ukraine",
-        "code": "380",
-        "iso": "UA",
-        "emoji": "🇺🇦",
-        "unicode": "U+1F1FA U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UA.svg"
+        "code": "ST",
+        "label": "Sao Tome and Principe",
+        "phone": "239"
     },
     {
-        "country": "Uganda",
-        "code": "256",
-        "iso": "UG",
-        "emoji": "🇺🇬",
-        "unicode": "U+1F1FA U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UG.svg"
+        "code": "SV",
+        "label": "El Salvador",
+        "phone": "503"
     },
     {
-        "country": "United States",
-        "code": "1",
-        "iso": "US",
-        "emoji": "🇺🇸",
-        "unicode": "U+1F1FA U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/US.svg"
+        "code": "SX",
+        "label": "Sint Maarten (Dutch part)",
+        "phone": "1-721"
     },
     {
-        "country": "Uruguay",
-        "code": "598",
-        "iso": "UY",
-        "emoji": "🇺🇾",
-        "unicode": "U+1F1FA U+1F1FE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UY.svg"
+        "code": "SY",
+        "label": "Syrian Arab Republic",
+        "phone": "963"
     },
     {
-        "country": "Uzbekistan",
-        "code": "998",
-        "iso": "UZ",
-        "emoji": "🇺🇿",
-        "unicode": "U+1F1FA U+1F1FF",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/UZ.svg"
+        "code": "SZ",
+        "label": "Swaziland",
+        "phone": "268"
     },
     {
-        "country": "Vatican City",
-        "code": "379",
-        "iso": "VA",
-        "emoji": "🇻🇦",
-        "unicode": "U+1F1FB U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VA.svg"
+        "code": "TC",
+        "label": "Turks and Caicos Islands",
+        "phone": "1-649"
     },
     {
-        "country": "St. Vincent & Grenadines",
-        "code": "1-784",
-        "iso": "VC",
-        "emoji": "🇻🇨",
-        "unicode": "U+1F1FB U+1F1E8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VC.svg"
+        "code": "TD",
+        "label": "Chad",
+        "phone": "235"
     },
     {
-        "country": "Venezuela",
-        "code": "58",
-        "iso": "VE",
-        "emoji": "🇻🇪",
-        "unicode": "U+1F1FB U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VE.svg"
-    },
-    {
-        "country": "British Virgin Islands",
-        "code": "1-284",
-        "iso": "VG",
-        "emoji": "🇻🇬",
-        "unicode": "U+1F1FB U+1F1EC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VG.svg"
-    },
-    {
-        "country": "U.S. Virgin Islands",
-        "code": "1-340",
-        "iso": "VI",
-        "emoji": "🇻🇮",
-        "unicode": "U+1F1FB U+1F1EE",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VI.svg"
-    },
-    {
-        "country": "Vietnam",
-        "code": "84",
-        "iso": "VN",
-        "emoji": "🇻🇳",
-        "unicode": "U+1F1FB U+1F1F3",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VN.svg"
-    },
-    {
-        "country": "Vanuatu",
-        "code": "678",
-        "iso": "VU",
-        "emoji": "🇻🇺",
-        "unicode": "U+1F1FB U+1F1FA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/VU.svg"
-    },
-    {
-        "country": "Wallis & Futuna",
-        "code": "681",
-        "iso": "WF",
-        "emoji": "🇼🇫",
-        "unicode": "U+1F1FC U+1F1EB",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/WF.svg"
-    },
-    {
-        "country": "Samoa",
-        "code": "685",
-        "iso": "WS",
-        "emoji": "🇼🇸",
-        "unicode": "U+1F1FC U+1F1F8",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/WS.svg"
-    },
-    {
-        "country": "Kosovo",
-        "code": "383",
-        "iso": "XK",
-        "emoji": "🇽🇰",
-        "unicode": "U+1F1FD U+1F1F0",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/XK.svg"
-    },
-    {
-        "country": "Yemen",
-        "code": "967",
-        "iso": "YE",
-        "emoji": "🇾🇪",
-        "unicode": "U+1F1FE U+1F1EA",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/YE.svg"
-    },
-    {
-        "country": "Mayotte",
-        "code": "262",
-        "iso": "YT",
-        "emoji": "🇾🇹",
-        "unicode": "U+1F1FE U+1F1F9",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/YT.svg"
-    },
-    {
-        "country": "South Africa",
-        "code": "27",
-        "iso": "ZA",
-        "emoji": "🇿🇦",
-        "unicode": "U+1F1FF U+1F1E6",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ZA.svg"
-    },
-    {
-        "country": "Zambia",
-        "code": "260",
-        "iso": "ZM",
-        "emoji": "🇿🇲",
-        "unicode": "U+1F1FF U+1F1F2",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ZM.svg"
-    },
-    {
-        "country": "Zimbabwe",
-        "code": "263",
-        "iso": "ZW",
-        "emoji": "🇿🇼",
-        "unicode": "U+1F1FF U+1F1FC",
-        "image": "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ZW.svg"
+        "code": "TF",
+        "label": "French Southern Territories",
+        "phone": "262"
+    },
+    {
+        "code": "TG",
+        "label": "Togo",
+        "phone": "228"
+    },
+    {
+        "code": "TH",
+        "label": "Thailand",
+        "phone": "66"
+    },
+    {
+        "code": "TJ",
+        "label": "Tajikistan",
+        "phone": "992"
+    },
+    {
+        "code": "TK",
+        "label": "Tokelau",
+        "phone": "690"
+    },
+    {
+        "code": "TL",
+        "label": "Timor-Leste",
+        "phone": "670"
+    },
+    {
+        "code": "TM",
+        "label": "Turkmenistan",
+        "phone": "993"
+    },
+    {
+        "code": "TN",
+        "label": "Tunisia",
+        "phone": "216"
+    },
+    {
+        "code": "TO",
+        "label": "Tonga",
+        "phone": "676"
+    },
+    {
+        "code": "TR",
+        "label": "Turkey",
+        "phone": "90"
+    },
+    {
+        "code": "TT",
+        "label": "Trinidad and Tobago",
+        "phone": "1-868"
+    },
+    {
+        "code": "TV",
+        "label": "Tuvalu",
+        "phone": "688"
+    },
+    {
+        "code": "TW",
+        "label": "Taiwan, Republic of China",
+        "phone": "886"
+    },
+    {
+        "code": "TZ",
+        "label": "United Republic of Tanzania",
+        "phone": "255"
+    },
+    {
+        "code": "UA",
+        "label": "Ukraine",
+        "phone": "380"
+    },
+    {
+        "code": "UG",
+        "label": "Uganda",
+        "phone": "256"
+    },
+    {
+        "code": "US",
+        "label": "United States",
+        "phone": "1",
+        "suggested": true
+    },
+    {
+        "code": "UY",
+        "label": "Uruguay",
+        "phone": "598"
+    },
+    {
+        "code": "UZ",
+        "label": "Uzbekistan",
+        "phone": "998"
+    },
+    {
+        "code": "VA",
+        "label": "Holy See (Vatican City State)",
+        "phone": "379"
+    },
+    {
+        "code": "VC",
+        "label": "Saint Vincent and the Grenadines",
+        "phone": "1-784"
+    },
+    {
+        "code": "VE",
+        "label": "Venezuela",
+        "phone": "58"
+    },
+    {
+        "code": "VG",
+        "label": "British Virgin Islands",
+        "phone": "1-284"
+    },
+    {
+        "code": "VI",
+        "label": "US Virgin Islands",
+        "phone": "1-340"
+    },
+    {
+        "code": "VN",
+        "label": "Vietnam",
+        "phone": "84"
+    },
+    {
+        "code": "VU",
+        "label": "Vanuatu",
+        "phone": "678"
+    },
+    {
+        "code": "WF",
+        "label": "Wallis and Futuna",
+        "phone": "681"
+    },
+    {
+        "code": "WS",
+        "label": "Samoa",
+        "phone": "685"
+    },
+    {
+        "code": "XK",
+        "label": "Kosovo",
+        "phone": "383"
+    },
+    {
+        "code": "YE",
+        "label": "Yemen",
+        "phone": "967"
+    },
+    {
+        "code": "YT",
+        "label": "Mayotte",
+        "phone": "262"
+    },
+    {
+        "code": "ZA",
+        "label": "South Africa",
+        "phone": "27"
+    },
+    {
+        "code": "ZM",
+        "label": "Zambia",
+        "phone": "260"
+    },
+    {
+        "code": "ZW",
+        "label": "Zimbabwe",
+        "phone": "263"
     }
 ]
