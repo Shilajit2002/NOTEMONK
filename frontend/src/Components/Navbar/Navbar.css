@@ -7,7 +7,7 @@
     background: linear-gradient(to right, #181712, #15140F, #15140F);
     position: fixed;
     top: 0;
-    z-index: 99999;
+    z-index: 999;
 }
 
 /* Navbar Logo Portion */

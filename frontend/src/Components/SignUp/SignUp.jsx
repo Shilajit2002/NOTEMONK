@@ -171,7 +171,7 @@ const SignUp = () => {
     };
 
     // Handle Form Submit Func
-    const handleSubmit = (event) => {
+    const handleSignUp = (event) => {
         // Stop Reloading the Page when Submiting the Form
         event.preventDefault();
 
@@ -179,12 +179,13 @@ const SignUp = () => {
         if (user
             .firstname !== "" && alert.firstnameAlert === "" && user
                 .lastname !== "" && alert.lastnameAlert === "" && user
-                    .email !== "" && alert.mailAlert === "" && user
-                        .password !== "" && alert.passAlert === "" && user
-                            .confirmpassword !== "" && alert.conpassAlert === "" && user
-                                .phone !== "" && alert.phoneAlert === "" && user
-                                    .code !== "" && user
-                                        .country !== "") {
+                    .username !== "" && alert.usernameAlert === "" && user
+                        .email !== "" && alert.mailAlert === "" && user
+                            .password !== "" && alert.passAlert === "" && user
+                                .confirmpassword !== "" && alert.conpassAlert === "" && user
+                                    .phone !== "" && alert.phoneAlert === "" && user
+                                        .code !== "" && user
+                                            .country !== "") {
 
             // Send to the Backend of User Form data
             axios.post("http://localhost:8000/api/users/register", user
@@ -219,7 +220,7 @@ const SignUp = () => {
                     setSnack({
                         open: true,
                         message: "You are already registered !!",
-                        severity: "warning"
+                        severity: "info"
                     });
                 } else {
                     setSnack({
@@ -235,7 +236,7 @@ const SignUp = () => {
             setSnack({
                 open: true,
                 message: "Please fill the form !!",
-                severity: "error"
+                severity: "warning"
             });
         }
     }
@@ -249,7 +250,7 @@ const SignUp = () => {
                     {/* Heading */}
                     <h2>SIGN UP</h2>
                     {/* SignUp Form */}
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSignUp}>
                         {/* First Name Box */}
                         <Box className="signUpbox">
                             {/* Person Icon */}
@@ -486,7 +487,6 @@ const SignUp = () => {
                                                 height: "48px", // set the height to 48px
                                                 display: "flex",
                                                 alignItems: "center", // vertically center the content
-                                                top: '30px',
                                                 width: 'fitContent'
                                             }}
                                             >
