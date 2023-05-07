@@ -1,137 +1,152 @@
 /* Signin Main Box */
 .signinContainer {
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to left, rgb(10, 10, 10), rgb(1, 27, 24), rgb(66, 1, 39));
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to left,
+    rgb(10, 10, 10),
+    rgb(1, 27, 24),
+    rgb(66, 1, 39)
+  );
 }
 
 /* Signin Form Div */
 .signinContainer .signinRight {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 30px 0;
-    background: linear-gradient(145deg, #fd6f6f, #df0d8b, #9316b9, #5d04bd, #201647);
-    padding: 20px 0;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.63) 0px 2px 4px 0px, rgba(0, 0, 0, 0.479) 0px 2px 16px 0px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+  background: linear-gradient(
+    145deg,
+    #fd6f6f,
+    #df0d8b,
+    #9316b9,
+    #5d04bd,
+    #201647
+  );
+  padding: 20px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.63) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.479) 0px 2px 16px 0px;
 }
 
 /* Signin Div Heading */
 .signinContainer .signinRight h2 {
-    text-align: center;
-    color: rgb(1, 23, 29);
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 1px;
-    font-weight: 600;
+  text-align: center;
+  color: rgb(1, 23, 29);
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 /* Signin Form */
 .signinContainer .signinRight form {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Signin Form Box */
 .signinContainer .signinRight .signinbox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
 /* Signin Form Alert */
 .signinContainer .signinRight p {
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: rgb(0, 0, 0);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
 }
 
 /* Signin Form TextField */
 .signinContainer .signinRight .signinbox .signinInput {
-    width: 90%;
-    background-color: rgba(2, 28, 49, 0.788);
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    outline: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  width: 90%;
+  background-color: rgba(2, 28, 49, 0.788);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* Signin Form TextField Label*/
-.signinContainer .signinRight .signinbox .signinInput>label {
-    color: rgb(207, 207, 207);
-    letter-spacing: 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.signinContainer .signinRight .signinbox .signinInput > label {
+  color: rgb(207, 207, 207);
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Signin Form Select Dropdown Icon*/
 .signinContainer .signinRight .signinbox .signinInput .sel svg {
-    color: white;
+  color: white;
 }
 
 /* Signin Form Buttons */
 .signinContainer .signinRight .signupup,
 .signinContainer .signinRight .signupin {
-    padding: 5px 40px;
-    border-style: none;
-    border-radius: 40px;
-    margin: 10px 0;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    letter-spacing: 1px;
-    background-color: rgb(1, 27, 24);
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 5px 40px;
+  border-style: none;
+  border-radius: 40px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  background-color: rgb(1, 27, 24);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 /* Signin Form Buttons Hover Effect*/
 .signinContainer .signinRight .signupup:hover {
-    background-color: rgb(0, 15, 14);
+  background-color: rgb(0, 15, 14);
 }
 
 /* Signin Form Buttons Hover Effect*/
 .signinContainer .signinRight .signupin {
-    background-color: rgb(33, 119, 194);
-    color: black;
-    font-weight: 600;
+  background-color: rgb(33, 119, 194);
+  color: black;
+  font-weight: 600;
 }
 
 .signinContainer .signinRight .signupin:hover {
-    background-color: rgb(23, 187, 173);
+  background-color: rgb(23, 187, 173);
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width:991px) {
-
-    /* Signin Form Div */
-    .signinContainer .signinRight {
-        width: 80%;
-    }
-
+@media only screen and (max-width: 991px) {
+  /* Signin Form Div */
+  .signinContainer .signinRight {
+    width: 80%;
+  }
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width:480px) {
+@media only screen and (max-width: 480px) {
+  /* Signin Form Div */
+  .signinContainer .signinRight {
+    width: 90%;
+  }
 
-    /* Signin Form Div */
-    .signinContainer .signinRight {
-        width: 90%;
-    }
-
-    /* Signin Form */
-    .signinContainer .signinRight form {
-        width: 90%;
-    }
+  /* Signin Form */
+  .signinContainer .signinRight form {
+    width: 90%;
+  }
 }

@@ -1,78 +1,88 @@
 /* Pacifico Font */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 /* Main Navbar */
 .navbar {
-    width: 100%;
-    background: linear-gradient(to right, #181712, #15140F, #15140F);
-    position: fixed;
-    top: 0;
-    z-index: 999;
+  width: 100%;
+  background: linear-gradient(to right, #181712, #15140f, #15140f);
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 /* Navbar Logo Portion */
 .navbar .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
 }
 
 /* Navbar Logo */
 .navbar .navbar-brand img {
-    width: 60px;
-    box-shadow: rgba(0, 0, 0, 0.788) 0px 2px 4px 0px, rgba(14, 30, 37, 0.726) 0px 2px 16px 0px;
-    border-radius: 50%;
+  width: 60px;
+  box-shadow: rgba(0, 0, 0, 0.788) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.726) 0px 2px 16px 0px;
+  border-radius: 50%;
 }
 
 /* Navbar Website Name */
 .navbar .navbar-brand .navbar-text {
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    color: #160230;
-    padding: 2px 10px;
-    text-shadow: 1px 1px 2px rgb(255, 0, 98), 0 0 1em blue;
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #160230;
+  padding: 2px 10px;
+  text-shadow: 1px 1px 2px rgb(255, 0, 98), 0 0 1em blue;
 }
 
 /* Navbar List Items */
 .navbar .nav-item {
-    width: fit-content;
-    text-decoration: none;
-    margin: 5px 10px;
-    font-size: 1.05rem;
-    text-align: center;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #333132, #333132 50%, #9e0bac 50%, #1c0d9e);
-    background-size: 200% 100%;
-    /*trasition effect for background*/
-    transition: background 0.5s;
-    box-sizing: border-box;
-    padding: 0.4em 1em;
-    border-radius: 5px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px;
-    color: rgb(50, 163, 255);
+  width: fit-content;
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 1.05rem;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #333132,
+    #333132 50%,
+    #9e0bac 50%,
+    #1c0d9e
+  );
+  background-size: 200% 100%;
+  /*trasition effect for background*/
+  transition: background 0.5s;
+  box-sizing: border-box;
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px;
+  color: rgb(50, 163, 255);
 }
 
 /* Navbar List Items Hover Effect */
 .navbar .nav-item:hover {
-    background-position: 100% 100%;
-    color: white;
+  background-position: 100% 100%;
+  color: white;
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width:991px) {
-    .navbar .navbar-nav {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+@media only screen and (max-width: 991px) {
+  .navbar .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .navbar .nav-item {
-        width: 100px;
-    }
+  .navbar .nav-item {
+    width: 100px;
+  }
 }
