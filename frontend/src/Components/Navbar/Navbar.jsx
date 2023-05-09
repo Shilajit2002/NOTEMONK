@@ -217,6 +217,8 @@ const Navbar = () => {
                                     bgcolor: stringToColor(
                                       username.firstname.toUpperCase()
                                     ),
+                                    boxShadow:
+                                      "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                                   }}
                                 >
                                   {username.firstname.charAt(0).toUpperCase()}
@@ -311,7 +313,7 @@ const Navbar = () => {
                             <MenuItem
                               onClick={() => {
                                 handleClose();
-                                navigate("/dashboard");
+                                navigate(`/dashboard/${username.id}`);
                               }}
                               sx={{
                                 color: "white",

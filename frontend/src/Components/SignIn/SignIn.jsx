@@ -136,7 +136,7 @@ const SignIn = () => {
           Cookies.set("token", req.data.token);
           Cookies.set("userid", req.data.userid);
 
-          window.location.href = "/dashboard";
+          navigate(`/dashboard/${Cookies.get("userid")}`);
         })
         .catch((err) => {
           // If Error then show the error message

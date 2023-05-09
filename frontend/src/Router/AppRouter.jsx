@@ -16,6 +16,8 @@ import SignUp from "../Components/SignUp/SignUp";
 import SignIn from "../Components/SignIn/SignIn";
 // Import Profile Component
 import Profile from "../Components/Profile/Profile";
+// Import Dashboard Component
+import Dashboard from "../Components/Dashboard/Dashboard";
 // Import NotFound Component
 import NotFound from "../Components/NotFound/NotFound";
 
@@ -34,6 +36,8 @@ const AppRouter = () => {
           <Route exact path="/signin" element={<SignIn />} />
           {/* Profile Route */}
           <Route exact path="/profile/:id" element={<Profile />} />
+          {/* Dashboard Route */}
+          <Route exact path="/dashboard/:id" element={<Dashboard />} />
           {/* Not Found Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
