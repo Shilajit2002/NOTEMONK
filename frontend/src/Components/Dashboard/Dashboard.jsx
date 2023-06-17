@@ -9,6 +9,10 @@ import PropTypes from "prop-types";
 /* ------------- Components ------------- */
 // SignIn Page
 import SignIn from "../SignIn/SignIn";
+// Following Page
+import Following from "../Following/Following";
+// Follower Page
+import Follower from "../Follower/Follower";
 
 /* ------------- Fetch ------------- */
 // Axios
@@ -211,6 +215,7 @@ const Dashboard = () => {
     const arr = [];
     for (let i = 0; i < 5; i++) {
       arr.push(
+        // Box
         <Box
           sx={{
             display: "flex",
@@ -222,6 +227,7 @@ const Dashboard = () => {
           }}
           key={i}
         >
+          {/* Avatar SKeleton */}
           <Skeleton
             variant="circular"
             sx={{
@@ -231,7 +237,7 @@ const Dashboard = () => {
               backgroundColor: "#b8b8b827",
             }}
           />
-
+          {/* Text Skeleton */}
           <Skeleton
             variant="text"
             sx={{
@@ -253,6 +259,66 @@ const Dashboard = () => {
   // Handle Change Value Func
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  // Unfollow Func
+  const unFollow = (follId) => {
+    // Take the Token and Userid
+    const token = Cookies.get("token");
+    const userid = Cookies.get("userid");
+
+    // If token and userid present
+    if (token && userid) {
+      // If userid and params id match
+      if (userid === id) {
+        // Axios Post Request from Backend
+        axios
+          .post(
+            `http://localhost:8000/api/followings/following/${userid}`,
+            { _id: follId },
+            {
+              headers: {
+                Authorization: `${token}`,
+              },
+            }
+          )
+          .then((res) => {
+            // Set the Following Details of the User
+          })
+          .catch((err) => {
+            // console.log(err);
+            Swal.fire({
+              icon: "warning",
+              title: `You are not authenticated !!`,
+              confirmButtonText: "Ok",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Cookies.remove("token");
+                Cookies.remove("userid");
+                window.location.href = `/signin`;
+              } else {
+                Cookies.remove("token");
+                Cookies.remove("userid");
+                window.location.href = `/signin`;
+              }
+            });
+          });
+      }
+      // If userid and params id not match
+      else {
+        Swal.fire({
+          icon: "warning",
+          title: `You can only view your own account !!`,
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = `/dashboard/${userid}`;
+          } else {
+            window.location.href = `/dashboard/${userid}`;
+          }
+        });
+      }
+    }
   };
 
   return (
@@ -343,9 +409,13 @@ const Dashboard = () => {
                   {/* TabPanel for Search Note Component */}
                   <TabPanel value={value} index={0}></TabPanel>
                   {/* TabPanel for Following Component*/}
-                  <TabPanel value={value} index={1}></TabPanel>
+                  <TabPanel value={value} index={1}>
+                    <Following />
+                  </TabPanel>
                   {/* TabPanel for Follower Component*/}
-                  <TabPanel value={value} index={2}></TabPanel>
+                  <TabPanel value={value} index={2}>
+                    <Follower />
+                  </TabPanel>
                 </Box>
               </div>
             </div>
@@ -408,6 +478,14 @@ const Dashboard = () => {
                       </Avatar>
                       {/* Username */}
                       <h6>{f.username}</h6>
+                      <button
+                        className="btn btn-info"
+                        onClick={() => {
+                          unFollow(f._id);
+                        }}
+                      >
+                        Follow
+                      </button>
                     </Box>
                   ))
                 ) : (
@@ -419,9 +497,10 @@ const Dashboard = () => {
           </div>
         </>
       ) : (
-        {
-          /* If Token and UserId not present then redirect SignIn */
-        }(<SignIn />)
+        <>
+          {/* If Token and UserId not present then redirect SignIn */}
+          <SignIn />
+        </>
       )}
     </>
   );

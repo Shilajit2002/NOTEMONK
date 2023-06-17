@@ -86,6 +86,7 @@ router.post('/following/:id', auth, async (req, res) => {
                             username: followerUser.username,
                             // Store the Following user id
                             followerArr: [{
+                                follower_username: followingUser.username,
                                 follower_user_id: user_id,
                                 accept: false
                             }]
@@ -106,6 +107,7 @@ router.post('/following/:id', auth, async (req, res) => {
                     //  If already present the following user id then delete that following user
                     let followerId = await follower.followerArr.findIndex(f => f.follower_user_id.toString() === user_id);
 
+                    // Delete the details of the follower and followings
                     following.followingArr.splice(followingId, 1);
                     follower.followerArr.splice(followerId, 1);
                 }

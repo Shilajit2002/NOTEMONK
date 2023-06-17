@@ -388,9 +388,9 @@ const Navbar = () => {
                             <MenuItem
                               onClick={() => {
                                 handleClose();
+                                window.location.href = "/signin";
                                 Cookies.remove("token");
                                 Cookies.remove("userid");
-                                window.location.href = "/signin";
                               }}
                               sx={{
                                 color: "white",

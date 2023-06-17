@@ -29,8 +29,6 @@
   align-items: center;
   flex-direction: column;
   align-self: flex-start;
-  position: sticky;
-  top: 120px;
   margin-top: 20px;
 }
 
@@ -169,4 +167,13 @@
   font-weight: 400;
   text-align: center;
   letter-spacing: 1px;
+}
+
+/* Tab Panel */
+.css-19kzrtu {
+  background-color: #1d2226;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
