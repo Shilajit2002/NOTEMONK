@@ -103,13 +103,12 @@
   padding: 10px 0;
 }
 
-/* Add Note Form TextField */
+/* Add Note Form Files Upload Box */
 .addNoteBox .addNoteForm .NoteBox .uploadBox {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   background-color: rgb(255, 255, 255);
 }
 
@@ -120,6 +119,7 @@
   font-size: 1rem;
   font-weight: 600;
   padding: 5px 15px;
+  margin: 0;
   background-color: #006ab1;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
@@ -137,19 +137,36 @@
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width: 480px) {
-  /* Signin Form Div */
-  .addNoteBox .addNoteForm {
-    width: 95%;
-  }
-
+@media only screen and (max-width: 600px) {
   /* Add Note Form Note Box NoteInput */
   .addNoteBox .addNoteForm .NoteBox .viewNoteInput {
     flex-direction: column;
   }
 
-  /* Add Note Form Note Box NoteInput Switch Root*/
-  .addNoteBox .addNoteForm .NoteBox .viewNoteInput .css-1vte2np-MuiSwitch-root {
-    margin-left: 10px;
+  /* Add Note Form Note Box Heading */
+  .addNoteBox .addNoteForm .NoteBox h6 {
+    margin: 10px 0;
+  }
+
+  /* Add Note Form TextField */
+  .addNoteBox .addNoteForm .NoteBox .uploadBox {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 480px) {
+  /* Signin Form Div */
+  .addNoteBox .addNoteForm {
+    width: 90%;
+    padding: 10px 0;
+  }
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 353px) {
+  .addNoteBox {
+    padding-top: 150px;
   }
 }

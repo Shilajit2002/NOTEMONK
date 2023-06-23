@@ -180,9 +180,12 @@ const AddNotes = () => {
     toolbar: [
       [{ header: [1, 2, 3, 4, 5, 6, false] }],
       ["bold", "italic", "underline", "strike", "blockquote"],
-      // [{ subscript: "sub" }, { superscript: "super" }],
+      [{ script: "sub" }, { script: "super" }],
       [{ font: [] }],
-      [{ color: [] }, { background: [] }], // Add color and background options
+      [{ size: ["small", false, "large", "huge"] }], // custom dropdown
+      [{ direction: "rtl" }], // text direction
+      [{ color: [] }, { background: [] }],
+      [{ align: [] }],
       [
         { list: "ordered" },
         { list: "bullet" },
@@ -190,13 +193,12 @@ const AddNotes = () => {
         { indent: "+1" },
       ],
       ["link", "image"],
-      // [{ script: "sub" }, { script: "super" }],
       [{ code: "" }],
       ["clean"],
     ],
   };
 
-  // React React Text Editor Formats
+  // React Rich Text Editor Formats
   const formats = [
     "header",
     "bold",
@@ -204,17 +206,20 @@ const AddNotes = () => {
     "underline",
     "strike",
     "blockquote",
-    // "subscript", // Use "subscript" format
-    // "superscript", // Use "superscript" format
+    "align", // corrected from "direction"
+    "script", // corrected from "script"
     "font",
+    "size",
     "color",
     "background",
     "list",
+    "ordered",
     "bullet",
     "indent",
     "link",
     "image",
     "code",
+    "clean",
   ];
 
   // Image Files Types
@@ -502,7 +507,6 @@ const AddNotes = () => {
             })
             .then((req) => {
               if (selectedFiles !== []) {
-                console.log("Hello");
                 const formData = new FormData();
                 selectedFiles.forEach((file, index) => {
                   formData.append("files", file);
@@ -712,10 +716,11 @@ const AddNotes = () => {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
+                        marginLeft: "10px",
                       }}
                       control={
                         <IOSSwitch
-                          sx={{ m: 1 }}
+                          // sx={{ m: 1 }}
                           checked={switchValue}
                           onChange={handleSwitchChange}
                         />
@@ -752,6 +757,7 @@ const AddNotes = () => {
                       <Button
                         variant="outlined"
                         color="secondary"
+                        size="small"
                         onClick={() => {
                           setSelectedFiles([]);
                         }}
@@ -827,6 +833,7 @@ const AddNotes = () => {
                         size="medium"
                         color="secondary"
                         aria-label="add"
+                        sx={{ zIndex: 1 }}
                       >
                         {/* Add Icon */}
                         <AddIcon />
