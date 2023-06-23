@@ -337,7 +337,7 @@ const Navbar = () => {
                             <MenuItem
                               onClick={() => {
                                 handleClose();
-                                navigate("/all-notes");
+                                navigate(`/all-notes/${username.id}`);
                               }}
                               sx={{
                                 color: "white",
@@ -361,7 +361,7 @@ const Navbar = () => {
                             <MenuItem
                               onClick={() => {
                                 handleClose();
-                                navigate("/add-notes");
+                                navigate(`/add-notes/${username.id}`);
                               }}
                               sx={{
                                 color: "white",

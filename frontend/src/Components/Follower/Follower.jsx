@@ -60,6 +60,9 @@ const Follower = () => {
   // Follower Names UseState
   const [followerName, setFollowerName] = useState(null);
 
+  // No Follower Status
+  const [noFollower, setNoFollower] = useState(null);
+
   // UserEffect for get all the user follower details
   useEffect(() => {
     // Take the Token and Userid
@@ -78,6 +81,9 @@ const Follower = () => {
             },
           })
           .then((res) => {
+            // Set the No Follower Details of the User
+            setNoFollower(res.data);
+
             // Set the Follower Details of the User
             setFollowerName(res.data.followerArr);
           })
@@ -467,8 +473,26 @@ const Follower = () => {
                 })
               ) : (
                 <>
-                  {/* Otherwise call followingNameSkList for showing skeleton*/}
-                  {followerNameSkList()}
+                  {noFollower && noFollower === "No followers yet (`~`)" ? (
+                    <>
+                      <h5
+                        style={{
+                          color: "aliceblue",
+                          textAlign: "center",
+                          textTransform: "capitalize",
+                          letterSpacing: "1.5px",
+                          fontFamily: "Times-new-Roman",
+                        }}
+                      >
+                        {noFollower}
+                      </h5>
+                    </>
+                  ) : (
+                    <>
+                      {/* Otherwise call followingNameSkList for showing skeleton*/}
+                      {followerNameSkList()}
+                    </>
+                  )}
                 </>
               )}
             </List>

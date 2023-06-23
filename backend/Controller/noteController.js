@@ -294,7 +294,7 @@ router.get('/all-note/:id', auth, async (req, res) => {
     }
 })
 
-// API for Get all the Note Details of a perticular User by id
+// API for delete all the Note Details of a perticular User by id
 router.delete('/delete-all-note/:id', auth, async (req, res) => {
     try {
 

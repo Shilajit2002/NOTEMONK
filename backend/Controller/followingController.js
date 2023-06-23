@@ -146,7 +146,7 @@ router.get("/following/:id", auth, async (req, res) => {
             }
             else {
                 // Set Ok Status
-                res.status(200).send("No Followers");
+                res.status(200).send("No followings");
             }
 
         } else {

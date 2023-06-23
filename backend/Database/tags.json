@@ -1,0 +1,3005 @@
+[
+  {
+    "tagname": "Mathematics"
+  },
+  {
+    "tagname": "Science"
+  },
+  {
+    "tagname": "English"
+  },
+  {
+    "tagname": "History"
+  },
+  {
+    "tagname": "Geography"
+  },
+  {
+    "tagname": "Physics"
+  },
+  {
+    "tagname": "Chemistry"
+  },
+  {
+    "tagname": "Biology"
+  },
+  {
+    "tagname": "Computer Science"
+  },
+  {
+    "tagname": "Literature"
+  },
+  {
+    "tagname": "Art"
+  },
+  {
+    "tagname": "Music"
+  },
+  {
+    "tagname": "Physical Education"
+  },
+  {
+    "tagname": "Social Studies"
+  },
+  {
+    "tagname": "Economics"
+  },
+  {
+    "tagname": "Psychology"
+  },
+  {
+    "tagname": "Sociology"
+  },
+  {
+    "tagname": "Political Science"
+  },
+  {
+    "tagname": "Foreign Languages"
+  },
+  {
+    "tagname": "Environmental Science"
+  },
+  {
+    "tagname": "Health Education"
+  },
+  {
+    "tagname": "Philosophy"
+  },
+  {
+    "tagname": "Engineering"
+  },
+  {
+    "tagname": "Business Studies"
+  },
+  {
+    "tagname": "Accounting"
+  },
+  {
+    "tagname": "Statistics"
+  },
+  {
+    "tagname": "Anthropology"
+  },
+  {
+    "tagname": "Archaeology"
+  },
+  {
+    "tagname": "Criminal Justice"
+  },
+  {
+    "tagname": "Information Technology"
+  },
+  {
+    "tagname": "Media Studies"
+  },
+  {
+    "tagname": "Communication"
+  },
+  {
+    "tagname": "Law"
+  },
+  {
+    "tagname": "Nursing"
+  },
+  {
+    "tagname": "Education"
+  },
+  {
+    "tagname": "Marketing"
+  },
+  {
+    "tagname": "Humanities"
+  },
+  {
+    "tagname": "Religious Studies"
+  },
+  {
+    "tagname": "Drama"
+  },
+  {
+    "tagname": "Film Studies"
+  },
+  {
+    "tagname": "Fashion Design"
+  },
+  {
+    "tagname": "Nutrition"
+  },
+  {
+    "tagname": "Astronomy"
+  },
+  {
+    "tagname": "Dentistry"
+  },
+  {
+    "tagname": "Medicine"
+  },
+  {
+    "tagname": "Physical Therapy"
+  },
+  {
+    "tagname": "Veterinary Science"
+  },
+  {
+    "tagname": "Agriculture"
+  },
+  {
+    "tagname": "Environmental Studies"
+  },
+  {
+    "tagname": "Journalism"
+  },
+  {
+    "tagname": "Library Science"
+  },
+  {
+    "tagname": "Linguistics"
+  },
+  {
+    "tagname": "Geology"
+  },
+  {
+    "tagname": "Theater"
+  },
+  {
+    "tagname": "Culinary Arts"
+  },
+  {
+    "tagname": "Hospitality Management"
+  },
+  {
+    "tagname": "Early Childhood Education"
+  },
+  {
+    "tagname": "Special Education"
+  },
+  {
+    "tagname": "Aviation"
+  },
+  {
+    "tagname": "Meteorology"
+  },
+  {
+    "tagname": "Sports Science"
+  },
+  {
+    "tagname": "Astrophysics"
+  },
+  {
+    "tagname": "Biotechnology"
+  },
+  {
+    "tagname": "Botany"
+  },
+  {
+    "tagname": "Ecology"
+  },
+  {
+    "tagname": "Genetics"
+  },
+  {
+    "tagname": "Marine Biology"
+  },
+  {
+    "tagname": "Microbiology"
+  },
+  {
+    "tagname": "Zoology"
+  },
+  {
+    "tagname": "Forensic Science"
+  },
+  {
+    "tagname": "Ethics"
+  },
+  {
+    "tagname": "World Religions"
+  },
+  {
+    "tagname": "Astrobiology"
+  },
+  {
+    "tagname": "Paleontology"
+  },
+  {
+    "tagname": "Oceanography"
+  },
+  {
+    "tagname": "Criminology"
+  },
+  {
+    "tagname": "Aeronautical Engineering"
+  },
+  {
+    "tagname": "Civil Engineering"
+  },
+  {
+    "tagname": "Electrical Engineering"
+  },
+  {
+    "tagname": "Mechanical Engineering"
+  },
+  {
+    "tagname": "Chemical Engineering"
+  },
+  {
+    "tagname": "Materials Science"
+  },
+  {
+    "tagname": "Robotics"
+  },
+  {
+    "tagname": "Data Science"
+  },
+  {
+    "tagname": "Machine Learning"
+  },
+  {
+    "tagname": "Artificial Intelligence"
+  },
+  {
+    "tagname": "Cryptocurrency"
+  },
+  {
+    "tagname": "Ethical Hacking"
+  },
+  {
+    "tagname": "Web Development"
+  },
+  {
+    "tagname": "Game Development"
+  },
+  {
+    "tagname": "Digital Marketing"
+  },
+  {
+    "tagname": "Entrepreneurship"
+  },
+  {
+    "tagname": "Finance"
+  },
+  {
+    "tagname": "Investment Banking"
+  },
+  {
+    "tagname": "Real Estate"
+  },
+  {
+    "tagname": "Graphic Design"
+  },
+  {
+    "tagname": "Animation"
+  },
+  {
+    "tagname": "Industrial Design"
+  },
+  {
+    "tagname": "Fashion Merchandising"
+  },
+  {
+    "tagname": "Sports Management"
+  },
+  {
+    "tagname": "Sports Medicine"
+  },
+  {
+    "tagname": "Kinesiology"
+  },
+  {
+    "tagname": "Forestry"
+  },
+  {
+    "tagname": "Horticulture"
+  },
+  {
+    "tagname": "Landscape Architecture"
+  },
+  {
+    "tagname": "Tourism and Hospitality"
+  },
+  {
+    "tagname": "Event Management"
+  },
+  {
+    "tagname": "Molecular Biology"
+  },
+  {
+    "tagname": "Biochemistry"
+  },
+  {
+    "tagname": "Immunology"
+  },
+  {
+    "tagname": "Pharmacology"
+  },
+  {
+    "tagname": "Neuroscience"
+  },
+  {
+    "tagname": "Sustainable Development"
+  },
+  {
+    "tagname": "Renewable Energy"
+  },
+  {
+    "tagname": "Geographic Information Systems (GIS)"
+  },
+  {
+    "tagname": "Urban Planning"
+  },
+  {
+    "tagname": "Public Health"
+  },
+  {
+    "tagname": "Counseling Psychology"
+  },
+  {
+    "tagname": "Social Work"
+  },
+  {
+    "tagname": "Fashion Marketing"
+  },
+  {
+    "tagname": "Interior Design"
+  },
+  {
+    "tagname": "Yoga"
+  },
+  {
+    "tagname": "Sports Psychology"
+  },
+  {
+    "tagname": "Cognitive Science"
+  },
+  {
+    "tagname": "Political Philosophy"
+  },
+  {
+    "tagname": "Data Analytics"
+  },
+  {
+    "tagname": "Human Resource Management"
+  },
+  {
+    "tagname": "Operations Management"
+  },
+  {
+    "tagname": "Supply Chain Management"
+  },
+  {
+    "tagname": "Information Systems"
+  },
+  {
+    "tagname": "Game Theory"
+  },
+  {
+    "tagname": "Logic"
+  },
+  {
+    "tagname": "Quantum Mechanics"
+  },
+  {
+    "tagname": "Operations Research"
+  },
+  {
+    "tagname": "Theoretical Physics"
+  },
+  {
+    "tagname": "Music Theory"
+  },
+  {
+    "tagname": "Ethnomusicology"
+  },
+  {
+    "tagname": "Cultural Anthropology"
+  },
+  {
+    "tagname": "Behavioral Economics"
+  },
+  {
+    "tagname": "International Relations"
+  },
+  {
+    "tagname": "Digital Media"
+  },
+  {
+    "tagname": "Photography"
+  },
+  {
+    "tagname": "Public Relations"
+  },
+  {
+    "tagname": "Conflict Resolution"
+  },
+  {
+    "tagname": "Creative Writing"
+  },
+  {
+    "tagname": "Journalism Ethics"
+  },
+  {
+    "tagname": "Fashion Journalism"
+  },
+  {
+    "tagname": "Human Nutrition"
+  },
+  {
+    "tagname": "Food Science"
+  },
+  {
+    "tagname": "Epidemiology"
+  },
+  {
+    "tagname": "Healthcare Management"
+  },
+  {
+    "tagname": "Social Psychology"
+  },
+  {
+    "tagname": "Organizational Behavior"
+  },
+  {
+    "tagname": "Art History"
+  },
+  {
+    "tagname": "Film Production"
+  },
+  {
+    "tagname": "Sound Engineering"
+  },
+  {
+    "tagname": "Information Security"
+  },
+  {
+    "tagname": "Mobile App Development"
+  },
+  {
+    "tagname": "Virtual Reality"
+  },
+  {
+    "tagname": "Entrepreneurial Finance"
+  },
+  {
+    "tagname": "Real Estate Investment"
+  },
+  {
+    "tagname": "User Experience Design"
+  },
+  {
+    "tagname": "Sustainable Architecture"
+  },
+  {
+    "tagname": "Wildlife Conservation"
+  },
+  {
+    "tagname": "Environmental Policy"
+  },
+  {
+    "tagname": "Forensic Psychology"
+  },
+  {
+    "tagname": "Clinical Psychology"
+  },
+  {
+    "tagname": "Artificial Neural Networks"
+  },
+  {
+    "tagname": "Cloud Computing"
+  },
+  {
+    "tagname": "Digital Forensics"
+  },
+  {
+    "tagname": "Cybersecurity"
+  },
+  {
+    "tagname": "Criminal Law"
+  },
+  {
+    "tagname": "Intellectual Property Law"
+  },
+  {
+    "tagname": "Corporate Law"
+  },
+  {
+    "tagname": "Taxation Law"
+  },
+  {
+    "tagname": "Pediatric Nursing"
+  },
+  {
+    "tagname": "Mental Health Counseling"
+  },
+  {
+    "tagname": "Curriculum Development"
+  },
+  {
+    "tagname": "Instructional Design"
+  },
+  {
+    "tagname": "English Literature"
+  },
+  {
+    "tagname": "Modern Dance"
+  },
+  {
+    "tagname": "Artificial Life"
+  },
+  {
+    "tagname": "Organic Chemistry"
+  },
+  {
+    "tagname": "Structural Engineering"
+  },
+  {
+    "tagname": "Machine Vision"
+  },
+  {
+    "tagname": "Deep Learning"
+  },
+  {
+    "tagname": "Social Media Marketing"
+  },
+  {
+    "tagname": "Hospitality Operations"
+  },
+  {
+    "tagname": "Sports Nutrition"
+  },
+  {
+    "tagname": "Quantum Computing"
+  },
+  {
+    "tagname": "Astrochemistry"
+  },
+  {
+    "tagname": "Industrial Engineering"
+  },
+  {
+    "tagname": "Supply Chain Analytics"
+  },
+  {
+    "tagname": "Ethical Leadership"
+  },
+  {
+    "tagname": "Human Rights Law"
+  },
+  {
+    "tagname": "International Business"
+  },
+  {
+    "tagname": "Consumer Behavior"
+  },
+  {
+    "tagname": "Developmental Psychology"
+  },
+  {
+    "tagname": "Environmental Engineering"
+  },
+  {
+    "tagname": "Data Visualization"
+  },
+  {
+    "tagname": "Human-Computer Interaction"
+  },
+  {
+    "tagname": "Digital Economy"
+  },
+  {
+    "tagname": "Organizational Psychology"
+  },
+  {
+    "tagname": "Robotics Engineering"
+  },
+  {
+    "tagname": "Sociolinguistics"
+  },
+  {
+    "tagname": "Cultural Studies"
+  },
+  {
+    "tagname": "Historical Archaeology"
+  },
+  {
+    "tagname": "Paleoanthropology"
+  },
+  {
+    "tagname": "Social Anthropology"
+  },
+  {
+    "tagname": "Human Geography"
+  },
+  {
+    "tagname": "Marine Engineering"
+  },
+  {
+    "tagname": "Petroleum Engineering"
+  },
+  {
+    "tagname": "Renewable Energy Systems"
+  },
+  {
+    "tagname": "Green Building Design"
+  },
+  {
+    "tagname": "Public Policy Analysis"
+  },
+  {
+    "tagname": "Educational Technology"
+  },
+  {
+    "tagname": "Multimedia Design"
+  },
+  {
+    "tagname": "Fashion Styling"
+  },
+  {
+    "tagname": "Outdoor Recreation"
+  },
+  {
+    "tagname": "Exercise Physiology"
+  },
+  {
+    "tagname": "Gerontology"
+  },
+  {
+    "tagname": "Health Informatics"
+  },
+  {
+    "tagname": "Behavioral Neuroscience"
+  },
+  {
+    "tagname": "Developmental Biology"
+  },
+  {
+    "tagname": "Neuropsychology"
+  },
+  {
+    "tagname": "Social Entrepreneurship"
+  },
+  {
+    "tagname": "International Development"
+  },
+  {
+    "tagname": "Fine Arts"
+  },
+  {
+    "tagname": "Music Production"
+  },
+  {
+    "tagname": "Artificial Intelligence Ethics"
+  },
+  {
+    "tagname": "Cloud Security"
+  },
+  {
+    "tagname": "Human Resource Development"
+  },
+  {
+    "tagname": "Marketing Analytics"
+  },
+  {
+    "tagname": "Urban Design"
+  },
+  {
+    "tagname": "Transportation Planning"
+  },
+  {
+    "tagname": "Clinical Research"
+  },
+  {
+    "tagname": "Public Health Nutrition"
+  },
+  {
+    "tagname": "Sport Psychology"
+  },
+  {
+    "tagname": "Orthopedic Nursing"
+  },
+  {
+    "tagname": "Educational Psychology"
+  },
+  {
+    "tagname": "Screenwriting"
+  },
+  {
+    "tagname": "Contemporary Art"
+  },
+  {
+    "tagname": "Organic Synthesis"
+  },
+  {
+    "tagname": "Structural Biology"
+  },
+  {
+    "tagname": "Software Engineering"
+  },
+  {
+    "tagname": "Business Intelligence"
+  },
+  {
+    "tagname": "Fashion Retailing"
+  },
+  {
+    "tagname": "Sport Management"
+  },
+  {
+    "tagname": "Sports Coaching"
+  },
+  {
+    "tagname": "Aerodynamics"
+  },
+  {
+    "tagname": "Aircraft Structures"
+  },
+  {
+    "tagname": "Propulsion Systems"
+  },
+  {
+    "tagname": "Flight Mechanics"
+  },
+  {
+    "tagname": "Avionics"
+  },
+  {
+    "tagname": "Geotechnical Engineering"
+  },
+  {
+    "tagname": "Transportation Engineering"
+  },
+  {
+    "tagname": "Water Resources Engineering"
+  },
+  {
+    "tagname": "Circuit Analysis"
+  },
+  {
+    "tagname": "Digital Electronics"
+  },
+  {
+    "tagname": "Power Systems"
+  },
+  {
+    "tagname": "Electronics and Communication"
+  },
+  {
+    "tagname": "Control Systems"
+  },
+  {
+    "tagname": "Thermodynamics"
+  },
+  {
+    "tagname": "Fluid Mechanics"
+  },
+  {
+    "tagname": "Heat Transfer"
+  },
+  {
+    "tagname": "Machine Design"
+  },
+  {
+    "tagname": "Manufacturing Processes"
+  },
+  {
+    "tagname": "Chemical Reaction Engineering"
+  },
+  {
+    "tagname": "Process Control"
+  },
+  {
+    "tagname": "Transport Phenomena"
+  },
+  {
+    "tagname": "Separation Processes"
+  },
+  {
+    "tagname": "Material Characterization"
+  },
+  {
+    "tagname": "Polymer Science"
+  },
+  {
+    "tagname": "Ceramics"
+  },
+  {
+    "tagname": "Metallurgy"
+  },
+  {
+    "tagname": "Composite Materials"
+  },
+  {
+    "tagname": "Robot Kinematics"
+  },
+  {
+    "tagname": "Robot Control"
+  },
+  {
+    "tagname": "Artificial Intelligence in Robotics"
+  },
+  {
+    "tagname": "Computer Vision"
+  },
+  {
+    "tagname": "Human-Robot Interaction"
+  },
+  {
+    "tagname": "Flight Dynamics and Controls"
+  },
+  {
+    "tagname": "Aerospace Propulsion"
+  },
+  {
+    "tagname": "Aircraft Systems"
+  },
+  {
+    "tagname": "Spacecraft Design"
+  },
+  {
+    "tagname": "Aerospace Structures"
+  },
+  {
+    "tagname": "Computer Architecture"
+  },
+  {
+    "tagname": "Operating Systems"
+  },
+  {
+    "tagname": "Data Structures and Algorithms"
+  },
+  {
+    "tagname": "Database Systems"
+  },
+  {
+    "tagname": "Biomechanics"
+  },
+  {
+    "tagname": "Medical Imaging"
+  },
+  {
+    "tagname": "Biomaterials"
+  },
+  {
+    "tagname": "Rehabilitation Engineering"
+  },
+  {
+    "tagname": "Biomedical Instrumentation"
+  },
+  {
+    "tagname": "Air Pollution Control"
+  },
+  {
+    "tagname": "Water and Wastewater Treatment"
+  },
+  {
+    "tagname": "Solid and Hazardous Waste Management"
+  },
+  {
+    "tagname": "Environmental Impact Assessment"
+  },
+  {
+    "tagname": "Sustainable Engineering"
+  },
+  {
+    "tagname": "Production Planning and Control"
+  },
+  {
+    "tagname": "Quality Engineering"
+  },
+  {
+    "tagname": "Work Design and Ergonomics"
+  },
+  {
+    "tagname": "Analog Electronics"
+  },
+  {
+    "tagname": "Digital Signal Processing"
+  },
+  {
+    "tagname": "Power Electronics"
+  },
+  {
+    "tagname": "Control Systems Engineering"
+  },
+  {
+    "tagname": "Mechanics of Materials"
+  },
+  {
+    "tagname": "Automotive Engineering"
+  },
+  {
+    "tagname": "Vibration Analysis"
+  },
+  {
+    "tagname": "Mechatronics"
+  },
+  {
+    "tagname": "Engineering Design"
+  },
+  {
+    "tagname": "Structural Analysis"
+  },
+  {
+    "tagname": "Construction Management"
+  },
+  {
+    "tagname": "Highway Engineering"
+  },
+  {
+    "tagname": "Process Design"
+  },
+  {
+    "tagname": "Reaction Engineering"
+  },
+  {
+    "tagname": "Process Safety"
+  },
+  {
+    "tagname": "Biochemical Engineering"
+  },
+  {
+    "tagname": "Nanotechnology"
+  },
+  {
+    "tagname": "Computer Networks"
+  },
+  {
+    "tagname": "Bioprocess Engineering"
+  },
+  {
+    "tagname": "Bioinformatics"
+  },
+  {
+    "tagname": "Genetic Engineering"
+  },
+  {
+    "tagname": "Pharmaceutical Engineering"
+  },
+  {
+    "tagname": "Tissue Engineering"
+  },
+  {
+    "tagname": "Aircraft Design"
+  },
+  {
+    "tagname": "Satellite Systems"
+  },
+  {
+    "tagname": "Spacecraft Propulsion"
+  },
+  {
+    "tagname": "Environmental Modeling"
+  },
+  {
+    "tagname": "Climate Change Mitigation"
+  },
+  {
+    "tagname": "Environmental Monitoring"
+  },
+  {
+    "tagname": "Water Resource Management"
+  },
+  {
+    "tagname": "Sustainable Waste Management"
+  },
+  {
+    "tagname": "Supply Chain Optimization"
+  },
+  {
+    "tagname": "Lean Manufacturing"
+  },
+  {
+    "tagname": "Quality Control"
+  },
+  {
+    "tagname": "Facilities Planning"
+  },
+  {
+    "tagname": "Software Testing"
+  },
+  {
+    "tagname": "Agile Development"
+  },
+  {
+    "tagname": "User Interface Design"
+  },
+  {
+    "tagname": "Reservoir Engineering"
+  },
+  {
+    "tagname": "Drilling Engineering"
+  },
+  {
+    "tagname": "Production Engineering"
+  },
+  {
+    "tagname": "Well Testing"
+  },
+  {
+    "tagname": "Petroleum Economics"
+  },
+  {
+    "tagname": "Nuclear Reactor Design"
+  },
+  {
+    "tagname": "Radiation Protection"
+  },
+  {
+    "tagname": "Nuclear Materials"
+  },
+  {
+    "tagname": "Fusion Energy"
+  },
+  {
+    "tagname": "Nuclear Safety"
+  },
+  {
+    "tagname": "Python"
+  },
+  {
+    "tagname": "JavaScript"
+  },
+  {
+    "tagname": "Java"
+  },
+  {
+    "tagname": "C++"
+  },
+  {
+    "tagname": "C#"
+  },
+  {
+    "tagname": "Ruby"
+  },
+  {
+    "tagname": "Go"
+  },
+  {
+    "tagname": "Swift"
+  },
+  {
+    "tagname": "Kotlin"
+  },
+  {
+    "tagname": "R"
+  },
+  {
+    "tagname": "PHP"
+  },
+  {
+    "tagname": "TypeScript"
+  },
+  {
+    "tagname": "Rust"
+  },
+  {
+    "tagname": "Perl"
+  },
+  {
+    "tagname": "Scala"
+  },
+  {
+    "tagname": "Haskell"
+  },
+  {
+    "tagname": "Lua"
+  },
+  {
+    "tagname": "Matlab"
+  },
+  {
+    "tagname": "Shell"
+  },
+  {
+    "tagname": "Objective-C"
+  },
+  {
+    "tagname": "VB.NET"
+  },
+  {
+    "tagname": "Groovy"
+  },
+  {
+    "tagname": "Dart"
+  },
+  {
+    "tagname": "Julia"
+  },
+  {
+    "tagname": "Assembly"
+  },
+  {
+    "tagname": "Fortran"
+  },
+  {
+    "tagname": "PL/SQL"
+  },
+  {
+    "tagname": "T-SQL"
+  },
+  {
+    "tagname": "C"
+  },
+  {
+    "tagname": "VBScript"
+  },
+  {
+    "tagname": "Delphi"
+  },
+  {
+    "tagname": "PowerShell"
+  },
+  {
+    "tagname": "Ada"
+  },
+  {
+    "tagname": "COBOL"
+  },
+  {
+    "tagname": "Lisp"
+  },
+  {
+    "tagname": "Prolog"
+  },
+  {
+    "tagname": "Scheme"
+  },
+  {
+    "tagname": "Elixir"
+  },
+  {
+    "tagname": "Erlang"
+  },
+  {
+    "tagname": "Clojure"
+  },
+  {
+    "tagname": "D"
+  },
+  {
+    "tagname": "F#"
+  },
+  {
+    "tagname": "OCaml"
+  },
+  {
+    "tagname": "Racket"
+  },
+  {
+    "tagname": "Smalltalk"
+  },
+  {
+    "tagname": "Tcl"
+  },
+  {
+    "tagname": "Verilog"
+  },
+  {
+    "tagname": "VHDL"
+  },
+  {
+    "tagname": "React"
+  },
+  {
+    "tagname": "Angular"
+  },
+  {
+    "tagname": "Vue.js"
+  },
+  {
+    "tagname": "Django"
+  },
+  {
+    "tagname": "Flask"
+  },
+  {
+    "tagname": "Ruby on Rails"
+  },
+  {
+    "tagname": "Express.js"
+  },
+  {
+    "tagname": "Spring"
+  },
+  {
+    "tagname": "Hibernate"
+  },
+  {
+    "tagname": "jQuery"
+  },
+  {
+    "tagname": "Bootstrap"
+  },
+  {
+    "tagname": "Node.js"
+  },
+  {
+    "tagname": "TensorFlow"
+  },
+  {
+    "tagname": "PyTorch"
+  },
+  {
+    "tagname": "Keras"
+  },
+  {
+    "tagname": "Pandas"
+  },
+  {
+    "tagname": "NumPy"
+  },
+  {
+    "tagname": "Matplotlib"
+  },
+  {
+    "tagname": "OpenCV"
+  },
+  {
+    "tagname": "SFML"
+  },
+  {
+    "tagname": "OpenGL"
+  },
+  {
+    "tagname": "Unity"
+  },
+  {
+    "tagname": "Firebase"
+  },
+  {
+    "tagname": "MongoDB"
+  },
+  {
+    "tagname": "MySQL"
+  },
+  {
+    "tagname": "PostgreSQL"
+  },
+  {
+    "tagname": "SQLite"
+  },
+  {
+    "tagname": "Oracle"
+  },
+  {
+    "tagname": "Redis"
+  },
+  {
+    "tagname": "Elasticsearch"
+  },
+  {
+    "tagname": "Apache Kafka"
+  },
+  {
+    "tagname": "RabbitMQ"
+  },
+  {
+    "tagname": "GraphQL"
+  },
+  {
+    "tagname": "Apollo"
+  },
+  {
+    "tagname": "CodeIgniter"
+  },
+  {
+    "tagname": "Laravel"
+  },
+  {
+    "tagname": "ASP.NET"
+  },
+  {
+    "tagname": "WPF"
+  },
+  {
+    "tagname": "ASP.NET Core"
+  },
+  {
+    "tagname": "C Programming"
+  },
+  {
+    "tagName": "Anatomy"
+  },
+  {
+    "tagName": "Physiology"
+  },
+  {
+    "tagName": "Biochemistry"
+  },
+  {
+    "tagName": "Pharmacology"
+  },
+  {
+    "tagName": "Pathology"
+  },
+  {
+    "tagName": "Microbiology"
+  },
+  {
+    "tagName": "Forensic Medicine"
+  },
+  {
+    "tagName": "Community Medicine"
+  },
+  {
+    "tagName": "General Medicine"
+  },
+  {
+    "tagName": "Pediatrics"
+  },
+  {
+    "tagName": "Dermatology"
+  },
+  {
+    "tagName": "Psychiatry"
+  },
+  {
+    "tagName": "Radiology"
+  },
+  {
+    "tagName": "Anesthesiology"
+  },
+  {
+    "tagName": "Obstetrics and Gynecology"
+  },
+  {
+    "tagName": "General Surgery"
+  },
+  {
+    "tagName": "Orthopedics"
+  },
+  {
+    "tagName": "Ophthalmology"
+  },
+  {
+    "tagName": "Otorhinolaryngology (ENT)"
+  },
+  {
+    "tagName": "Emergency Medicine"
+  },
+  {
+    "tagName": "Physiotherapy"
+  },
+  {
+    "tagName": "Orthopedics Physiotherapy"
+  },
+  {
+    "tagName": "Neurological Physiotherapy"
+  },
+  {
+    "tagName": "Cardiorespiratory Physiotherapy"
+  },
+  {
+    "tagName": "Sports Physiotherapy"
+  },
+  {
+    "tagName": "Pediatric Physiotherapy"
+  },
+  {
+    "tagName": "Medical Laboratory Techniques"
+  },
+  {
+    "tagName": "Clinical Biochemistry"
+  },
+  {
+    "tagName": "Clinical Microbiology"
+  },
+  {
+    "tagName": "Hematology"
+  },
+  {
+    "tagName": "Immunology"
+  },
+  {
+    "tagName": "Blood Banking"
+  },
+  {
+    "tagName": "Cytology"
+  },
+  {
+    "tagName": "Histopathology"
+  },
+  {
+    "tagName": "Nursing Foundations"
+  },
+  {
+    "tagName": "Medical-Surgical Nursing"
+  },
+  {
+    "tagName": "Psychiatric Nursing"
+  },
+  {
+    "tagName": "Maternity Nursing"
+  },
+  {
+    "tagName": "Pediatric Nursing"
+  },
+  {
+    "tagName": "Community Health Nursing"
+  },
+  {
+    "tagName": "Nutrition and Dietetics"
+  },
+  {
+    "tagName": "Anatomy and Physiology"
+  },
+  {
+    "tagName": "Nursing Research and Statistics"
+  },
+  {
+    "tagName": "Bioethics"
+  },
+  {
+    "tagName": "Medical Ethics"
+  },
+  {
+    "tagName": "Pharmacology and Therapeutics"
+  },
+  {
+    "tagName": "Pathophysiology"
+  },
+  {
+    "tagName": "Medical Genetics"
+  },
+  {
+    "tagName": "Immunology and Serology"
+  },
+  {
+    "tagName": "Epidemiology"
+  },
+  {
+    "tagName": "Biostatistics"
+  },
+  {
+    "tagName": "Medical Sociology"
+  },
+  {
+    "tagName": "Health Psychology"
+  },
+  {
+    "tagName": "Healthcare Management"
+  },
+  {
+    "tagName": "Clinical Pharmacology"
+  },
+  {
+    "tagName": "Geriatric Medicine"
+  },
+  {
+    "tagName": "Neonatology"
+  },
+  {
+    "tagName": "Urology"
+  },
+  {
+    "tagName": "Cardiology"
+  },
+  {
+    "tagName": "Gastroenterology"
+  },
+  {
+    "tagName": "Endocrinology"
+  },
+  {
+    "tagName": "Nephrology"
+  },
+  {
+    "tagName": "Pulmonology"
+  },
+  {
+    "tagName": "Oncology"
+  },
+  {
+    "tagName": "Radiation Oncology"
+  },
+  {
+    "tagName": "Cardiovascular and Pulmonary Physiotherapy"
+  },
+  {
+    "tagName": "Intensive Care Unit (ICU) Physiotherapy"
+  },
+  {
+    "tagName": "Electrotherapy"
+  },
+  {
+    "tagName": "Diagnostic Radiography"
+  },
+  {
+    "tagName": "Blood Banking Technology"
+  },
+  {
+    "tagName": "Clinical Pathology"
+  },
+  {
+    "tagName": "Medical Microbiology"
+  },
+  {
+    "tagName": "Clinical Hematology"
+  },
+  {
+    "tagName": "Cytogenetics"
+  },
+  {
+    "tagName": "Molecular Diagnostics"
+  },
+  {
+    "tagName": "Bioinformatics"
+  },
+  {
+    "tagName": "Health Assessment and Physical Examination"
+  },
+  {
+    "tagName": "Pharmacotherapeutics"
+  },
+  {
+    "tagName": "Nursing Management"
+  },
+  {
+    "tagName": "Critical Care Nursing"
+  },
+  {
+    "tagName": "Oncology Nursing"
+  },
+  {
+    "tagName": "Rehabilitation Nursing"
+  },
+  {
+    "tagName": "Nursing Informatics"
+  },
+  {
+    "tagName": "Midwifery"
+  },
+  {
+    "tagName": "Family Health Nursing"
+  },
+  {
+    "tagName": "Evidence-Based Nursing"
+  },
+  {
+    "tagName": "Cardiothoracic Surgery"
+  },
+  {
+    "tagName": "Neurosurgery"
+  },
+  {
+    "tagName": "Plastic Surgery"
+  },
+  {
+    "tagName": "Oncologic Surgery"
+  },
+  {
+    "tagName": "Gynecological Surgery"
+  },
+  {
+    "tagName": "Ophthalmic Surgery"
+  },
+  {
+    "tagName": "Orthopedic Surgery"
+  },
+  {
+    "tagName": "Pediatric Surgery"
+  },
+  {
+    "tagName": "Transplant Surgery"
+  },
+  {
+    "tagName": "Integumentary Physiotherapy"
+  },
+  {
+    "tagName": "Occupational Therapy"
+  },
+  {
+    "tagName": "Electrocardiography (ECG)"
+  },
+  {
+    "tagName": "Radiation Therapy"
+  },
+  {
+    "tagName": "Nuclear Medicine"
+  },
+  {
+    "tagName": "Immunohematology"
+  },
+  {
+    "tagName": "Medical Parasitology"
+  },
+  {
+    "tagName": "Virology"
+  },
+  {
+    "tagName": "Nursing Education"
+  },
+  {
+    "tagName": "Geriatric Nursing"
+  },
+  {
+    "tagName": "Home Health Nursing"
+  },
+  {
+    "tagName": "Nursing Leadership and Management"
+  },
+  {
+    "tagName": "Perioperative Nursing"
+  },
+  {
+    "tagName": "Psychiatric-Mental Health Nursing"
+  },
+  {
+    "tagName": "Public Health Nursing"
+  },
+  {
+    "tagName": "Palliative Care Nursing"
+  },
+  {
+    "tagName": "Pharmacology for Nurses"
+  },
+  {
+    "tagName": "Health Informatics"
+  },
+  {
+    "tagName": "Clinical Nutrition"
+  },
+  {
+    "tagName": "Pediatric Nutrition"
+  },
+  {
+    "tagName": "Patient Care Management"
+  },
+  {
+    "tagName": "Healthcare Quality and Safety"
+  },
+  {
+    "tagName": "Medical Law and Ethics"
+  },
+  {
+    "tagName": "Emergency and Disaster Management"
+  },
+  {
+    "tagName": "Health Promotion and Disease Prevention"
+  },
+  {
+    "tagName": "Global Health"
+  },
+  {
+    "tagName": "Clinical Psychology"
+  },
+  {
+    "tagName": "Medical Imaging Technology"
+  },
+  {
+    "tagName": "Molecular Biology Techniques"
+  },
+  {
+    "tagName": "Clinical Cytogenetics"
+  },
+  {
+    "tagName": "Medical Laboratory Quality Management"
+  },
+  {
+    "tagName": "Phlebotomy"
+  },
+  {
+    "tagname": "Statics"
+  },
+  {
+    "tagname": "Dynamics"
+  },
+  {
+    "tagname": "Electromagnetics"
+  },
+  {
+    "tagname": "Material Science"
+  },
+  {
+    "tagname": "Electrical Circuits"
+  },
+  {
+    "tagname": "Digital Logic"
+  },
+  {
+    "tagname": "Signals and Systems"
+  },
+  {
+    "tagname": "Electronics"
+  },
+  {
+    "tagname": "Microprocessors"
+  },
+  {
+    "tagname": "Computer Programming"
+  },
+  {
+    "tagname": "Database Management Systems"
+  },
+  {
+    "tagname": "Aerospace Engineering"
+  },
+  {
+    "tagname": "Biomedical Engineering"
+  },
+  {
+    "tagname": "Systems Engineering"
+  },
+  {
+    "tagname": "Nuclear Engineering"
+  },
+  {
+    "tagname": "Engineering Economics"
+  },
+  {
+    "tagname": "Engineering Ethics"
+  },
+  {
+    "tagname": "Project Management"
+  },
+  {
+    "tagname": "Telecommunications Engineering"
+  },
+  {
+    "tagname": "Network Security"
+  },
+  {
+    "tagname": "Control Engineering"
+  },
+  {
+    "tagname": "Instrumentation Engineering"
+  },
+  {
+    "tagname": "Hydraulic Engineering"
+  },
+  {
+    "tagname": "Engineering Geology"
+  },
+  {
+    "tagname": "Engineering Mathematics"
+  },
+  {
+    "tagname": "Engineering Mechanics"
+  },
+  {
+    "tagname": "Engineering Drawing"
+  },
+  {
+    "tagname": "Engineering Materials"
+  },
+  {
+    "tagname": "Engineering Measurements and Instrumentation"
+  },
+  {
+    "tagname": "Engineering Thermodynamics"
+  },
+  {
+    "tagname": "Engineering Dynamics"
+  },
+  {
+    "tagname": "Engineering Electromagnetics"
+  },
+  {
+    "tagname": "Engineering Acoustics"
+  },
+  {
+    "tagname": "Engineering Optimization"
+  },
+  {
+    "tagname": "Engineering Statistics"
+  },
+  {
+    "tagname": "Engineering Computational Methods"
+  },
+  {
+    "tagname": "Engineering Project Management"
+  },
+  {
+    "tagname": "Engineering Ethics and Professionalism"
+  },
+  {
+    "tagname": "Engineering Communication"
+  },
+  {
+    "tagname": "Engineering Entrepreneurship"
+  },
+  {
+    "tagname": "Engineering Risk Analysis"
+  },
+  {
+    "tagname": "Engineering Sustainability"
+  },
+  {
+    "tagname": "Engineering Systems Analysis"
+  },
+  {
+    "tagname": "Engineering Failure Analysis"
+  },
+  {
+    "tagname": "Engineering Quality Control"
+  },
+  {
+    "tagname": "Engineering Reliability"
+  },
+  {
+    "tagname": "Engineering Maintenance"
+  },
+  {
+    "tagname": "Engineering Mechanics of Solids"
+  },
+  {
+    "tagname": "Engineering Mechanics of Fluids"
+  },
+  {
+    "tagname": "Structural Dynamics"
+  },
+  {
+    "tagname": "Computational Fluid Dynamics"
+  },
+  {
+    "tagname": "Finite Element Analysis"
+  },
+  {
+    "tagname": "Mechanical Vibrations"
+  },
+  {
+    "tagname": "Microelectromechanical Systems (MEMS)"
+  },
+  {
+    "tagname": "Electric Drives"
+  },
+  {
+    "tagname": "Image Processing"
+  },
+  {
+    "tagname": "Wireless Communication"
+  },
+  {
+    "tagname": "Antenna Theory and Design"
+  },
+  {
+    "tagname": "Power System Analysis"
+  },
+  {
+    "tagname": "Power System Protection"
+  },
+  {
+    "tagname": "High Voltage Engineering"
+  },
+  {
+    "tagname": "Chemical Process Design"
+  },
+  {
+    "tagname": "Process Optimization"
+  },
+  {
+    "tagname": "Structural Analysis and Design Software"
+  },
+  {
+    "tagname": "Electronic Circuit Design"
+  },
+  {
+    "tagname": "Analog and Digital Electronics"
+  },
+  {
+    "tagname": "Microcontroller Programming"
+  },
+  {
+    "tagname": "Computer Organization and Design"
+  },
+  {
+    "tagname": "Software Development Life Cycle"
+  },
+  {
+    "tagname": "Object-Oriented Programming"
+  },
+  {
+    "tagname": "Big Data Analytics"
+  },
+  {
+    "tagname": "Industrial Robotics"
+  },
+  {
+    "tagname": "Aviation Engineering"
+  },
+  {
+    "tagname": "Pipeline Engineering"
+  },
+  {
+    "tagname": "Geological Engineering"
+  },
+  {
+    "tagname": "Mining Engineering"
+  },
+  {
+    "tagname": "Mineral Processing"
+  },
+  {
+    "tagname": "Geodesy and Geomatics Engineering"
+  },
+  {
+    "tagname": "Remote Sensing"
+  },
+  {
+    "tagname": "Civil Infrastructure Systems"
+  },
+  {
+    "tagname": "Structural Dynamics and Earthquake Engineering"
+  },
+  {
+    "tagname": "Coastal Engineering"
+  },
+  {
+    "tagname": "Geoenvironmental Engineering"
+  },
+  {
+    "tagname": "Sustainable Construction"
+  },
+  {
+    "tagname": "Hydrology and Water Resources Engineering"
+  },
+  {
+    "tagname": "Biomedical Imaging"
+  },
+  {
+    "tagname": "Biomedical Materials"
+  },
+  {
+    "tagname": "Human Factors Engineering"
+  },
+  {
+    "tagname": "Industrial Automation"
+  },
+  {
+    "tagname": "Project Engineering"
+  },
+  {
+    "tagname": "Risk Management"
+  },
+  {
+    "tagname": "System Integration"
+  },
+  {
+    "tagname": "Nuclear Power Engineering"
+  },
+  {
+    "tagname": "Engineering in Medicine"
+  },
+  {
+    "tagname": "Space Systems Engineering"
+  },
+  {
+    "tagname": "Satellite Communication"
+  },
+  {
+    "tagname": "Astronautics"
+  },
+  {
+    "tagname": "Engineering and Society"
+  },
+  {
+    "tagname": "Ethics in Engineering"
+  },
+  {
+    "tagname": "Engineering Education"
+  },
+  {
+    "tagname": "Innovation and Entrepreneurship"
+  },
+  {
+    "tagname": "Engineering Leadership"
+  },
+  {
+    "tagname": "Bioprocessing Engineering"
+  },
+  {
+    "tagname": "Energy Engineering"
+  },
+  {
+    "tagname": "Renewable Energy Engineering"
+  },
+  {
+    "tagname": "Smart Grid Technology"
+  },
+  {
+    "tagname": "Photonics"
+  },
+  {
+    "tagname": "Semiconductor Devices"
+  },
+  {
+    "tagname": "Embedded Systems"
+  },
+  {
+    "tagname": "Natural tagtagname Processing"
+  },
+  {
+    "tagname": "Internet of Things (IoT)"
+  },
+  {
+    "tagname": "Augmented Reality"
+  },
+  {
+    "tagname": "Cyber-Physical Systems"
+  },
+  {
+    "tagname": "Structural Health Monitoring"
+  },
+  {
+    "tagname": "Building Information Modeling (BIM)"
+  },
+  {
+    "tagname": "Air Quality Management"
+  },
+  {
+    "tagname": "Waste Management"
+  },
+  {
+    "tagname": "Engineering Geodesy"
+  },
+  {
+    "tagname": "Geotechnical Earthquake Engineering"
+  },
+  {
+    "tagname": "Hazard Mitigation"
+  },
+  {
+    "tagname": "Network Programming"
+  },
+  {
+    "tagname": "Data Mining"
+  },
+  {
+    "tagname": "Social Network Analysis"
+  },
+  {
+    "tagname": "Machine Ethics"
+  },
+  {
+    "tagname": "Industrial Hygiene"
+  },
+  {
+    "tagname": "Occupational Safety"
+  },
+  {
+    "tagname": "Product Design"
+  },
+  {
+    "tagname": "Design for Manufacturability"
+  },
+  {
+    "tagname": "Design Thinking"
+  },
+  {
+    "tagname": "Human Factors Design"
+  },
+  {
+    "tagname": "Quality Control and Management"
+  },
+  {
+    "tagname": "Engineering Economics and Cost Analysis"
+  },
+  {
+    "tagname": "Supply Chain and Logistics Management"
+  },
+  {
+    "tagname": "Operations and Production Management"
+  },
+  {
+    "tagname": "Computer Graphics"
+  },
+  {
+    "tagname": "Algorithms and Data Structures"
+  },
+  {
+    "tagname": "Distributed Systems"
+  },
+  {
+    "tagname": "Mobile Application Development"
+  },
+  {
+    "tagname": "Information Retrieval"
+  },
+  {
+    "tagname": "Compiler Design"
+  },
+  {
+    "tagname": "Parallel and Distributed Computing"
+  },
+  {
+    "tagname": "High-Performance Computing"
+  },
+  {
+    "tagname": "Computational Biology"
+  },
+  {
+    "tagname": "Computer Aided Design (CAD)"
+  },
+  {
+    "tagname": "Cryptography"
+  },
+  {
+    "tagname": "Wireless Sensor Networks"
+  },
+  {
+    "tagname": "Computer Ethics"
+  },
+  {
+    "tagname": "Cryptocurrency and Blockchain Technology"
+  },
+  {
+    "tagname": "Computer Forensics"
+  },
+  {
+    "tagname": "Computer Systems Security"
+  },
+  {
+    "tagname": "Pattern Recognition"
+  },
+  {
+    "tagname": "Computational Linguistics"
+  },
+  {
+    "tagname": "Internet Security"
+  },
+  {
+    "tagname": "Information Theory"
+  },
+  {
+    "tagname": "Computer Architecture Design"
+  },
+  {
+    "tagname": "Computational Geometry"
+  },
+  {
+    "tagname": "Computer-aided Manufacturing"
+  },
+  {
+    "tagname": "Computer Hardware Design"
+  },
+  {
+    "tagname": "Computer Animation"
+  },
+  {
+    "tagname": "Embedded Software Engineering"
+  },
+  {
+    "tagname": "Software Testing and Quality Assurance"
+  },
+  {
+    "tagname": "Mobile Game Development"
+  },
+  {
+    "tagname": "Computer Music"
+  },
+  {
+    "tagname": "Bio-inspired Computing"
+  },
+  {
+    "tagname": "Information Security Management"
+  },
+  {
+    "tagname": "Computer Ethics and Privacy"
+  },
+  {
+    "tagname": "Computational Physics"
+  },
+  {
+    "tagname": "Computational Chemistry"
+  },
+  {
+    "tagname": "Computational Mathematics"
+  },
+  {
+    "tagname": "Wireless Communication Networks"
+  },
+  {
+    "tagname": "Data Compression"
+  },
+  {
+    "tagname": "Computerized Tomography"
+  },
+  {
+    "tagname": "Virtualization Technology"
+  },
+  {
+    "tagname": "Network Protocols"
+  },
+  {
+    "tagname": "Web Security"
+  },
+  {
+    "tagname": "Robotics Process Automation"
+  },
+  {
+    "tagname": "Software Project Management"
+  },
+  {
+    "tagname": "Internet of Things Security"
+  },
+  {
+    "tagname": "Parallel Processing"
+  },
+  {
+    "tagname": "Computer Vision Systems"
+  },
+  {
+    "tagname": "Information Systems Management"
+  },
+  {
+    "tagname": "Computational Neuroscience"
+  },
+  {
+    "tagname": "Data Warehousing"
+  },
+  {
+    "tagname": "Parallel Computing"
+  },
+  {
+    "tagname": "Quantum Information Science"
+  },
+  {
+    "tagname": "Data Warehousing and Data Mining"
+  },
+  {
+    "tagname": "Humanoid Robotics"
+  },
+  {
+    "tagname": "Cognitive Computing"
+  },
+  {
+    "tagname": "Evolutionary Computation"
+  },
+  {
+    "tagname": "Ubiquitous Computing"
+  },
+  {
+    "tagname": "Semantic Web"
+  },
+  {
+    "tagname": "Software Defined Networking"
+  },
+  {
+    "tagname": "Information Security Engineering"
+  },
+  {
+    "tagname": "Computational Social Science"
+  },
+  {
+    "tagname": "Internet of Things (IoT) Applications"
+  },
+  {
+    "tagname": "Robotics and Automation in Manufacturing"
+  },
+  {
+    "tagname": "Machine Translation"
+  },
+  {
+    "tagname": "Data Privacy and Confidentiality"
+  },
+  {
+    "tagname": "Web Application Security"
+  },
+  {
+    "tagname": "Cloud Computing Architecture"
+  },
+  {
+    "tagname": "Computer Systems Validation"
+  },
+  {
+    "tagname": "Digital Image Processing"
+  },
+  {
+    "tagname": "Recommender Systems"
+  },
+  {
+    "tagname": "Computational Complexity Theory"
+  },
+  {
+    "tagname": "Software Defined Radio"
+  },
+  {
+    "tagname": "Computer Ethics and Cyber Laws"
+  },
+  {
+    "tagname": "Computer Graphics Programming"
+  },
+  {
+    "tagname": "Virtual Machine Technology"
+  },
+  {
+    "tagname": "Information Retrieval Systems"
+  },
+  {
+    "tagname": "Natural tagtagname Generation"
+  },
+  {
+    "tagname": "Algorithmic Game Theory"
+  },
+  {
+    "tagname": "Computer Vision Applications"
+  },
+  {
+    "tagname": "Enterprise Systems"
+  },
+  {
+    "tagname": "Cloud Computing Security"
+  },
+  {
+    "tagname": "Biometric Systems"
+  },
+  {
+    "tagname": "Robot Perception and Localization"
+  },
+  {
+    "tagname": "Web Analytics"
+  },
+  {
+    "tagname": "Internet of Things (IoT) Analytics"
+  },
+  {
+    "tagname": "Computational Economics"
+  },
+  {
+    "tagname": "Quantum Information Processing"
+  },
+  {
+    "tagname": "Information Visualization"
+  },
+  {
+    "tagname": "Distributed Computing Models"
+  },
+  {
+    "tagname": "Computer-Assisted Diagnosis"
+  },
+  {
+    "tagname": "Software Requirements Engineering"
+  },
+  {
+    "tagname": "Network Traffic Analysis"
+  },
+  {
+    "tagname": "Computational Musicology"
+  },
+  {
+    "tagname": "Mobile Cloud Computing"
+  },
+  {
+    "tagname": "Computational Sociology"
+  },
+  {
+    "tagname": "Web Content Management Systems"
+  },
+  {
+    "tagname": "Graph Theory and Algorithms"
+  },
+  {
+    "tagname": "Anatomy"
+  },
+  {
+    "tagname": "Physiology"
+  },
+  {
+    "tagname": "Pathology"
+  },
+  {
+    "tagname": "Medical Genetics"
+  },
+  {
+    "tagname": "Histology"
+  },
+  {
+    "tagname": "Embryology"
+  },
+  {
+    "tagname": "Medical Ethics"
+  },
+  {
+    "tagname": "Medical Terminology"
+  },
+  {
+    "tagname": "Radiology"
+  },
+  {
+    "tagname": "Cardiology"
+  },
+  {
+    "tagname": "Dermatology"
+  },
+  {
+    "tagname": "Endocrinology"
+  },
+  {
+    "tagname": "Gastroenterology"
+  },
+  {
+    "tagname": "Hematology"
+  },
+  {
+    "tagname": "Infectious Diseases"
+  },
+  {
+    "tagname": "Nephrology"
+  },
+  {
+    "tagname": "Oncology"
+  },
+  {
+    "tagname": "Ophthalmology"
+  },
+  {
+    "tagname": "Orthopedics"
+  },
+  {
+    "tagname": "Otolaryngology"
+  },
+  {
+    "tagname": "Pulmonology"
+  },
+  {
+    "tagname": "Rheumatology"
+  },
+  {
+    "tagname": "Urology"
+  },
+  {
+    "tagname": "Psychiatry"
+  },
+  {
+    "tagname": "Pediatrics"
+  },
+  {
+    "tagname": "Obstetrics and Gynecology"
+  },
+  {
+    "tagname": "Emergency Medicine"
+  },
+  {
+    "tagname": "Family Medicine"
+  },
+  {
+    "tagname": "Internal Medicine"
+  },
+  {
+    "tagname": "Surgery"
+  },
+  {
+    "tagname": "Anesthesiology"
+  },
+  {
+    "tagname": "Cardiovascular Surgery"
+  },
+  {
+    "tagname": "Neurosurgery"
+  },
+  {
+    "tagname": "Orthopedic Surgery"
+  },
+  {
+    "tagname": "Plastic Surgery"
+  },
+  {
+    "tagname": "General Practice"
+  },
+  {
+    "tagname": "Nuclear Medicine"
+  },
+  {
+    "tagname": "Occupational Therapy"
+  },
+  {
+    "tagname": "Speech Therapy"
+  },
+  {
+    "tagname": "Medical Informatics"
+  },
+  {
+    "tagname": "Neurology"
+  },
+  {
+    "tagname": "Nutrition and Dietetics"
+  },
+  {
+    "tagname": "Oncology Nursing"
+  },
+  {
+    "tagname": "Ophthalmic Nursing"
+  },
+  {
+    "tagname": "Palliative Care Nursing"
+  },
+  {
+    "tagname": "Perioperative Nursing"
+  },
+  {
+    "tagname": "Psychiatric Nursing"
+  },
+  {
+    "tagname": "Radiation Oncology"
+  },
+  {
+    "tagname": "Radiation Therapy"
+  },
+  {
+    "tagname": "Radiography"
+  },
+  {
+    "tagname": "Rehabilitation Therapy"
+  },
+  {
+    "tagname": "Respiratory Therapy"
+  },
+  {
+    "tagname": "Speech-tagtagname Pathology"
+  },
+  {
+    "tagname": "Toxicology"
+  },
+  {
+    "tagname": "Transfusion Medicine"
+  },
+  {
+    "tagname": "Travel Medicine"
+  },
+  {
+    "tagname": "Tropical Medicine"
+  },
+  {
+    "tagname": "Urgent Care Medicine"
+  },
+  {
+    "tagname": "Vascular Medicine"
+  },
+  {
+    "tagname": "Veterinary Medicine"
+  },
+  {
+    "tagname": "Virology"
+  },
+  {
+    "tagname": "Women's Health"
+  },
+  {
+    "tagname": "Wound Care"
+  },
+  {
+    "tagname": "Yoga Therapy"
+  },
+  {
+    "tagname": "Allergy and Immunology"
+  },
+  {
+    "tagname": "Geriatrics"
+  },
+  {
+    "tagname": "Physical Medicine and Rehabilitation"
+  },
+  {
+    "tagname": "Vascular Surgery"
+  },
+  {
+    "tagname": "Bengali tagtagname and Literature"
+  },
+  {
+    "tagname": "English tagtagname and Literature"
+  },
+  {
+    "tagname": "Drama and Theatre Studies"
+  },
+  {
+    "tagname": "Journalism and Mass Communication"
+  },
+  {
+    "tagname": "Women's Studies"
+  },
+  {
+    "tagname": "Rabindra Sahitya"
+  },
+  {
+    "tagname": "Nazrul Sahitya"
+  },
+  {
+    "tagname": "Modern Bengali Poetry"
+  },
+  {
+    "tagname": "Bengali Drama"
+  },
+  {
+    "tagname": "Bengali Novel"
+  },
+  {
+    "tagname": "Bengali Linguistics"
+  },
+  {
+    "tagname": "Bengali Grammar"
+  },
+  {
+    "tagname": "Bengali Prose"
+  },
+  {
+    "tagname": "Medieval Bengali Literature"
+  },
+  {
+    "tagname": "Bengali Folk Literature"
+  },
+  {
+    "tagname": "American Literature"
+  },
+  {
+    "tagname": "World Literature"
+  },
+  {
+    "tagname": "Critical Theory"
+  },
+  {
+    "tagname": "Poetry"
+  },
+  {
+    "tagname": "Fiction"
+  },
+  {
+    "tagname": "Literary Criticism"
+  },
+  {
+    "tagname": "Shakespeare Studies"
+  },
+  {
+    "tagname": "Postcolonial Literature"
+  },
+  {
+    "tagname": "Ancient History"
+  },
+  {
+    "tagname": "Medieval History"
+  },
+  {
+    "tagname": "Modern History"
+  },
+  {
+    "tagname": "Political History"
+  },
+  {
+    "tagname": "Social History"
+  },
+  {
+    "tagname": "Economic History"
+  },
+  {
+    "tagname": "Cultural History"
+  },
+  {
+    "tagname": "Historiography"
+  },
+  {
+    "tagname": "World History"
+  },
+  {
+    "tagname": "Indian History"
+  },
+  {
+    "tagname": "Physical Geography"
+  },
+  {
+    "tagname": "Climatology"
+  },
+  {
+    "tagname": "Geomorphology"
+  },
+  {
+    "tagname": "Biogeography"
+  },
+  {
+    "tagname": "Environmental Geography"
+  },
+  {
+    "tagname": "Urban Geography"
+  },
+  {
+    "tagname": "Regional Geography"
+  },
+  {
+    "tagname": "Geographical Techniques"
+  },
+  {
+    "tagname": "Cartography"
+  },
+  {
+    "tagname": "Transportation Geography"
+  },
+  {
+    "tagname": "Population Geography"
+  },
+  {
+    "tagname": "Geopolitics"
+  },
+  {
+    "tagname": "Economic Geography"
+  },
+  {
+    "tagname": "Social Geography"
+  },
+  {
+    "tagname": "Tourism Geography"
+  },
+  {
+    "tagname": "Rural Geography"
+  },
+  {
+    "tagname": "Geographic Thought and Methods"
+  },
+  {
+    "tagname": "Hotel Management"
+  },
+  {
+    "tagname": "Food and Beverage Management"
+  },
+  {
+    "tagname": "Front Office Operations"
+  },
+  {
+    "tagname": "Housekeeping Management"
+  },
+  {
+    "tagname": "Hospitality Marketing and Sales"
+  },
+  {
+    "tagname": "Restaurant Management"
+  },
+  {
+    "tagname": "Hospitality Accounting"
+  },
+  {
+    "tagname": "Hospitality Law and Ethics"
+  },
+  {
+    "tagname": "Human Resource Management in Hospitality"
+  },
+  {
+    "tagname": "Hospitality Operations Management"
+  },
+  {
+    "tagname": "Tourism and Travel Management"
+  },
+  {
+    "tagname": "Hospitality Information Systems"
+  },
+  {
+    "tagname": "Hotel and Resort Planning and Design"
+  },
+  {
+    "tagname": "Revenue Management"
+  },
+  {
+    "tagname": "Wine and Beverage Management"
+  },
+  {
+    "tagname": "Hotel Financial Management"
+  },
+  {
+    "tagname": "Strategic Management in Hospitality"
+  },
+  {
+    "tagname": "Sustainable Tourism and Hospitality"
+  },
+  {
+    "tagname": "Leadership in Hospitality"
+  },
+  {
+    "tagname": "Customer Service in Hospitality"
+  },
+  {
+    "tagname": "MATLAB"
+  },
+  {
+    "tagname": "JUnit"
+  },
+  {
+    "tagname": "Redux"
+  },
+  {
+    "tagname": "Next.js"
+  },
+  {
+    "tagname": "Gatsby"
+  },
+  {
+    "tagname": "Vue Router"
+  },
+  {
+    "tagname": "Vuex"
+  },
+  {
+    "tagname": "Lodash"
+  },
+  {
+    "tagname": "Axios"
+  },
+  {
+    "tagname": "Chart.js"
+  },
+  {
+    "tagname": "Moment.js"
+  },
+  {
+    "tagname": "Jest"
+  },
+  {
+    "tagname": "Cypress"
+  },
+  {
+    "tagname": "Mockito"
+  },
+  {
+    "tagname": "Numpy"
+  },
+  {
+    "tagname": "Scikit-learn"
+  },
+  {
+    "tagname": "Sinatra"
+  },
+  {
+    "tagname": "Business Law"
+  },
+  {
+    "tagname": "Financial Management"
+  },
+  {
+    "tagname": "Business Communication"
+  },
+  {
+    "tagname": "Business Ethics"
+  },
+  {
+    "tagname": "Retail Management"
+  },
+  {
+    "tagname": "Business Statistics"
+  },
+  {
+    "tagname": "Corporate Finance"
+  },
+  {
+    "tagname": "Cost Accounting"
+  },
+  {
+    "tagname": "Auditing"
+  },
+  {
+    "tagname": "Taxation"
+  },
+  {
+    "tagname": "Business Strategy"
+  },
+  {
+    "tagname": "Financial Accounting"
+  },
+  {
+    "tagname": "Microeconomics"
+  },
+  {
+    "tagname": "Macroeconomics"
+  },
+  {
+    "tagname": "Business Mathematics"
+  },
+  {
+    "tagname": "Business Analytics"
+  },
+  {
+    "tagname": "Investment Management"
+  },
+  {
+    "tagname": "Business Research Methods"
+  },
+  {
+    "tagname": "Managerial Economics"
+  },
+  {
+    "tagname": "Business Information Systems"
+  },
+  {
+    "tagname": "Corporate Governance"
+  },
+  {
+    "tagname": "Business Negotiation"
+  },
+  {
+    "tagname": "Business Leadership"
+  },
+  {
+    "tagname": "Financial Markets and Institutions"
+  },
+  {
+    "tagname": "Business Innovation"
+  },
+  {
+    "tagname": "Principles of Management"
+  },
+  {
+    "tagname": "Marketing Management"
+  },
+  {
+    "tagname": "Statistics for Business"
+  },
+  {
+    "tagname": "Business Finance"
+  },
+  {
+    "tagname": "Strategic Management"
+  },
+  {
+    "tagname": "Leadership and Organizational Behavior"
+  },
+  {
+    "tagname": "Business Ethics and Corporate Governance"
+  },
+  {
+    "tagname": "Management Information Systems"
+  },
+  {
+    "tagname": "Entrepreneurship and Innovation"
+  },
+  {
+    "tagname": "Managerial Accounting"
+  },
+  {
+    "tagname": "Business Law and Ethics"
+  },
+  {
+    "tagname": "Business Data Analysis"
+  },
+  {
+    "tagname": "International Marketing"
+  },
+  {
+    "tagname": "Strategic Human Resource Management"
+  },
+  {
+    "tagname": "E-commerce"
+  },
+  {
+    "tagname": "Global Business Management"
+  },
+  {
+    "tagname": "Corporate Social Responsibility"
+  },
+  {
+    "tagname": "Financial Accounting and Analysis"
+  },
+  {
+    "tagname": "Marketing Strategy"
+  },
+  {
+    "tagname": "Operations and Supply Chain Management"
+  },
+  {
+    "tagname": "Leadership and Change Management"
+  },
+  {
+    "tagname": "Investment and Portfolio Management"
+  },
+  {
+    "tagname": "International Business Strategy"
+  },
+  {
+    "tagname": "Business Consulting"
+  },
+  {
+    "tagname": "Sustainable Business Practices"
+  }
+]

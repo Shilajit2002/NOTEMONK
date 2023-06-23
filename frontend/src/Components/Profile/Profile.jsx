@@ -351,6 +351,7 @@ const Profile = () => {
                 navigate(`/profile/${Cookies.get("userid")}`);
               })
               .catch((err) => {
+                setOpen(false);
                 console.error(err);
               });
           } else {

@@ -44,7 +44,7 @@ const noteSchema = mongoose.Schema({
             },
             tag: [
                 {
-                    tagName: {
+                    tagname: {
                         type: String
                     }
                 }

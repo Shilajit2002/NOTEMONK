@@ -60,6 +60,9 @@ const Following = () => {
   // Following Names UseState
   const [followingName, setFollowingName] = useState(null);
 
+  // No Following Status
+  const [noFollowing, setNoFollowing] = useState(null);
+
   // UserEffect for get all the user following details
   useEffect(() => {
     // Take the Token and Userid
@@ -78,6 +81,9 @@ const Following = () => {
             },
           })
           .then((res) => {
+            // Set the No Following Details of the User
+            setNoFollowing(res.data);
+
             // Set the Following Details of the User
             setFollowingName(res.data.followingArr);
           })
@@ -388,8 +394,26 @@ const Following = () => {
                 })
               ) : (
                 <>
-                  {/* Otherwise call followingNameSkList for showing skeleton*/}
-                  {followingNameSkList()}
+                  {noFollowing && noFollowing === "No followings" ? (
+                    <>
+                      <h5
+                        style={{
+                          color: "aliceblue",
+                          textAlign: "center",
+                          textTransform: "capitalize",
+                          letterSpacing: "1.5px",
+                          fontFamily: "Times-new-Roman",
+                        }}
+                      >
+                        ~* Follow your friends & grow up your network *~
+                      </h5>
+                    </>
+                  ) : (
+                    <>
+                      {/* Otherwise call followingNameSkList for showing skeleton*/}
+                      {followingNameSkList()}
+                    </>
+                  )}
                 </>
               )}
             </List>

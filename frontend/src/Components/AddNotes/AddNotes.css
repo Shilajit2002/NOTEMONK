@@ -1,0 +1,155 @@
+/* Add Note Box */
+.addNoteBox {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+/* Add Note Form Div */
+.addNoteBox .addNoteForm {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Add Note Div Heading */
+.addNoteBox .addNoteForm h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Add Note Form */
+.addNoteBox .addNoteForm form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Add Note Form Box */
+.addNoteBox .addNoteForm .NoteBox {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Add Note Form TextField */
+.addNoteBox .addNoteForm .NoteBox .noteInput {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.678) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.479) 0px 2px 16px 0px;
+}
+
+/* Add Note Form TextField Label*/
+.addNoteBox .addNoteForm .NoteBox .noteInput > label {
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Add Note Form Note Box Heading */
+.addNoteBox .addNoteForm .NoteBox h5 {
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #000000b6;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Rich text editor */
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  min-height: 50vh;
+}
+
+/* Add Note Form TextField */
+.addNoteBox .addNoteForm .NoteBox .viewNoteInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.678) 0px 2px 4px 0px,
+    rgba(0, 0, 0, 0.479) 0px 2px 16px 0px;
+  padding: 10px 0;
+}
+
+/* Add Note Form TextField */
+.addNoteBox .addNoteForm .NoteBox .uploadBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Add Note Form Note Box Heading */
+.addNoteBox .addNoteForm .NoteBox h6 {
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 15px;
+  background-color: #006ab1;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px;
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 991px) {
+  /* Signin Form Div */
+  .addNoteBox .addNoteForm {
+    width: 80%;
+  }
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 480px) {
+  /* Signin Form Div */
+  .addNoteBox .addNoteForm {
+    width: 95%;
+  }
+
+  /* Add Note Form Note Box NoteInput */
+  .addNoteBox .addNoteForm .NoteBox .viewNoteInput {
+    flex-direction: column;
+  }
+
+  /* Add Note Form Note Box NoteInput Switch Root*/
+  .addNoteBox .addNoteForm .NoteBox .viewNoteInput .css-1vte2np-MuiSwitch-root {
+    margin-left: 10px;
+  }
+}

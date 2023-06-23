@@ -29,6 +29,8 @@ app.use("/api/users", require("./Controller/userController"));
 app.use("/api/profiles", require("./Controller/profileController"));
 // Import CountryCode Router
 app.use("/api/codes/", require("./Controller/countryCodeController"));
+// Import TagName Router
+app.use("/api/tags/", require("./Controller/tagNameController"));
 // Import Following Router
 app.use("/api/followings/", require("./Controller/followingController"))
 // Import Follower Router
