@@ -313,6 +313,12 @@ const AddNotes = () => {
     setSelectedFiles((prevSelectedFiles) =>
       prevSelectedFiles.filter((file) => file.name !== fileName)
     );
+
+    // Reset the value of the file input element
+    const fileInput = document.getElementById("file");
+    if (fileInput) {
+      fileInput.value = null;
+    }
   };
 
   //  Truncate File Name Func
