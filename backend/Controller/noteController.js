@@ -10,6 +10,8 @@ const moment = require('moment-timezone');
 const User = require("../Model/user");
 // Import Note Collection/Model
 const Note = require("../Model/note");
+// Import Search Note Collection/Model
+const SearchNote = require("../Model/searchNote");
 // Import Authentication
 const auth = require("../Middleware/auth");
 
@@ -146,6 +148,25 @@ router.post('/add-note/:id', auth, async (req, res) => {
             //  Save the Document in the Note Collection
             const setNote = await note.save();
 
+            //  Check the Curent Note is Public or not
+            if (setNote.notesArr[setNote.notesArr.length - 1].view === "public") {
+                // If public then store the note in Search Note Collection
+                let searchNote = new SearchNote({
+                    user_id: user_id,
+                    username: user.username,
+                    note_id: setNote.notesArr[setNote.notesArr.length - 1]._id,
+                    title: setNote.notesArr[setNote.notesArr.length - 1].title,
+                    description: setNote.notesArr[setNote.notesArr.length - 1].description,
+                    tag: setNote.notesArr[setNote.notesArr.length - 1].tag,
+                    like: 0,
+                    comments: [],
+                    time: setNote.notesArr[setNote.notesArr.length - 1].updatedAt
+                })
+
+                //  Save the Document in the Search Note Collection
+                let setSearchNote = await searchNote.save();
+            }
+
             // Set Created Status
             res.status(201).json(setNote);
         } else {
@@ -179,10 +200,60 @@ router.patch('/edit-note/:id', auth, async (req, res) => {
             note.notesArr[noteId].description = req.body.description;
             note.notesArr[noteId].view = req.body.view;
             note.notesArr[noteId].tag = req.body.tag;
+            note.notesArr[noteId].like = req.body.like;
+            note.notesArr[noteId].comment = req.body.comment;
             note.notesArr[noteId].updatedAt = new Date(moment().tz(moment.tz.guess()));
 
             //  Save the Document in the Note Collection
             const setNote = await note.save();
+
+            //  Check the Curent Note is Public or not
+            if (note.notesArr[noteId].view === "public") {
+                // Find that perticular Search Notes of that note id
+                let searchNote = await SearchNote.findOne({
+                    note_id: req.body._id
+                });
+
+                //  If that Search Note is present then edit it
+                if (searchNote) {
+                    //  Set all the value
+                    searchNote.username = user.username;
+                    searchNote.title = req.body.title;
+                    searchNote.description = req.body.description;
+                    searchNote.tag = req.body.tag;
+                    searchNote.like = req.body.like;
+                    searchNote.comment = req.body.comment;
+                    searchNote.time = new Date(moment().tz(moment.tz.guess()));
+
+                    //  Save the Document in the Search Note Collection
+                    let setSearchNote = await searchNote.save();
+                }
+                //  If that Search Note is not present then create it
+                else {
+                    // Store the note in Search Note Collection
+                    let searchNote = new SearchNote({
+                        user_id: user_id,
+                        username: user.username,
+                        note_id: req.body._id,
+                        title: req.body.title,
+                        description: req.body.description,
+                        tag: req.body.tag,
+                        like: req.body.like,
+                        comments: req.body.comments,
+                        time: new Date(moment().tz(moment.tz.guess()))
+                    })
+
+                    //  Save the Document in the Search Note Collection
+                    let setSearchNote = await searchNote.save();
+                }
+            }
+            // If the Current Note is private then delete it
+            else if (note.notesArr[noteId].view === "private") {
+                // Find that perticular Search Notes of that note id and Delete It
+                let searchNote = await SearchNote.findOneAndDelete({
+                    note_id: req.body._id
+                });
+            }
 
             // Set Ok Status
             res.status(200).json(setNote);
@@ -251,6 +322,11 @@ router.delete('/delete-note/:id', auth, async (req, res) => {
             //  Save the Document in the Note Collection
             const setNote = await note.save();
 
+            // Find that perticular Search Notes of that note id and Delete It
+            let searchNote = await SearchNote.findOneAndDelete({
+                note_id: req.body._id
+            });
+
             // Set Ok Status
             res.status(200).send(setNote);
         } else {
@@ -312,6 +388,9 @@ router.delete('/delete-all-note/:id', auth, async (req, res) => {
 
             //  Save the Document in the Note Collection
             const setNote = await note.save();
+
+            // Find and Delete the particular Search Note
+            let deleteResult = await SearchNote.deleteMany({ user_id: user_id });
 
             // Set Ok Status
             res.status(200).send(setNote);

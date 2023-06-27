@@ -1,7 +1,5 @@
 // Import Mongoose
 const mongoose = require('mongoose');
-// Import Validator
-const validator = require('validator');
 // Import Moment Timezone for User Local Time
 const moment = require('moment-timezone');
 
@@ -77,6 +75,16 @@ const noteSchema = mongoose.Schema({
                     editedAt: {
                         type: Date,
                         default: Date.now
+                    }
+                }
+            ],
+            like: {
+                type: Number
+            },
+            comments: [
+                {
+                    msg: {
+                        type: String
                     }
                 }
             ]
