@@ -7,31 +7,6 @@ import "./AddNotes.css";
 // SignIn Page
 import SignIn from "../SignIn/SignIn";
 
-/* ------------- File Logos ------------- */
-import MP3 from "./Assets/mp3File.png";
-import PNG from "./Assets/pngFIle.png";
-import JPG from "./Assets/jpgFile.jpg";
-import JPEG from "./Assets/jpegFile.jpg";
-import GIF from "./Assets/gif.png";
-import PDF from "./Assets/pdf.png";
-import DOC from "./Assets/word.png";
-import XL from "./Assets/excel.png";
-import PPT from "./Assets/ppt.png";
-import ZIP from "./Assets/zip.png";
-import TXT from "./Assets/txt.png";
-import NULL from "./Assets/null.png";
-import C from "./Assets/c.png";
-import CP from "./Assets/cplusplus.png";
-import CS from "./Assets/c#.png";
-import JAVA from "./Assets/java.png";
-import PY from "./Assets/py.png";
-import JS from "./Assets/js.jpeg";
-import TS from "./Assets/ts.png";
-import JSX from "./Assets/jsx.png";
-import SQL from "./Assets/sql.webp";
-import HTML from "./Assets/html.png";
-import CSS from "./Assets/css.png";
-
 /* ------------- Fetch ------------- */
 // Axios
 import axios from "axios";
@@ -99,10 +74,10 @@ import MuiAlert from "@mui/material/Alert";
 import Swal from "sweetalert2";
 
 /* ------------- React Rich Text Editor ------------- */
-// Ract Quill
-import ReactQuill from "react-quill";
-// React Quil CSS
-import "react-quill/dist/quill.snow.css";
+import TextEditor from "./TextEditor";
+
+// Load Image File Picture & Create a Short File Name from LoadImage.js file
+import { loadImage, truncateFileName } from "./LoadImage";
 
 const AddNotes = () => {
   // Use Navigate
@@ -175,109 +150,6 @@ const AddNotes = () => {
     },
   }));
 
-  // React React Text Editor Modules
-  const modules = {
-    toolbar: [
-      [{ header: [1, 2, 3, 4, 5, 6, false] }],
-      ["bold", "italic", "underline", "strike", "blockquote"],
-      [{ script: "sub" }, { script: "super" }],
-      [{ font: [] }],
-      [{ size: ["small", false, "large", "huge"] }], // custom dropdown
-      [{ direction: "rtl" }], // text direction
-      [{ color: [] }, { background: [] }],
-      [{ align: [] }],
-      [
-        { list: "ordered" },
-        { list: "bullet" },
-        { indent: "-1" },
-        { indent: "+1" },
-      ],
-      ["link", "image"],
-      [{ code: "" }],
-      ["clean"],
-    ],
-  };
-
-  // React Rich Text Editor Formats
-  const formats = [
-    "header",
-    "bold",
-    "italic",
-    "underline",
-    "strike",
-    "blockquote",
-    "align", // corrected from "direction"
-    "script", // corrected from "script"
-    "font",
-    "size",
-    "color",
-    "background",
-    "list",
-    "ordered",
-    "bullet",
-    "indent",
-    "link",
-    "image",
-    "code",
-    "clean",
-  ];
-
-  // Image Files Types
-  const fileTypes = [
-    { img: `${MP3}`, mimeType: "audio/mpeg" },
-    { img: `${JPG}`, mimeType: "image/jpg" },
-    { img: `${JPEG}`, mimeType: "image/jpeg" },
-    { img: `${PNG}`, mimeType: "image/png" },
-    { img: `${GIF}`, mimeType: "image/gif" },
-    { img: `${PDF}`, mimeType: "application/pdf" },
-    { img: `${DOC}`, mimeType: "application/msword" },
-    { img: `${DOC}`, mimeType: "application/msword" },
-    {
-      img: `${DOC}`,
-      mimeType:
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    },
-    { img: `${XL}`, mimeType: "application/vnd.ms-excel" },
-    { img: `${XL}`, mimeType: "application/vnd.ms-excel" },
-    {
-      img: `${XL}`,
-      mimeType:
-        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    },
-    { img: `${PPT}`, mimeType: "application/vnd.ms-powerpoint" },
-    { img: `${PPT}`, mimeType: "application/vnd.ms-powerpoint" },
-    {
-      img: `${PPT}`,
-      mimeType:
-        "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    },
-    { img: `${ZIP}`, mimeType: "application/zip" },
-    { img: `${ZIP}`, mimeType: "application/x-zip-compressed" },
-    { img: `${TXT}`, mimeType: "text/plain" },
-    { img: `${JAVA}`, mimeType: "java" },
-    { img: `${C}`, mimeType: "c" },
-    { img: `${CP}`, mimeType: "cpp" },
-    { img: `${PY}`, mimeType: "text/x-python" },
-    { img: `${JSX}`, mimeType: "jsx" },
-    { img: `${CS}`, mimeType: "cs" },
-    { img: `${TS}`, mimeType: "video/vnd.dlna.mpeg-tts" },
-    { img: `${JS}`, mimeType: "text/javascript" },
-    { img: `${SQL}`, mimeType: "sql" },
-    { img: `${HTML}`, mimeType: "text/html" },
-    { img: `${CSS}`, mimeType: "text/css" },
-    { img: `${NULL}`, mimeType: "" },
-  ];
-
-  // Load Image File Logo as per their Types
-  const loadImage = (type) => {
-    for (let i = 0; i < fileTypes.length; i++) {
-      if (fileTypes[i].mimeType === type) {
-        return fileTypes[i].img;
-      }
-    }
-    return fileTypes[fileTypes.length - 1].img;
-  };
-
   //  Select Files UseState
   const [selectedFiles, setSelectedFiles] = useState([]);
 
@@ -321,34 +193,14 @@ const AddNotes = () => {
     }
   };
 
-  //  Truncate File Name Func
-  const truncateFileName = (fileName, maxLength) => {
-    if (fileName.length <= maxLength) {
-      return fileName;
-    }
-
-    //  Split the file name with the extension and show the name of the file in a proper way
-    const fileExt = fileName.split(".").pop();
-    const fileNameWithoutExt = fileName.substring(
-      0,
-      fileName.length - fileExt.length - 1
-    );
-    const truncatedName = `${fileNameWithoutExt.substring(
-      0,
-      Math.floor(maxLength / 2)
-    )}...${fileNameWithoutExt.substring(
-      fileNameWithoutExt.length - Math.ceil(maxLength / 2)
-    )}`;
-
-    return `${truncatedName}.${fileExt}`;
-  };
-
   // Add Note UseState
   const [note, setNote] = useState({
     title: "",
     description: "",
     view: "PUBLIC",
     tag: [],
+    like: 0,
+    comments: [],
   });
 
   // Handle Note Title Change Func
@@ -371,8 +223,8 @@ const AddNotes = () => {
   // Switch Value UseState
   const [switchValue, setSwitchValue] = useState(true);
 
-  //  Handle Switch Change Func
-  const handleSwitchChange = (event) => {
+  //  Handle Note Switch Change Func
+  const handleNoteSwitchChange = (event) => {
     setSwitchValue(event.target.checked);
 
     setNote({
@@ -381,8 +233,8 @@ const AddNotes = () => {
     });
   };
 
-  //  Handle Change Func for UseState
-  const handleChange = (event, value) => {
+  //  Handle Note Tag Change Func for UseState
+  const handleNoteTagChange = (event, value) => {
     setNote({
       ...note,
       tag: value,
@@ -689,12 +541,7 @@ const AddNotes = () => {
                     Description <DescriptionIcon sx={{ textAlign: "center" }} />
                   </h5>
                   {/* React Rich Text Editor for Description*/}
-                  <ReactQuill
-                    theme="snow"
-                    className="noteInput"
-                    style={{ borderRadius: "0" }}
-                    modules={modules}
-                    formats={formats}
+                  <TextEditor
                     value={note.description}
                     onChange={handleNoteDescChange}
                   />
@@ -728,7 +575,7 @@ const AddNotes = () => {
                         <IOSSwitch
                           // sx={{ m: 1 }}
                           checked={switchValue}
-                          onChange={handleSwitchChange}
+                          onChange={handleNoteSwitchChange}
                         />
                       }
                       label=""
@@ -866,7 +713,7 @@ const AddNotes = () => {
                         options={uniqueNames.map((tagname) => ({ tagname }))} // Create objects with unique tagname
                         getOptionLabel={(option) => option?.tagname || ""}
                         value={note.tag}
-                        onChange={handleChange}
+                        onChange={handleNoteTagChange}
                         renderInput={(params) => (
                           // Text Field
                           <TextField

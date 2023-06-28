@@ -149,7 +149,7 @@ router.post('/add-note/:id', auth, async (req, res) => {
             const setNote = await note.save();
 
             //  Check the Curent Note is Public or not
-            if (setNote.notesArr[setNote.notesArr.length - 1].view === "public") {
+            if (setNote.notesArr[setNote.notesArr.length - 1].view === "PUBLIC") {
                 // If public then store the note in Search Note Collection
                 let searchNote = new SearchNote({
                     user_id: user_id,
@@ -208,7 +208,7 @@ router.patch('/edit-note/:id', auth, async (req, res) => {
             const setNote = await note.save();
 
             //  Check the Curent Note is Public or not
-            if (note.notesArr[noteId].view === "public") {
+            if (note.notesArr[noteId].view === "PUBLIC") {
                 // Find that perticular Search Notes of that note id
                 let searchNote = await SearchNote.findOne({
                     note_id: req.body._id
@@ -248,7 +248,7 @@ router.patch('/edit-note/:id', auth, async (req, res) => {
                 }
             }
             // If the Current Note is private then delete it
-            else if (note.notesArr[noteId].view === "private") {
+            else if (note.notesArr[noteId].view === "PRIVATE") {
                 // Find that perticular Search Notes of that note id and Delete It
                 let searchNote = await SearchNote.findOneAndDelete({
                     note_id: req.body._id
