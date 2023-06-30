@@ -13,6 +13,8 @@ import SignIn from "../SignIn/SignIn";
 import Following from "../Following/Following";
 // Follower Page
 import Follower from "../Follower/Follower";
+// Search Note Page
+import SearchNote from "../SearchNote/SearchNote";
 
 /* ------------- Fetch ------------- */
 // Axios
@@ -106,15 +108,6 @@ const Dashboard = () => {
   // UseNavigate
   const navigate = useNavigate();
 
-  // SearchNote UseState
-  const [searchNote, setSearchNote] = useState("");
-
-  // Handle Search Note Change Func
-  const handleSearchNoteChange = (e) => {
-    const { value } = e.target;
-    setSearchNote(value);
-  };
-
   // UserName UseState
   const [username, setuserName] = useState(null);
 
@@ -194,7 +187,88 @@ const Dashboard = () => {
         });
       }
     }
+  }, [id]);
+
+  // SearchNote UseState
+  const [searchNote, setSearchNote] = useState({
+    searchText: "",
   });
+
+  // Handle Search Note Change Func
+  const handleSearchNoteChange = (e) => {
+    const { value } = e.target;
+    setSearchNote({
+      searchText: value,
+    });
+  };
+
+  const [viewNote, setViewNote] = useState();
+
+  // Search Submit Func
+  const searchSubmit = (event) => {
+    // Stop Reloading the Page when Submiting the Form
+    event.preventDefault();
+
+    // Take the Token and Userid
+    const token = Cookies.get("token");
+    const userid = Cookies.get("userid");
+
+    // If token and userid present
+    if (token && userid) {
+      // If userid and params id match
+      if (userid === id) {
+        // Check if the Search Text is fill or not
+        if (searchNote.searchText !== "") {
+          // Send to the Backend of Search Note data
+          axios
+            .post(
+              `http://localhost:8000/api/searches/all-users-notes/${userid}`,
+              searchNote,
+              {
+                headers: {
+                  Authorization: `${token}`,
+                },
+              }
+            )
+            .then((req) => {
+              // Store the search note
+              setViewNote(req.data);
+            })
+            .catch((err) => {
+              Swal.fire({
+                icon: "warning",
+                title: `You are not authenticated !!`,
+                confirmButtonText: "Ok",
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  Cookies.remove("token");
+                  Cookies.remove("userid");
+                  window.location.href = `/signin`;
+                } else {
+                  Cookies.remove("token");
+                  Cookies.remove("userid");
+                  window.location.href = `/signin`;
+                }
+              });
+            });
+        }
+      }
+      // If userid and params id not match
+      else {
+        Swal.fire({
+          icon: "warning",
+          title: `You can only view your own account !!`,
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = `/dashboard/${userid}`;
+          } else {
+            window.location.href = `/dashboard/${userid}`;
+          }
+        });
+      }
+    }
+  };
 
   // Search Friend UseState
   const [searchFriend, setSearchFriend] = useState("");
@@ -254,7 +328,7 @@ const Dashboard = () => {
   };
 
   // Value UseState
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   // Handle Change Value Func
   const handleChange = (event, newValue) => {
@@ -331,7 +405,7 @@ const Dashboard = () => {
             {/* Left Box */}
             <div className="leftBox">
               {/* Note Seach Box */}
-              <div className="searchBox">
+              <form className="searchBox" onSubmit={searchSubmit}>
                 {/* Note Search Input */}
                 <input
                   type="text"
@@ -339,18 +413,11 @@ const Dashboard = () => {
                   placeholder="Search notes ...."
                   id=""
                   onChange={handleSearchNoteChange}
-                  value={searchNote}
+                  value={searchNote.searchText}
                 />
                 {/* Search Icon */}
-                <SearchIcon
-                  style={{
-                    fontSize: "2rem",
-                    margin: "5px",
-                    color: "white",
-                    cursor: "pointer",
-                  }}
-                />
-              </div>
+                <button type="submit">SEARCH</button>
+              </form>
 
               {/* Dash User Box */}
               <div className="dashuserBox">
@@ -359,6 +426,7 @@ const Dashboard = () => {
                   sx={{
                     width: "100%",
                     typography: "body1",
+                    mb:5
                   }}
                 >
                   {/* Tabs */}
@@ -407,7 +475,9 @@ const Dashboard = () => {
                     />
                   </Tabs>
                   {/* TabPanel for Search Note Component */}
-                  <TabPanel value={value} index={0}></TabPanel>
+                  <TabPanel value={value} index={0}>
+                    <SearchNote note={viewNote} />
+                  </TabPanel>
                   {/* TabPanel for Following Component*/}
                   <TabPanel value={value} index={1}>
                     <Following />
@@ -461,7 +531,9 @@ const Dashboard = () => {
                       }}
                       key={index}
                       onClick={() => {
-                        navigate(`/profile-info/${f.username}`);
+                        navigate(
+                          `/profile-info/${f.username}/${f._id}`
+                        );
                       }}
                     >
                       {/* User Logo */}

@@ -38,8 +38,8 @@ router.get("/all-users/:id", auth, async (req, res) => {
     }
 })
 
-// Get all the notes details
-router.get("/all-users-notes/:id", auth, async (req, res) => {
+// Get all the notes details by posting search notes 
+router.post("/all-users-notes/:id", auth, async (req, res) => {
     try {
         // If the user id and params id match
         if (req.user.id === req.params.id) {
@@ -67,7 +67,12 @@ router.get("/all-users-notes/:id", auth, async (req, res) => {
             }
 
             // Set Ok Status
-            res.status(200).json(note);
+            if (note.length !== 0) {
+                res.status(200).json(note);
+            }
+            else {
+                res.status(200).send("No notes found (`~`)");
+            }
         }
         // If not show error
         else {

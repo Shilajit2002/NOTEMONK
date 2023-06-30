@@ -24,6 +24,7 @@ const auth = (req, res, next) => {
             }
         })
     } else {
+        console.log(token);
         // Set Unathorized Status
         res.status(401).send("You Are Not Authenticated !!");
     }

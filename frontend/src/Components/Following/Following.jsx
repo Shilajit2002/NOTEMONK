@@ -340,7 +340,7 @@ const Following = () => {
                         <ListItemButton
                           onClick={() => {
                             navigate(
-                              `/profile-info/${value.following_username}`
+                              `/profile-info/${value.following_username}/${value.following_user_id}`
                             );
                           }}
                           sx={{

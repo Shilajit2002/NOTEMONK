@@ -1,6 +1,6 @@
 // React & UseState & UseEffect
 import React, { useState, useEffect } from "react";
-// Following CSS
+// Follower CSS
 import "./Follower.css";
 
 /* ------------- Fetch ------------- */
@@ -421,7 +421,7 @@ const Follower = () => {
                         <ListItemButton
                           onClick={() => {
                             navigate(
-                              `/profile-info/${value.follower_username}`
+                              `/profile-info/${value.follower_username}/${value.follower_user_id}`
                             );
                           }}
                           sx={{

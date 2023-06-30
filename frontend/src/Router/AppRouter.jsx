@@ -22,6 +22,14 @@ import Dashboard from "../Components/Dashboard/Dashboard";
 import AllNotes from "../Components/AllNotes/AllNotes";
 // Import Add Notes Component
 import AddNotes from "../Components/AddNotes/AddNotes";
+// Import Single Note Component
+import SingleNote from "../Components/SingleNote/SingleNote";
+// Import Edit Note Component
+import EditNote from "../Components/EditNote/EditNote";
+// Import Profile Info Component
+import ProfileInfo from "../Components/ProfileInfo/ProfileInfo";
+// Import User Single Note Component
+import UserSingleNote from "../Components/UserSingleNote/UserSingleNote";
 // Import NotFound Component
 import NotFound from "../Components/NotFound/NotFound";
 
@@ -46,6 +54,30 @@ const AppRouter = () => {
           <Route exact path="/all-notes/:id" element={<AllNotes />} />
           {/* Add Notes Route */}
           <Route exact path="/add-notes/:id" element={<AddNotes />} />
+          {/* Single Note Route */}
+          <Route
+            exact
+            path="/single-note/:id/note/:note_id"
+            element={<SingleNote />}
+          />
+          {/* Edit Note Route */}
+          <Route
+            exact
+            path="/edit-note/:id/note/:note_id"
+            element={<EditNote />}
+          />
+          {/* All User Profile Info Route */}
+          <Route
+            exact
+            path="/profile-info/:username/:id"
+            element={<ProfileInfo />}
+          />
+          {/* All User Single Note Route */}
+          <Route
+            exact
+            path="/profile-info/:username/:id/note/:note_id"
+            element={<UserSingleNote />}
+          />
           {/* Not Found Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
