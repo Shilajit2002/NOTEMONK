@@ -95,7 +95,7 @@ const AddNotes = () => {
   // Use Navigate
   const navigate = useNavigate();
 
-  // Take the from Params
+  // Take the id from Params
   const { id } = useParams();
 
   // Take the token and userid if it is not peresent redirect to SignIn page
@@ -572,7 +572,8 @@ const AddNotes = () => {
                   />
                   {/* Preview Button */}
                   <Button
-                    variant="outlined"
+                    variant="contained"
+                    color='warning'
                     style={{
                       marginTop: "10px",
                       color: "white",

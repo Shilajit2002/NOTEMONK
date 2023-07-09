@@ -308,14 +308,14 @@ const Dashboard = () => {
               mr: 2,
               width: 32,
               height: 32,
-              backgroundColor: "#b8b8b827",
+              backgroundColor: "#24242479",
             }}
           />
           {/* Text Skeleton */}
           <Skeleton
             variant="text"
             sx={{
-              backgroundColor: "#b8b8b827",
+              backgroundColor: "#24242479",
               width: "80%",
               height: "32px",
             }}
@@ -426,7 +426,7 @@ const Dashboard = () => {
                   sx={{
                     width: "100%",
                     typography: "body1",
-                    mb:5
+                    mb: 5,
                   }}
                 >
                   {/* Tabs */}
@@ -508,7 +508,7 @@ const Dashboard = () => {
                   style={{
                     fontSize: "2rem",
                     margin: "5px",
-                    color: "black",
+                    color: "white",
                     cursor: "pointer",
                   }}
                 />
@@ -528,12 +528,18 @@ const Dashboard = () => {
                         width: "100%",
                         margin: "20px 0",
                         cursor: "pointer",
+                        padding: "3.5px 5px",
+                        backgroundColor: "rgba(12, 12, 12, 0.527)",
+                        borderTopLeftRadius: "20px",
+                        borderBottomLeftRadius: "20px",
+                        borderTopRightRadius: "5px",
+                        borderBottomRightRadius: "5px",
+                        boxShadow:
+                          "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;",
                       }}
                       key={index}
                       onClick={() => {
-                        navigate(
-                          `/profile-info/${f.username}/${f._id}`
-                        );
+                        navigate(`/profile-info/${f.username}/${f._id}`);
                       }}
                     >
                       {/* User Logo */}
@@ -550,14 +556,14 @@ const Dashboard = () => {
                       </Avatar>
                       {/* Username */}
                       <h6>{f.username}</h6>
-                      <button
+                      {/* <button
                         className="btn btn-info"
                         onClick={() => {
                           unFollow(f._id);
                         }}
                       >
                         Follow
-                      </button>
+                      </button> */}
                     </Box>
                   ))
                 ) : (

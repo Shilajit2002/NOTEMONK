@@ -99,9 +99,9 @@ const AllNotes = () => {
           confirmButtonText: "Ok",
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = `/all-notes/${userid}`;
+            window.location.reload();
           } else {
-            window.location.href = `/all-notes/${userid}`;
+            window.location.reload();
           }
         });
       }
@@ -268,7 +268,7 @@ const AllNotes = () => {
                         textTransform: "capitalize",
                         letterSpacing: "1.5px",
                         fontFamily: "Times-new-Roman",
-                        margin:"30px 10px",
+                        margin: "30px 10px",
                         backgroundColor: "rgba(0, 0, 0, 0.493)",
                         padding: "10px",
                         borderRadius: "5px",

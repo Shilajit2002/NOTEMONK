@@ -67,11 +67,12 @@ router.post('/add-note-files/:id', auth, upload.array('files'), async (req, res)
 })
 
 // API for Editing Note Files by Id
-router.patch('/edit-note-files/:id', auth, upload.array('files'), async (req, res) => {
+router.patch('/edit-note-files/:id/:note_id', auth, upload.array('files'), async (req, res) => {
     try {
         // If the user id and params id match
         if (req.user.id === req.params.id) {
             const user_id = req.user.id;
+            const note_id = req.params.note_id;
 
             // Find the User by User id
             let user = await User.findOne({ _id: user_id });
@@ -79,11 +80,12 @@ router.patch('/edit-note-files/:id', auth, upload.array('files'), async (req, re
             let note = await Note.findOne({ user_id: user_id });
 
             // Find that perticular Note index by using note id
-            let noteId = await note.notesArr.findIndex(n => n._id.toString() === req.body._id);
+            let noteId = await note.notesArr.findIndex(n => n._id.toString() === note_id);
 
             // Set the Username of that Note User
             note.username = user.username;
 
+            console.log(req.files);
             // Store the All files in Array of Objects
             const files = req.files.map(file => {
                 return {
@@ -94,12 +96,8 @@ router.patch('/edit-note-files/:id', auth, upload.array('files'), async (req, re
                 }
             })
 
-            // If the Notes have any files then remove all the files
-            if (note.notesArr[noteId].files.length !== 0) {
-                note.notesArr[noteId].files.splice(0, note.notesArr[noteId].files.length);
-            }
             // Push the Array of Files in Database of that perticular notes
-            note.notesArr[noteId].files.push(...files);
+            note.notesArr[noteId].files = files;
 
             //  Save the Document in the Note Collection
             const setNote = await note.save();
@@ -194,8 +192,12 @@ router.patch('/edit-note/:id', auth, async (req, res) => {
             // Find that perticular Note index by using note id
             let noteId = await note.notesArr.findIndex(n => n._id.toString() === req.body._id);
 
+            if (noteId) {
+
+            }
             // Set all details of the Note
             note.username = user.username;
+
             note.notesArr[noteId].title = req.body.title;
             note.notesArr[noteId].description = req.body.description;
             note.notesArr[noteId].view = req.body.view;
@@ -263,16 +265,18 @@ router.patch('/edit-note/:id', auth, async (req, res) => {
         }
     } catch (error) {
         // Set Internal Server Error Status
+        console.log(error);
         res.status(500).send("Server Error !!");
     }
 })
 
 // API for Get Perticular Note Details of a perticular User by id
-router.get('/note/:id', auth, async (req, res) => {
+router.get('/note/:id/:note_id', auth, async (req, res) => {
     try {
         // If the user id and params id match
         if (req.user.id === req.params.id) {
             const user_id = req.user.id;
+            const note_id = req.params.note_id;
 
             // Find the User by User id
             // let user = await User.findOne({ _id: user_id });
@@ -281,10 +285,15 @@ router.get('/note/:id', auth, async (req, res) => {
 
             if (note && note.notesArr.length !== 0) {
                 // Find that perticular Note index by using note id
-                let noteId = await note.notesArr.findIndex(n => n._id.toString() === req.body._id);
+                let noteId = await note.notesArr.findIndex(n => n._id.toString() === note_id);
 
-                // Set Ok Status
-                res.status(200).json(note.notesArr[noteId]);
+                if (noteId!==-1) {
+                    // Set Ok Status
+                    res.status(200).json(note.notesArr[noteId]);
+                } else {
+                    // Set Internal Server Error Status
+                    res.status(500).send("You can not edit any one notes !!");
+                }
             }
             else {
                 // Set Ok Status

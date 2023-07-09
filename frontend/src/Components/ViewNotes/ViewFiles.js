@@ -114,9 +114,7 @@ const showFile = (buffer, contentType, ext) => {
         return (
             // PDF Docviewer
             <div>
-                <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} style={{
-                    boxSadow: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"
-                }} />
+                <DocViewer documents={docs} pluginRenderers={DocViewerRenderers} />
             </div>
         );
     }

@@ -83,6 +83,7 @@ router.post("/login", async (req, res) => {
         const { username, email, password } = req.body;
         // Check the Email is exists or not
         let logUser = await User.findOne({ email: email });
+
         // If not exists
         if (!logUser) {
             //  Set Not Found Status
@@ -91,9 +92,8 @@ router.post("/login", async (req, res) => {
         // If exists
         else {
             // Check the Username is exists or not
-            logUser = await User.findOne({ username: username });
             // If not exists
-            if (!logUser) {
+            if (logUser.username !== username) {
                 //  Set Not Found Status
                 res.status(404).send("Username is Incorrect !!")
             }
