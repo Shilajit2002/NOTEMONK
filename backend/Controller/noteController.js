@@ -275,7 +275,7 @@ router.get('/note/:id', auth, async (req, res) => {
             const user_id = req.user.id;
 
             // Find the User by User id
-            let user = await User.findOne({ _id: user_id });
+            // let user = await User.findOne({ _id: user_id });
             // Find all Notes of that User by User id
             let note = await Note.findOne({ user_id: user_id });
 
@@ -309,7 +309,7 @@ router.delete('/delete-note/:id', auth, async (req, res) => {
             const user_id = req.user.id;
 
             // Find the User by User id
-            let user = await User.findOne({ _id: user_id });
+            // let user = await User.findOne({ _id: user_id });
             // Find all Notes of that User by User id
             let note = await Note.findOne({ user_id: user_id });
 
@@ -347,18 +347,12 @@ router.get('/all-note/:id', auth, async (req, res) => {
             const user_id = req.user.id;
 
             // Find the User by User id
-            let user = await User.findOne({ _id: user_id });
+            // let user = await User.findOne({ _id: user_id });
             // Find all Notes of that User by User id
             let note = await Note.findOne({ user_id: user_id });
 
-            if (note && note.notesArr.length !== 0) {
-                // Set Ok Status
-                res.status(200).json(note);
-            }
-            else {
-                // Set Ok Status
-                res.status(200).send("No note has been created yet");
-            }
+            // Set Ok Status
+            res.status(200).json(note);
 
         } else {
             // Set Internal Server Error Status
@@ -379,7 +373,7 @@ router.delete('/delete-all-note/:id', auth, async (req, res) => {
             const user_id = req.user.id;
 
             // Find the User by User id
-            let user = await User.findOne({ _id: user_id });
+            // let user = await User.findOne({ _id: user_id });
             // Find all Notes of that User by User id
             let note = await Note.findOne({ user_id: user_id });
 

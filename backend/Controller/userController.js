@@ -16,6 +16,8 @@ const Following = require("../Model/following");
 const Follower = require("../Model/follower");
 // Import Note Collection/Model
 const Note = require("../Model/note");
+// Import Search Note Collection/Model
+const SearchNote = require("../Model/searchNote");
 // Import Authentication
 const auth = require("../Middleware/auth");
 
@@ -208,8 +210,9 @@ router.delete('/user/:id', auth, async (req, res) => {
             const note = await Note.deleteOne({ user_id: req.user.id });
             const following = await Following.deleteOne({ user_id: req.user.id });
             const follower = await Follower.deleteOne({ user_id: req.user.id });
+            const searchNote = await SearchNote.deleteMany({ user_id: req.user.id });
 
-            const response = [user, userProfile, note, following, follower];
+            const response = [user, userProfile, note, following, follower, searchNote];
 
             // Set Ok Status
             res.status(200).json(response);

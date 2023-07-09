@@ -128,6 +128,12 @@
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px;
 }
 
+/* Preview Note Dialog Content Image and Link Tag */
+#alert-dialog-description img,
+#alert-dialog-description a {
+  width: 100%;
+}
+
 /* Media Query for Responsive */
 @media only screen and (max-width: 991px) {
   /* Signin Form Div */

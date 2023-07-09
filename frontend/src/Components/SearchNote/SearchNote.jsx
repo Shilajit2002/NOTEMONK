@@ -232,9 +232,15 @@ const SearchNote = (props) => {
                           }}
                         />
                         {/* View Note Button */}
-                        <Button color="secondary" variant="contained" onClick={()=>{
-                          navigate(`/profile-info/${value.username}/${value.user_id}/note/${value.note_id}`)
-                        }}>
+                        <Button
+                          color="secondary"
+                          variant="contained"
+                          onClick={() => {
+                            navigate(
+                              `/profile-info/${value.username}/${value.user_id}/note/${value.note_id}`
+                            );
+                          }}
+                        >
                           View Note
                         </Button>
                       </div>
@@ -269,7 +275,7 @@ const SearchNote = (props) => {
                       alt=""
                       style={{
                         width: "90%",
-                        height: "45vh",
+                        height: "44vh",
                         marginBottom: "10px",
                         borderRadius: "10px",
                         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",

@@ -1,0 +1,155 @@
+/* Per Note Box */
+.perNoteBox {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+}
+
+/* Per Note Box Index */
+.perNoteBox .indexNote {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: #ff00b3f1;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 550;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin-right: 5px;
+  text-shadow: #222222 2px 2px 10px;
+}
+
+/* Per Note Box Accordion */
+.perNoteBox .accr {
+  width: 90%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* Per Note Box Description Image and Link */
+.perNoteBox .accr .desc img,
+.perNoteBox .accr .desc a {
+  width: 100%;
+}
+
+/* Per Note Box Description */
+.perNoteBox .accr .desc {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.979);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: 1mm ridge rgb(63, 1, 65);
+  margin-bottom: 25px;
+}
+
+/* Per Note File Box */
+.perNoteBox .fileBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  background-color: #001f3f;
+  padding: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
+}
+
+/* Per Note Box Heading */
+.perNoteBox .fileBox h5 {
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #000000b6;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Per Note File Box Inner File Box */
+.perNoteBox .fileBox .fileBoxNotes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Per Note Tag Box */
+.perNoteBox .allNotesTagBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  background-color: #eef1f6;
+  padding: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-top: 10px solid #0c97d3;
+  border-radius: 5px;
+}
+
+/* Per Note Tag Box Inner Tag Box */
+.perNoteBox .allNotesTagBox .tagBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+/* Per Note Share Note Box */
+.perNoteBox .shareNote {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Dialog Pre Tag Webkit ScrollBar */
+.MuiDialogContent-root pre::-webkit-scrollbar {
+  height: 5px;
+  cursor: pointer;
+}
+
+/* Dialog Pre Tag Webkit ScrollBar Thumb */
+.MuiDialogContent-root pre::-webkit-scrollbar-thumb {
+  background-color: #4eab6a;
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 991px) {
+  /* Signin Form Div */
+  .perNoteBox {
+    width: 80%;
+  }
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 566px) {
+  /* Signin Form Div */
+  .perNoteBox {
+    width: 92%;
+  }
+}

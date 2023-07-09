@@ -46,6 +46,16 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Backdrop from "@mui/material/Backdrop";
 // Circular Progress
 import CircularProgress from "@mui/material/CircularProgress";
+// Dialog
+import Dialog from "@mui/material/Dialog";
+// Dialog Actions
+import DialogActions from "@mui/material/DialogActions";
+// Dialog Content
+import DialogContent from "@mui/material/DialogContent";
+// Dialog Content Text
+import DialogContentText from "@mui/material/DialogContentText";
+// Dialog Title
+import DialogTitle from "@mui/material/DialogTitle";
 
 /* ------------- MUI Icons ------------- */
 // Description Icon
@@ -64,6 +74,8 @@ import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete";
 // Label Icon
 import LabelIcon from "@mui/icons-material/Label";
+// Preview Icon
+import PreviewIcon from "@mui/icons-material/Preview";
 
 /* ------------- Alerts ------------- */
 // Snack Bar
@@ -77,7 +89,7 @@ import Swal from "sweetalert2";
 import TextEditor from "./TextEditor";
 
 // Load Image File Picture & Create a Short File Name from LoadImage.js file
-import { loadImage, truncateFileName } from "./LoadImage";
+import { loadImage, truncateFileName } from "../ViewNotes/LoadImage";
 
 const AddNotes = () => {
   // Use Navigate
@@ -292,9 +304,9 @@ const AddNotes = () => {
           confirmButtonText: "Ok",
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = `/add-notes/${userid}`;
+            window.location.reload();
           } else {
-            window.location.href = `/add-notes/${userid}`;
+            window.location.reload();
           }
         });
       }
@@ -490,13 +502,26 @@ const AddNotes = () => {
           confirmButtonText: "Ok",
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = `/add-notes/${userid}`;
+            window.location.reload();
           } else {
-            window.location.href = `/add-notes/${userid}`;
+            window.location.reload();
           }
         });
       }
     }
+  };
+
+  // Open Preview Dialog Box UseState
+  const [openPreviewDialog, setOpenPreviewDialog] = useState(false);
+
+  // Open Preview Dialog Box Func
+  const handleClickOpenPreviewDialog = () => {
+    setOpenPreviewDialog(true);
+  };
+
+  // Close Preview Dialog Box Func
+  const handleClosePreviewDialog = () => {
+    setOpenPreviewDialog(false);
   };
 
   return (
@@ -545,6 +570,20 @@ const AddNotes = () => {
                     value={note.description}
                     onChange={handleNoteDescChange}
                   />
+                  {/* Preview Button */}
+                  <Button
+                    variant="outlined"
+                    style={{
+                      marginTop: "10px",
+                      color: "white",
+                      fontWeight: "500",
+                      letterSpacing: "1px",
+                    }}
+                    onClick={handleClickOpenPreviewDialog}
+                  >
+                    {/* Preview Icon */}
+                    <PreviewIcon sx={{ mr: 1 }} /> Preview
+                  </Button>
                 </Box>
 
                 {/* View Box */}
@@ -639,11 +678,11 @@ const AddNotes = () => {
                       >
                         {/* Files Logo */}
                         <img
-                          src={
-                            file.type !== ""
-                              ? loadImage(file.type)
-                              : loadImage(file.name.split(".")[1])
-                          }
+                          src={loadImage(
+                            file.name
+                              .split(".")
+                              [file.name.split(".").length - 1].toLowerCase()
+                          )}
                           alt=""
                           style={{
                             width: "110px",
@@ -778,6 +817,40 @@ const AddNotes = () => {
                   <strong>{snack.message}</strong>
                 </MuiAlert>
               </Snackbar>
+
+              {/* Dialog Box for Delete User */}
+              <Dialog
+                open={openPreviewDialog}
+                onClose={handleClosePreviewDialog}
+                aria-labelledby="alert-dialog-title"
+                aria-describedby="alert-dialog-description"
+                maxwidth={"sm"}
+              >
+                {/* Dialog Title */}
+                <DialogTitle id="alert-dialog-title">
+                  {"Preview Description"}
+                </DialogTitle>
+                {/* Dialog Content */}
+                <DialogContent dividers>
+                  {/* Dialog Content Text */}
+                  <DialogContentText
+                    id="alert-dialog-description"
+                    dangerouslySetInnerHTML={{ __html: note.description }}
+                    style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}
+                  ></DialogContentText>
+                </DialogContent>
+                {/* Dialog Actions */}
+                <DialogActions>
+                  {/* Ok Button */}
+                  <Button
+                    onClick={handleClosePreviewDialog}
+                    autoFocus
+                    color="error"
+                  >
+                    Close
+                  </Button>
+                </DialogActions>
+              </Dialog>
             </div>
           </div>
         </>
