@@ -31,6 +31,28 @@ import ShareIcon from "@mui/icons-material/Share";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 // Comment Icon
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+// Whatsapp Icon
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// Facebook Icon
+import FacebookIcon from "@mui/icons-material/Facebook";
+// Twitter Icon
+import TwitterIcon from "@mui/icons-material/Twitter";
+// LinkedIn Icon
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// Email Icon
+import EmailIcon from "@mui/icons-material/Email";
+// Telegram Icon
+import TelegramIcon from "@mui/icons-material/Telegram";
+// Copy Icon
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+// Done Icon
+import DoneIcon from "@mui/icons-material/Done";
+// Close Icon
+import CloseIcon from "@mui/icons-material/Close";
+// Icon Button
+import IconButton from "@mui/material/IconButton";
+// Tooltip
+import Tooltip from "@mui/material/Tooltip";
 
 /* ------------- MUI Components ------------- */
 // Box
@@ -38,11 +60,29 @@ import Box from "@mui/material/Box";
 // Avatar
 import Avatar from "@mui/material/Avatar";
 // Button
-import { Button } from "@mui/material";
+import { Button, Icon } from "@mui/material";
+// Dialog
+import Dialog from "@mui/material/Dialog";
+// Dialog Content
+import DialogContent from "@mui/material/DialogContent";
+// Dialog Content Text
+import DialogContentText from "@mui/material/DialogContentText";
+// Dialog Title
+import DialogTitle from "@mui/material/DialogTitle";
 
 /* ------------- Alerts ------------- */
 // Swal
 import Swal from "sweetalert2";
+
+/* ------------- React Share ------------- */
+import {
+  WhatsappShareButton,
+  FacebookShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+  LinkedinShareButton,
+  TelegramShareButton,
+} from "react-share";
 
 const SearchNote = (props) => {
   // Take the from Params
@@ -102,6 +142,42 @@ const SearchNote = (props) => {
     const val = str.toString().substring(0, 10).split("-");
     let t = val[2] + "-" + val[1] + "-" + val[0];
     return t;
+  };
+
+  // Open Share Dialog Box UseState
+  const [openShareDialog, setOpenShareDialog] = useState(false);
+
+  // Open Share Dialog Box Func
+  const handleClickOpenShareDialog = () => {
+    setOpenShareDialog(true);
+  };
+
+  // Close Share Dialog Box Func
+  const handleCloseShareDialog = () => {
+    setOpenShareDialog(false);
+  };
+
+  // Share Note Id UseState
+  const [shareId, setShareId] = useState();
+
+  // Copy UseShareState
+  const [copyShare, setCopyShare] = useState(false);
+
+  // Handle Share Copy Url Func
+  const handleShareCopyUrl = (url) => {
+    const textToCopy = url;
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        setCopyShare(true);
+        setTimeout(() => {
+          setCopyShare(false);
+        }, 1000);
+      })
+      .catch((error) => {
+        // console.error("Error copying text:", error);
+        setCopyShare(false);
+      });
   };
 
   return (
@@ -211,26 +287,48 @@ const SearchNote = (props) => {
                       {/* Share Note Box */}
                       <div className="shareNote">
                         {/* Like Icon */}
-                        <ThumbUpOutlinedIcon
-                          sx={{
-                            color: "blue",
-                            cursor: "pointer",
-                          }}
-                        />
+                        <Tooltip title="Like">
+                          <IconButton>
+                            <ThumbUpOutlinedIcon
+                              sx={{
+                                color: "cyan",
+                                cursor: "pointer",
+                                m: 0.5,
+                              }}
+                            />
+                          </IconButton>
+                        </Tooltip>
                         {/* Comment Icon */}
-                        <ChatBubbleOutlineIcon
-                          sx={{
-                            color: "black",
-                            cursor: "pointer",
-                          }}
-                        />
+                        <Tooltip title="Comment">
+                          <IconButton>
+                            <ChatBubbleOutlineIcon
+                              sx={{
+                                color: "blue",
+                                cursor: "pointer",
+                                m: 0.5,
+                              }}
+                            />
+                          </IconButton>
+                        </Tooltip>
                         {/* Share Icon */}
-                        <ShareIcon
-                          sx={{
-                            color: "green",
-                            cursor: "pointer",
-                          }}
-                        />
+                        <Tooltip title="Share">
+                          <IconButton
+                            onClick={() => {
+                              setShareId(
+                                `/profile-info/${value.username}/${value.user_id}/note/${value.note_id}`
+                              );
+                              handleClickOpenShareDialog();
+                            }}
+                          >
+                            <ShareIcon
+                              sx={{
+                                color: "green",
+                                cursor: "pointer",
+                                m: 0.5,
+                              }}
+                            />
+                          </IconButton>
+                        </Tooltip>
                         {/* View Note Button */}
                         <Button
                           color="secondary"
@@ -299,6 +397,203 @@ const SearchNote = (props) => {
               </>
             )}
           </div>
+
+          {/* Dialog Box for Share Note */}
+          <Dialog
+            open={openShareDialog}
+            onClose={handleCloseShareDialog}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+            maxWidth="sm"
+          >
+            {/* Dialog Title */}
+            <DialogTitle id="alert-dialog-title">
+              <div className="shareDialogBox">
+                <h5>Share</h5>
+                <Tooltip title="Close" sx={{ ml: 2 }}>
+                  <IconButton onClick={handleCloseShareDialog}>
+                    <CloseIcon
+                      color="error"
+                      sx={{
+                        cursor: "pointer",
+                      }}
+                    />
+                  </IconButton>
+                </Tooltip>
+              </div>
+            </DialogTitle>
+            {/* Dialog Content */}
+            <DialogContent dividers>
+              {/* Dialog Content Text */}
+              <DialogContentText component="span" id="alert-dialog-description">
+                <input
+                  type="text"
+                  name="shareId"
+                  defaultValue={shareId}
+                  readOnly
+                  className="shareUrlBox"
+                />
+                <div className="shareIconBox">
+                  {/* Copy */}
+                  <div
+                    style={{
+                      backgroundColor: "#C1C1C1",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                      borderStyle: "none",
+                    }}
+                    onClick={() => {
+                      handleShareCopyUrl(shareId);
+                    }}
+                  >
+                    {copyShare ? (
+                      <>
+                        <Tooltip title="Copied" sx={{ m: 0.5 }}>
+                          <IconButton>
+                            <DoneIcon
+                              sx={{
+                                color: "white",
+                                fontSize: "2rem",
+                              }}
+                            />
+                          </IconButton>
+                        </Tooltip>
+                      </>
+                    ) : (
+                      <>
+                        <Tooltip title="Copy" sx={{ m: 0.5 }}>
+                          <IconButton>
+                            <ContentCopyIcon
+                              sx={{
+                                color: "white",
+                                fontSize: "2rem",
+                              }}
+                            />
+                          </IconButton>
+                        </Tooltip>
+                      </>
+                    )}
+                  </div>
+                  {/* WP */}
+                  <WhatsappShareButton
+                    url={shareId}
+                    style={{
+                      backgroundColor: "#26CC64",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                    }}
+                  >
+                    <WhatsAppIcon
+                      sx={{
+                        m: 1.3,
+                        color: "white",
+                        fontSize: "2.2rem",
+                      }}
+                    />
+                  </WhatsappShareButton>
+                  {/* Facebook */}
+                  <FacebookShareButton
+                    url={shareId}
+                    style={{
+                      backgroundColor: "#1674EA",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                    }}
+                  >
+                    <FacebookIcon
+                      sx={{
+                        m: 1.3,
+                        color: "white",
+                        fontSize: "2.2rem",
+                      }}
+                    />
+                  </FacebookShareButton>
+                  {/* Telegram */}
+                  <TelegramShareButton
+                    url={shareId}
+                    style={{
+                      backgroundColor: "#28A4E4",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                    }}
+                  >
+                    <TelegramIcon
+                      sx={{
+                        m: 1.3,
+                        color: "white",
+                        fontSize: "2.2rem",
+                      }}
+                    />
+                  </TelegramShareButton>
+                  {/* LinkedIn */}
+                  <LinkedinShareButton
+                    url={shareId}
+                    style={{
+                      backgroundColor: "#0077B7",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                    }}
+                  >
+                    <LinkedInIcon
+                      sx={{
+                        m: 1.3,
+                        color: "white",
+                        fontSize: "2.2rem",
+                      }}
+                    />
+                  </LinkedinShareButton>
+                  {/* Email */}
+                  <EmailShareButton
+                    url={shareId}
+                    style={{
+                      backgroundColor: "#E1574A",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                    }}
+                  >
+                    <EmailIcon
+                      sx={{
+                        m: 1.3,
+                        color: "white",
+                        fontSize: "2.2rem",
+                      }}
+                    />
+                  </EmailShareButton>
+                  {/* Twitter */}
+                  <TwitterShareButton
+                    url={shareId}
+                    style={{
+                      backgroundColor: "#36A0F7",
+                      borderRadius: "50%",
+                      margin: "5px",
+                      boxShadow:
+                        "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                    }}
+                  >
+                    <TwitterIcon
+                      sx={{
+                        m: 1.3,
+                        color: "white",
+                        fontSize: "2.2rem",
+                      }}
+                    />
+                  </TwitterShareButton>
+                </div>
+              </DialogContentText>
+            </DialogContent>
+          </Dialog>
         </>
       ) : (
         <>

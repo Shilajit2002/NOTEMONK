@@ -71,6 +71,23 @@ const Navbar = () => {
 
   // UserName UseState
   const [username, setuserName] = useState(null);
+  // User Image Url UseState
+  const [imgNavUrl, setimgNavUrl] = useState(null);
+
+  // A chunk size
+  const CHUNK_SIZE = 8192;
+
+  // Convert Image Array Buffer to Base 64
+  const arrayBufferToBase64 = (buffer) => {
+    const chunks = [];
+    const bytes = new Uint8Array(buffer);
+    for (let i = 0; i < bytes.length; i += CHUNK_SIZE) {
+      chunks.push(
+        String.fromCharCode.apply(null, bytes.slice(i, i + CHUNK_SIZE))
+      );
+    }
+    return btoa(chunks.join(""));
+  };
 
   // UseEffect for Get the User Details
   useEffect(() => {
@@ -87,6 +104,7 @@ const Navbar = () => {
           },
         })
         .then((res) => {
+          // console.log(res.data);
           const firstname = res.data[0].firstname;
           const uname = res.data[0].username;
           // Store the Username
@@ -95,6 +113,18 @@ const Navbar = () => {
             uname: uname,
             id: res.data[0]._id,
           });
+
+          // Check if the Image array is null or not
+          if (res.data.length === 2 && res.data[1] !== null) {
+            // If not then convert Array Buffer Image to Base64String
+            const base64String = arrayBufferToBase64(
+              res.data[1].image.data.data
+            );
+            // Create the Image Url
+            const imageUrl = `data:${res.data[1].image.contentType};base64,${base64String}`;
+            // Set the Image Url for Showing
+            setimgNavUrl(imageUrl);
+          }
         })
         .catch((err) => {
           Cookies.remove("token");
@@ -209,20 +239,34 @@ const Navbar = () => {
                               >
                                 Hey, {username.firstname}
                                 {/* Avatar for Logo names */}
-                                <Avatar
-                                  sx={{
-                                    ml: 2,
-                                    width: 32,
-                                    height: 32,
-                                    bgcolor: stringToColor(
-                                      username.firstname.toUpperCase()
-                                    ),
-                                    boxShadow:
-                                      "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-                                  }}
-                                >
-                                  {username.firstname.charAt(0).toUpperCase()}
-                                </Avatar>
+                                {imgNavUrl ? (
+                                  <Avatar
+                                    alt="avatar"
+                                    src={imgNavUrl}
+                                    sx={{
+                                      ml: 2,
+                                      width: 32,
+                                      height: 32,
+                                      boxShadow:
+                                        "rgba(34, 140, 221, 0.3) 0px 1px 2px 0px, rgba(0, 139, 245, 0.15) 0px 2px 6px 2px",
+                                    }}
+                                  />
+                                ) : (
+                                  <Avatar
+                                    sx={{
+                                      ml: 2,
+                                      width: 32,
+                                      height: 32,
+                                      bgcolor: stringToColor(
+                                        username.firstname.toUpperCase()
+                                      ),
+                                      boxShadow:
+                                        "rgba(34, 140, 221, 0.3) 0px 1px 2px 0px, rgba(0, 139, 245, 0.15) 0px 2px 6px 2px",
+                                    }}
+                                  >
+                                    {username.firstname.charAt(0).toUpperCase()}
+                                  </Avatar>
+                                )}
                               </IconButton>
                             </Tooltip>
                           </Box>

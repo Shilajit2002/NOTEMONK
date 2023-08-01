@@ -1,0 +1,19 @@
+/* All Note Details Box */
+.userAllNotesDetailBox {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+.userAllNotesDetailBox h2{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 1px;
+  font-weight: 600;
+}

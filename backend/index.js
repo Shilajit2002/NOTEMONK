@@ -39,6 +39,8 @@ app.use("/api/followers/", require("./Controller/followerController"))
 app.use("/api/searches/", require("./Controller/searchController"))
 // Import Note Router
 app.use("/api/notes/", require("./Controller/noteController"))
+// Import All User Controller Router
+app.use("/api/allUser/", require("./Controller/allUserController"))
 
 app.all("*", (req, res) => {
     res.status(404).send("`~` Page Not Found `~`");

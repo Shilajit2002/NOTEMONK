@@ -1,0 +1,24 @@
+/* Profile Info Main Box */
+.profileInfoMainBox {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #181712, #15140f, #15140f);
+}
+
+.profileInfoMainBox .css-19kzrtu {
+  padding: 0px;
+  margin-left: 25px;
+}
+
+.profileInfoMainBox .tabs {
+  font-weight: 510;
+  letter-spacing: 1px;
+}
+
+.profileInfoMainBox .tabs--selected {
+  background-color: #e203ff17;
+  color: rgb(255, 255, 255);
+}

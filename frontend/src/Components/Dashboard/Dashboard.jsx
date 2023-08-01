@@ -335,66 +335,6 @@ const Dashboard = () => {
     setValue(newValue);
   };
 
-  // Unfollow Func
-  const unFollow = (follId) => {
-    // Take the Token and Userid
-    const token = Cookies.get("token");
-    const userid = Cookies.get("userid");
-
-    // If token and userid present
-    if (token && userid) {
-      // If userid and params id match
-      if (userid === id) {
-        // Axios Post Request from Backend
-        axios
-          .post(
-            `http://localhost:8000/api/followings/following/${userid}`,
-            { _id: follId },
-            {
-              headers: {
-                Authorization: `${token}`,
-              },
-            }
-          )
-          .then((res) => {
-            // Set the Following Details of the User
-          })
-          .catch((err) => {
-            // console.log(err);
-            Swal.fire({
-              icon: "warning",
-              title: `You are not authenticated !!`,
-              confirmButtonText: "Ok",
-            }).then((result) => {
-              if (result.isConfirmed) {
-                Cookies.remove("token");
-                Cookies.remove("userid");
-                window.location.href = `/signin`;
-              } else {
-                Cookies.remove("token");
-                Cookies.remove("userid");
-                window.location.href = `/signin`;
-              }
-            });
-          });
-      }
-      // If userid and params id not match
-      else {
-        Swal.fire({
-          icon: "warning",
-          title: `You can only view your own account !!`,
-          confirmButtonText: "Ok",
-        }).then((result) => {
-          if (result.isConfirmed) {
-            window.location.href = `/dashboard/${userid}`;
-          } else {
-            window.location.href = `/dashboard/${userid}`;
-          }
-        });
-      }
-    }
-  };
-
   return (
     <>
       {/* If Token and UserId present then open dashboard */}
@@ -556,14 +496,6 @@ const Dashboard = () => {
                       </Avatar>
                       {/* Username */}
                       <h6>{f.username}</h6>
-                      {/* <button
-                        className="btn btn-info"
-                        onClick={() => {
-                          unFollow(f._id);
-                        }}
-                      >
-                        Follow
-                      </button> */}
                     </Box>
                   ))
                 ) : (

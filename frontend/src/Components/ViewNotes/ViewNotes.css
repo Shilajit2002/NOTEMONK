@@ -1,6 +1,6 @@
 /* Per Note Box */
 .perNoteBox {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -136,6 +136,38 @@
 /* Dialog Pre Tag Webkit ScrollBar Thumb */
 .MuiDialogContent-root pre::-webkit-scrollbar-thumb {
   background-color: #4eab6a;
+}
+
+.shareDialogBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.shareUrlBox {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #011830;
+  border: 1px solid rgb(0, 195, 255);
+  color: white;
+  letter-spacing: 1px;
+  box-shadow: rgba(100, 100, 111, 0.192) 0px 7px 29px 0px;
+}
+
+.shareUrlBox:focus {
+  outline: none;
+}
+
+.shareIconBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 /* Media Query for Responsive */

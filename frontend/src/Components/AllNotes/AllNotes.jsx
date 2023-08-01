@@ -25,10 +25,13 @@ import Cookies from "js-cookie";
 // Swal
 import Swal from "sweetalert2";
 
+/* ------------- MUI Components ------------- */
+// Button
+import { Button } from "@mui/material";
+
 /* ------------- MUI Structure ------------- */
 // Skeleton
 import Skeleton from "@mui/material/Skeleton";
-import { Button } from "@mui/material";
 
 /* ------------- MUI Components ------------- */
 // Circular Progress

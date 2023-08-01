@@ -186,13 +186,28 @@ const Profile = () => {
       // Check the uploaded file is image or not
       if (e.target.files[0].type.match(/image\/*/) == null) {
         // If not then Set Image Url null
-        setimgUrl(null);
+        // setimgUrl(null);
         // Set Image File Error
         setimgError(true);
 
         setSnack({
           open: true,
           message: "Only Images are supported !!",
+          severity: "warning",
+        });
+
+        return;
+      }
+      // If the image larger then 2 mb
+      else if (e.target.files[0].size / (1024 * 1024).toFixed(2) > 1.5) {
+        // If not then Set Image Url null
+        // setimgUrl(null);
+        // Set Image File Error
+        setimgError(true);
+
+        setSnack({
+          open: true,
+          message: "Upload image within 1mb !!",
           severity: "warning",
         });
 

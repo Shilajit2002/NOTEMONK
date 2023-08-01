@@ -21,7 +21,7 @@
 
 /* Left Box */
 .dahsboardMainBox .leftBox {
-  width: 60%;
+  width: 55%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +176,7 @@
 }
 
 /* Tab Panel */
-.css-19kzrtu {
+.dahsboardMainBox .leftBox .dashuserBox .css-19kzrtu {
   background-color: #1d2226;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;

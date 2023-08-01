@@ -78,6 +78,10 @@ import LabelIcon from "@mui/icons-material/Label";
 // Preview Icon
 import PreviewIcon from "@mui/icons-material/Preview";
 
+/* ------------- MUI Structure ------------- */
+// Skeleton
+import Skeleton from "@mui/material/Skeleton";
+
 /* ------------- Alerts ------------- */
 // Snack Bar
 import Snackbar from "@mui/material/Snackbar";
@@ -421,6 +425,119 @@ const EditNote = () => {
   // Close Preview Dialog Box Func
   const handleClosePreviewDialog = () => {
     setOpenPreviewDialog(false);
+  };
+
+  // EditNotesSkList for Storing Skeleton when no notes coming
+  const EditNotesSkList = () => {
+    const arr = (
+      <div className="addNoteForm">
+        {/* Skeleton for Heading */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 2,
+            width: 150,
+            height: 30,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for Title */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 1,
+            width: "100%",
+            height: 60,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for Description */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 1,
+            width: "100%",
+            height: "50vh",
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for Button */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 2,
+            width: 100,
+            height: 40,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for View */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 1,
+            width: "100%",
+            height: 60,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for File */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 1,
+            width: "100%",
+            height: 100,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for Tags */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 1,
+            width: "100%",
+            height: 60,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+
+        {/* Skeleton for Button */}
+        <Skeleton
+          variant="rectangular"
+          sx={{
+            m: 2,
+            width: 100,
+            height: 40,
+            backgroundColor: "#0000003b",
+            borderRadius: "5px",
+          }}
+          edge="end"
+        />
+      </div>
+    );
+
+    return arr;
   };
 
   // Handle Form Submit Func
@@ -940,7 +1057,10 @@ const EditNote = () => {
                 </div>
               </>
             ) : (
-              <></>
+              <>
+                {/* Otherwise call EditNotesSkList for showing skeleton*/}
+                {EditNotesSkList()}
+              </>
             )}
           </div>
         </>
