@@ -55,7 +55,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 // Dialog Title
 import DialogTitle from "@mui/material/DialogTitle";
-// Import Button
+// Button
 import { Button } from "@mui/material";
 
 /* ------------- MUI Inputs ------------- */
@@ -97,15 +97,19 @@ const UserProfile = (props) => {
 
   // Loading / Circular Progress Open Close UseState
   const [open, setOpen] = useState(false);
+
+  // Follow UseState
   const [follow, setFollow] = useState();
 
+  // UseEffect for Converting Image and Follow
   useEffect(() => {
+    // If presnent then do this
     if (
       Cookies.get("token") &&
       Cookies.get("userid") &&
       props &&
       props.userAllDetails &&
-      props.userAllDetails.length === 6 &&
+      props.userAllDetails.length === 5 &&
       props.userAllDetails[1]
     ) {
       arrayBufferToBase64(
@@ -116,6 +120,7 @@ const UserProfile = (props) => {
     }
   }, [props]);
 
+  // Number Format Func for Followers and Following
   const numberFormat = (num) => {
     if (num >= 1000000000000) {
       return (num / 1000000000000).toFixed(1) + "T";
@@ -130,7 +135,6 @@ const UserProfile = (props) => {
     }
   };
 
-  console.log(follow);
   // Follow User Profile Func
   const followUserProfileFunc = (follId) => {
     // Take the Token and Userid
@@ -140,8 +144,8 @@ const UserProfile = (props) => {
     // If token and userid present
     if (token && userid) {
       // If userid and params id match
-      // Axios Post Request from Backend
       setOpen(true);
+      // Axios Post Request from Backend
       axios
         .post(
           `http://localhost:8000/api/followings/following/${userid}`,
@@ -154,7 +158,7 @@ const UserProfile = (props) => {
         )
         .then((res) => {
           // Set the Following Details of the User
-          // console.log(res.data[0]);
+          // console.log(res.data);
           let val = res.data[1].followerArr;
           const newVal = val.filter((v) => v.follower_user_id === userid);
           // console.log(newVal);
@@ -210,10 +214,12 @@ const UserProfile = (props) => {
     setOpenContactDialog(false);
   };
 
+  // Username Copy UseState
   const [userNameCopy, setUsernameCopy] = useState(false);
+  // URL Copy UseState
   const [urlCopy, setUrlCopy] = useState(false);
 
-  //   Handle Copy Func
+  // Handle UsernameCopy Func
   const usernameCopyFunc = (textContent) => {
     const textToCopy = textContent;
     navigator.clipboard
@@ -230,7 +236,7 @@ const UserProfile = (props) => {
       });
   };
 
-  //   Handle Copy Func
+  // Handle URLCopy Func
   const urlCopyFunc = (textContent) => {
     const textToCopy = textContent;
     navigator.clipboard
@@ -246,23 +252,49 @@ const UserProfile = (props) => {
         setUrlCopy(false);
       });
   };
+
+  const [isScreenWide, setIsScreenWide] = useState(
+    window.matchMedia("(min-width: 991px)").matches
+  );
+
+  useEffect(() => {
+    // Add a listener to update the orientation when the window width changes
+    const handleResize = () => {
+      setIsScreenWide(window.matchMedia("(min-width: 991px)").matches);
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       {/* If Token and UserId present then open following page */}
       {Cookies.get("token") && Cookies.get("userid") ? (
+        // User Profile Details Box
         <div className="userProfileDetailsBox">
+          {/* If props then show this */}
           {props &&
           props.userAllDetails &&
-          props.userAllDetails.length === 6 ? (
+          props.userAllDetails.length === 5 ? (
             <>
+              {/* User Profile Left Box */}
               <div className="userProfileLeft">
+                {/* Profile Image */}
                 <img src={profImg ? profImg : DUP} alt="" />
+                {/* Full Name */}
                 <p>
                   {props.userAllDetails[0].firstname}{" "}
                   {props.userAllDetails[0].lastname}
                 </p>
+                {/* Social Box */}
                 <div className="socialsBox">
+                  {/* Fol Box */}
                   <div className="folBox">
+                    {/* Follower Number */}
                     <p
                       style={{
                         color: "#610939",
@@ -270,6 +302,7 @@ const UserProfile = (props) => {
                     >
                       {numberFormat(props.userAllDetails[2])}
                     </p>
+                    {/* Followers */}
                     <p
                       style={{
                         color: "#610939",
@@ -278,8 +311,11 @@ const UserProfile = (props) => {
                       FOLLOWERS
                     </p>
                   </div>
+                  {/* Divider */}
                   <hr />
+                  {/* Fol Box */}
                   <div className="folBox">
+                    {/* Following Number */}
                     <p
                       style={{
                         color: "rgb(7, 108, 155)",
@@ -287,6 +323,7 @@ const UserProfile = (props) => {
                     >
                       {numberFormat(props.userAllDetails[3])}
                     </p>
+                    {/* Followings */}
                     <p
                       style={{
                         color: "rgb(7, 108, 155)",
@@ -296,11 +333,15 @@ const UserProfile = (props) => {
                     </p>
                   </div>
                 </div>
+                {/* Fol Button Box */}
                 <div className="folButtonBox">
+                  {/* If follow present then do this */}
                   {follow && follow.length !== 0 && !open ? (
                     <>
+                      {/* If acceptence is true then Show Unfollow Button*/}
                       {follow[0].accept ? (
                         <>
+                          {/* UnFollow Button */}
                           <Button
                             variant="contained"
                             color="error"
@@ -316,6 +357,8 @@ const UserProfile = (props) => {
                         </>
                       ) : (
                         <>
+                          {/* If acceptence is false then show Pending Button and Withdraw Button */}
+                          {/* Pending Button */}
                           <Button
                             variant="outlined"
                             color="secondary"
@@ -327,6 +370,7 @@ const UserProfile = (props) => {
                           >
                             Pending
                           </Button>
+                          {/* Withdraw Button */}
                           <Button
                             variant="contained"
                             color="warning"
@@ -347,6 +391,7 @@ const UserProfile = (props) => {
                     </>
                   ) : (
                     <>
+                      {/* Else Show Follow Button */}
                       {!open ? (
                         <Button
                           variant="contained"
@@ -358,7 +403,8 @@ const UserProfile = (props) => {
                           Follow
                         </Button>
                       ) : (
-                        // Circular Progress
+                        // If Open true then show Circular Progress
+                        // Circular Progress Button
                         <Button variant="text" size="small">
                           <CircularProgress
                             color="secondary"
@@ -370,6 +416,7 @@ const UserProfile = (props) => {
                   )}
                 </div>
 
+                {/* Contact Info Link */}
                 <h6
                   onClick={() => {
                     handleClickOpenContactDialog();
@@ -378,7 +425,10 @@ const UserProfile = (props) => {
                   contact info
                 </h6>
               </div>
+
+              {/* User Profile Right Box */}
               <div className="userProfileRight">
+                {/* Full Name */}
                 <Box className="editbox">
                   {/* Person Icon */}
                   <PersonIcon
@@ -416,9 +466,10 @@ const UserProfile = (props) => {
                     }}
                   />
                 </Box>
+
                 {/* Username */}
                 <Box className="editbox">
-                  {/* Person Icon */}
+                  {/* Username Icon */}
                   <RememberMeIcon
                     sx={{
                       color: "black",
@@ -450,9 +501,10 @@ const UserProfile = (props) => {
                     }}
                   />
                 </Box>
+
                 {/* Email */}
                 <Box className="editbox">
-                  {/* Person Icon */}
+                  {/* Email Icon */}
                   <EmailIcon
                     sx={{
                       color: "black",
@@ -484,9 +536,10 @@ const UserProfile = (props) => {
                     }}
                   />
                 </Box>
+
                 {/* Phone */}
                 <Box className="editbox">
-                  {/* Person Icon */}
+                  {/* Phone Icon */}
                   <PhoneIcon
                     sx={{
                       color: "black",
@@ -522,9 +575,10 @@ const UserProfile = (props) => {
                     }}
                   />
                 </Box>
+
                 {/* Country */}
                 <Box className="editbox">
-                  {/* Person Icon */}
+                  {/* Flag Icon */}
                   <FlagCircleIcon
                     sx={{
                       color: "black",
@@ -597,12 +651,14 @@ const UserProfile = (props) => {
               </div>
             </>
           ) : (
+            // If nothing then show skeleton
             <>
+              {/* Left Box Skeleton */}
               <Skeleton
                 variant="rectangular"
                 sx={{
-                  mr: 2,
-                  width: "30%",
+                  m: 1,
+                  width: isScreenWide ? "30%" : "80%",
                   height: "55vh",
                   backgroundColor: "#6969693b",
                   borderRadius: "10px",
@@ -610,11 +666,12 @@ const UserProfile = (props) => {
                 edge="end"
               />
 
+              {/* Right Box Skeleton */}
               <Skeleton
                 variant="rectangular"
                 sx={{
-                  mr: 2,
-                  width: "50%",
+                  m: 1,
+                  width: isScreenWide ? "30%" : "80%",
                   height: "60vh",
                   backgroundColor: "#6969693b",
                   borderRadius: "10px",
@@ -625,9 +682,11 @@ const UserProfile = (props) => {
           )}
         </div>
       ) : (
+        // Else show none
         <></>
       )}
-      {/* Dialog Box for View Note FIles */}
+
+      {/* Dialog Box for View Contact Info */}
       <Dialog
         open={openContactDialog}
         onClose={handleCloseContactDialog}
@@ -645,19 +704,24 @@ const UserProfile = (props) => {
             id="alert-dialog-description"
             className="contContent"
           >
+            {/* Contc Box */}
             <div className="contc">
+              {/* Username */}
               <p>username</p>
+              {/* Inner Contc Box */}
               <div className="innerContc">
+                {/* Username Input */}
                 <input
                   type="text"
                   value={
                     props &&
                     props.userAllDetails &&
-                    props.userAllDetails.length === 6 &&
+                    props.userAllDetails.length === 5 &&
                     props.userAllDetails[0].username
                   }
                   readOnly
                 />
+                {/* Username Copy Icon */}
                 {!userNameCopy ? (
                   <ContentCopyIcon
                     onClick={() => {
@@ -668,6 +732,7 @@ const UserProfile = (props) => {
                     }}
                   />
                 ) : (
+                  // Done Icon
                   <DoneIcon
                     sx={{
                       marginLeft: "15px",
@@ -676,10 +741,16 @@ const UserProfile = (props) => {
                 )}
               </div>
             </div>
+
+            {/* Contc Box */}
             <div className="contc">
+              {/* Profile Url */}
               <p>profile url</p>
+              {/* Inner Contc Box */}
               <div className="innerContc">
+                {/* Url Input */}
                 <input type="text" value={window.location.pathname} readOnly />
+                {/* URL Copy Icon */}
                 {!urlCopy ? (
                   <ContentCopyIcon
                     onClick={() => {
@@ -690,6 +761,7 @@ const UserProfile = (props) => {
                     }}
                   />
                 ) : (
+                  // Done Icon
                   <DoneIcon
                     sx={{
                       marginLeft: "15px",

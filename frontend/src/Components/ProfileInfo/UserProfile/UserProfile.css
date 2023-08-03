@@ -1,13 +1,19 @@
+/* User Profile Details Box */
 .userProfileDetailsBox {
   width: 100%;
   min-height: 90vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 0, 0) 11.2%,
+    rgb(11, 132, 145) 91.1%
+  );
   padding: 5px;
 }
 
+/* User Profile Left Box */
 .userProfileDetailsBox .userProfileLeft {
   width: 30%;
   min-height: 60vh;
@@ -22,6 +28,7 @@
   padding: 10px;
 }
 
+/* Profile Image */
 .userProfileDetailsBox .userProfileLeft img {
   width: 170px;
   height: 170px;
@@ -32,6 +39,7 @@
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px;
 }
 
+/* Full Name */
 .userProfileDetailsBox .userProfileLeft p {
   color: rgb(0, 0, 0);
   margin-top: 10px;
@@ -40,6 +48,7 @@
   font-weight: 550;
 }
 
+/* Socials Box */
 .userProfileDetailsBox .userProfileLeft .socialsBox {
   width: 100%;
   display: flex;
@@ -48,6 +57,7 @@
   flex-wrap: wrap;
 }
 
+/* Fol Box */
 .userProfileDetailsBox .userProfileLeft .socialsBox .folBox {
   border-style: none;
   display: flex;
@@ -56,11 +66,13 @@
   flex-direction: column;
 }
 
+/* Fol Box Para */
 .userProfileDetailsBox .userProfileLeft .socialsBox .folBox p {
   font-size: 14px;
   font-weight: 550;
 }
 
+/* Divider */
 .userProfileDetailsBox .userProfileLeft .socialsBox hr {
   background-color: rgb(0, 0, 0);
   width: 2px;
@@ -68,6 +80,7 @@
   margin: 0;
 }
 
+/* FolButton Box */
 .userProfileDetailsBox .userProfileLeft .folButtonBox {
   width: 100%;
   display: flex;
@@ -77,6 +90,7 @@
   margin-top: 10px;
 }
 
+/* Heading */
 .userProfileDetailsBox .userProfileLeft h6 {
   margin: 15px 0;
   cursor: pointer;
@@ -84,6 +98,7 @@
   color: rgb(3, 62, 151);
 }
 
+/* User Profile Right Box */
 .userProfileDetailsBox .userProfileRight {
   width: 50%;
   min-height: 60vh;
@@ -96,8 +111,10 @@
   align-items: center;
   flex-direction: column;
   padding: 10px 0;
+  margin: 15px 0;
 }
 
+/* Edit Box */
 .userProfileDetailsBox .userProfileRight .editbox {
   width: 90%;
   display: flex;
@@ -107,6 +124,7 @@
   margin: 10px;
 }
 
+/* Edit Input */
 .userProfileDetailsBox .userProfileRight .editbox .editInput {
   width: 95%;
   background-color: rgba(2, 28, 49, 0.788);
@@ -126,6 +144,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Text Area */
 .userProfileDetailsBox .userProfileRight .editboxTextArea {
   width: 90%;
   display: flex;
@@ -133,6 +152,7 @@
   align-items: center;
 }
 
+/* Input Text Area */
 .userProfileDetailsBox .userProfileRight .editboxTextArea .editInputTextArea {
   width: 100%;
   background-color: rgba(2, 28, 49, 0.788);
@@ -151,7 +171,8 @@
   letter-spacing: 0.5px;
 }
 
-.contContent{
+/* Cont Content Box */
+.contContent {
   width: auto;
   display: flex;
   justify-content: center;
@@ -159,7 +180,8 @@
   flex-direction: column;
 }
 
-.contc{
+/* Contact Box */
+.contc {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -167,7 +189,8 @@
   margin-bottom: 20px;
 }
 
-.contc p{
+/* Contact Para */
+.contc p {
   color: #016786;
   font-size: 16px;
   font-weight: 550;
@@ -176,11 +199,13 @@
   margin-bottom: 2px;
 }
 
-.contc input{
+/* Contact Input Box */
+.contc input {
   border-style: none;
   padding: 10px;
   width: 100%;
-  box-shadow: rgba(38, 1, 59, 0.096) 0px 10px 36px 0px, rgba(2, 79, 131, 0.164) 0px 0px 0px 1px;
+  box-shadow: rgba(38, 1, 59, 0.096) 0px 10px 36px 0px,
+    rgba(2, 79, 131, 0.164) 0px 0px 0px 1px;
   border-radius: 5px;
   color: #000000;
   letter-spacing: 1px;
@@ -189,11 +214,13 @@
   cursor: pointer;
 }
 
-.contc input:focus{
+/* Contact Input Focus */
+.contc input:focus {
   outline: none;
 }
 
-.contc .innerContc{
+/* Inner Contact Box */
+.contc .innerContc {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -201,38 +228,48 @@
   cursor: pointer;
 }
 
+/* Media Query For Responsive */
 @media only screen and (max-width: 932px) {
+  /* User Profile Details Box */
   .userProfileDetailsBox {
     flex-direction: column;
   }
 
+  /* User Profile Left Box */
   .userProfileDetailsBox .userProfileLeft {
     width: 50%;
     margin: 20px 0;
   }
 
+  /* User Profile Right Box */
   .userProfileDetailsBox .userProfileRight {
     width: 90%;
     margin: 20px 0;
   }
 }
 
+/* Media Query For Responsive */
 @media only screen and (max-width: 618px) {
+  /* User Profile Left Box */
   .userProfileDetailsBox .userProfileLeft {
     width: 90%;
     margin: 20px 0;
   }
 
+  /* User Profile Right Box */
   .userProfileDetailsBox .userProfileRight {
     width: 90%;
     margin: 20px 0;
   }
 }
 
+/* Media Query For Responsive */
 @media only screen and (max-width: 411px) {
+  /* Social Box */
   .userProfileDetailsBox .userProfileLeft .socialsBox {
     flex-direction: column;
   }
+  /* Divider */
   .userProfileDetailsBox .userProfileLeft .socialsBox hr {
     width: 90%;
     height: 2px;

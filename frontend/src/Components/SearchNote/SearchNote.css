@@ -27,6 +27,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px 20px;
   background-color: white;
   border-top-left-radius: 15px;
@@ -57,6 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 /* Calender Value */
@@ -122,6 +124,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px;
   background-color: white;
   border-bottom-left-radius: 5px;

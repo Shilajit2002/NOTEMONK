@@ -251,3 +251,10 @@
     width: 90%;
   }
 }
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 369px) {
+  .profileMainBox {
+    padding-top: 150px;
+  }
+}

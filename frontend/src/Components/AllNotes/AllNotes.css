@@ -30,8 +30,8 @@
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width: 353px) {
+@media only screen and (max-width: 369px) {
   .allNotesDetailBox {
-    padding-top: 180px;
+    padding-top: 150px;
   }
 }

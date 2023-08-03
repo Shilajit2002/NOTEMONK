@@ -1,0 +1,12 @@
+/* Pacifico Font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* NoteMonk Logo */
+.NOTEMONK {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #160230;
+  padding: 10px 0px;
+  text-shadow: 1px 1px 2px rgb(255, 0, 98), 0 0 1em blue;
+}

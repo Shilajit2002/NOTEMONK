@@ -1,4 +1,4 @@
-/* All Note Details Box */
+/* User All Note Details Box */
 .userAllNotesDetailBox {
   width: 100%;
   min-height: 100vh;
@@ -10,7 +10,8 @@
   background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 
-.userAllNotesDetailBox h2{
+/* Heading */
+.userAllNotesDetailBox h2 {
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: "Courier New", Courier, monospace;

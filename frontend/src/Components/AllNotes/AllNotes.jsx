@@ -238,7 +238,7 @@ const AllNotes = () => {
           {/* All Note Details Main Box */}
           <div className="allNotesDetailBox">
             {/* Heading */}
-            <h2>Your Notes</h2>
+            <h2>My Notes</h2>
             {/* If Note present then print it */}
             {allNotes && allNotes.notesArr.length !== 0 ? (
               <>

@@ -181,7 +181,7 @@
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width: 353px) {
+@media only screen and (max-width: 369px) {
   .editNoteBox {
     padding-top: 150px;
   }

@@ -269,8 +269,6 @@ const ViewNotes = (props) => {
     }
   };
 
-  console.log(props);
-
   return (
     <>
       {/* If Pop Present i.e Notes Present then show It */}

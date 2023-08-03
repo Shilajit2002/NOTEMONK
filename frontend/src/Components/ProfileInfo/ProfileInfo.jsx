@@ -6,8 +6,6 @@ import "./ProfileInfo.css";
 /* ------------- Components ------------- */
 // SignIn Page
 import SignIn from "../SignIn/SignIn";
-// View Notes
-import ViewNotes from "../ViewNotes/ViewNotes";
 // User Profile
 import UserProfile from "./UserProfile/UserProfile";
 // User Note
@@ -21,8 +19,8 @@ import PropTypes from "prop-types";
 import axios from "axios";
 
 /* ------------- React Router Dom ------------- */
-// UseNavigate & UseParams
-import { useNavigate, useParams } from "react-router-dom";
+// UseParams
+import { useParams } from "react-router-dom";
 
 /* ------------- Storage ------------- */
 // Cookies
@@ -62,7 +60,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography component="div">{children}</Typography>
         </Box>
       )}
     </div>
@@ -100,7 +98,7 @@ const ProfileInfo = () => {
   // User All Note Details UseState
   const [userAllNoteDetails, setUserAllNoteDetails] = useState();
 
-  // UserEffect for get a perticular notes of the user
+  // UserEffect for get all details of a perticular user
   useEffect(() => {
     // Take the Token and Userid
     const token = Cookies.get("token");
@@ -121,8 +119,15 @@ const ProfileInfo = () => {
         )
         .then((res) => {
           // console.log(res.data);
-          // Set the Notes Details of the User
-          setUserAllDetails(res.data);
+          // Set the All Details of the User
+          setUserAllDetails([
+            res.data[0],
+            res.data[1],
+            res.data[2],
+            res.data[3],
+            res.data[4],
+          ]);
+          // Set All Note Details of the User
           setUserAllNoteDetails({
             notesArr: res.data[5],
             username: res.data[0].username,
@@ -158,6 +163,23 @@ const ProfileInfo = () => {
     setValue(newValue);
   };
 
+  const [isScreenWide, setIsScreenWide] = useState(
+    window.matchMedia("(min-width: 991px)").matches
+  );
+
+  useEffect(() => {
+    // Add a listener to update the orientation when the window width changes
+    const handleResize = () => {
+      setIsScreenWide(window.matchMedia("(min-width: 991px)").matches);
+    };
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       {/* If Token and UserId present then open following page */}
@@ -169,7 +191,7 @@ const ProfileInfo = () => {
               sx={{
                 flexGrow: 1,
                 bgcolor: "background.paper",
-                display: "flex",
+                display: isScreenWide ? "flex" : "block",
                 width: "100%",
                 minHeight: "100vh",
                 paddingTop: "90px",
@@ -177,7 +199,7 @@ const ProfileInfo = () => {
             >
               {/* Tabs */}
               <Tabs
-                orientation="vertical"
+                orientation={isScreenWide ? "vertical" : "horizontal"}
                 variant="scrollable"
                 value={value}
                 textColor="inherit"
@@ -223,7 +245,10 @@ const ProfileInfo = () => {
               <TabPanel
                 value={value}
                 index={0}
-                style={{ width: "100%", marginLeft: "100px" }}
+                style={{
+                  width: "100%",
+                  marginLeft: isScreenWide ? "100px" : "0px",
+                }}
               >
                 <UserProfile userAllDetails={userAllDetails} />
               </TabPanel>
@@ -231,7 +256,10 @@ const ProfileInfo = () => {
               <TabPanel
                 value={value}
                 index={1}
-                style={{ width: "100%", marginLeft: "100px" }}
+                style={{
+                  width: "100%",
+                  marginLeft: isScreenWide ? "100px" : "0px",
+                }}
               >
                 <UserNote userAllNoteDetails={userAllNoteDetails} />
               </TabPanel>

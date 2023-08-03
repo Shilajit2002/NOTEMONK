@@ -359,8 +359,63 @@ const Follower = () => {
                       {/* List Item */}
                       <ListItem
                         key={value._id}
-                        secondaryAction={
-                          value.accept ? (
+                        sx={{
+                          width: "100%",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
+                        disablePadding
+                        className="followerListBox"
+                      >
+                        {/* List Item Button */}
+                        <ListItemButton
+                          onClick={() => {
+                            navigate(
+                              `/profile-info/${value.follower_username}/${value.follower_user_id}`
+                            );
+                          }}
+                          sx={{
+                            padding: "10px",
+                            borderTopLeftRadius: "10px",
+                            borderBottomLeftRadius: "10px",
+                          }}
+                        >
+                          {/* List Item Avatar */}
+                          <ListItemAvatar>
+                            {/* User Logo */}
+                            <Avatar
+                              sx={{
+                                mr: 2,
+                                width: 40,
+                                height: 40,
+                                bgcolor: stringToColor(value.follower_username),
+                                boxShadow:
+                                  "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px",
+                              }}
+                            >
+                              {value.follower_username.charAt(0).toUpperCase()}
+                            </Avatar>
+                          </ListItemAvatar>
+                          {/* List Item Text */}
+                          <ListItemText
+                            id={value.follower_username}
+                            // User Name
+                            primary={value.follower_username}
+                          />
+                        </ListItemButton>
+
+                        {/* Box */}
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            mt: 1,
+                            mb: 1,
+                          }}
+                        >
+                          {value.accept ? (
                             // Remove Button
                             <Button
                               variant="contained"
@@ -413,46 +468,8 @@ const Follower = () => {
                                 Reject
                               </Button>
                             </>
-                          )
-                        }
-                        disablePadding
-                      >
-                        {/* List Item Button */}
-                        <ListItemButton
-                          onClick={() => {
-                            navigate(
-                              `/profile-info/${value.follower_username}/${value.follower_user_id}`
-                            );
-                          }}
-                          sx={{
-                            padding: "10px",
-                            borderTopLeftRadius: "10px",
-                            borderBottomLeftRadius: "10px",
-                          }}
-                        >
-                          {/* List Item Avatar */}
-                          <ListItemAvatar>
-                            {/* User Logo */}
-                            <Avatar
-                              sx={{
-                                mr: 2,
-                                width: 40,
-                                height: 40,
-                                bgcolor: stringToColor(value.follower_username),
-                                boxShadow:
-                                  "rgba(56, 88, 102, 0.521) 0px 2px 4px 0px, rgba(71, 88, 95, 0.719) 0px 2px 16px 0px",
-                              }}
-                            >
-                              {value.follower_username.charAt(0).toUpperCase()}
-                            </Avatar>
-                          </ListItemAvatar>
-                          {/* List Item Text */}
-                          <ListItemText
-                            id={value.follower_username}
-                            // User Name
-                            primary={value.follower_username}
-                          />
-                        </ListItemButton>
+                          )}
+                        </Box>
                       </ListItem>
                       {/* Box */}
                       <Box

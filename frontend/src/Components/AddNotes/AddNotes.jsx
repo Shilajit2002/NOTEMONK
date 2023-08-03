@@ -534,7 +534,7 @@ const AddNotes = () => {
             {/* Add Note Form Box */}
             <div className="addNoteForm">
               {/* Heading */}
-              <h2>Create your Note</h2>
+              <h2>Create Note</h2>
               {/* Form */}
               <form onSubmit={handleAddNote}>
                 {/* Title Box */}

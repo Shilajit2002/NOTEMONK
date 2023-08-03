@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 // Navbar CSS
 import "./Navbar.css";
 
+// Drawer Nav Component
+import DrawerNav from "../DrawerNav/DrawerNav";
+
 /* ------------- Pictures ------------- */
 // Logo
 import logo from "../../Logo/logo.png";
@@ -13,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 // NavLink
 import { NavLink } from "react-router-dom";
 
-/* ------------- React Router Dom ------------- */
+/* ------------- Storage ------------- */
 // Cookie
 import Cookies from "js-cookie";
 
@@ -44,8 +47,6 @@ import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 
 /* ------------- MUI Icons ------------- */
-// Menu Icon
-import MenuIcon from "@mui/icons-material/Menu";
 // LogoOut Icon
 import Logout from "@mui/icons-material/Logout";
 // Account Icon
@@ -183,19 +184,30 @@ const Navbar = () => {
           </NavLink>
 
           {/* Collapsiable  */}
-          <p
+          <div
             className="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
-            style={{ borderStyle: "none" }}
+            // data-bs-toggle="collapse"
+            // data-bs-target="#collapsibleNavbar"
+            style={{
+              borderStyle: "none",
+              margin: "0px",
+              padding: "0px",
+              cursor: "pointer",
+            }}
           >
-            <MenuIcon />
-          </p>
+            {/* Drawer Nav Component */}
+            <DrawerNav
+              username={username}
+              anchor={"right"}
+              imgNavUrl={imgNavUrl}
+              component="span"
+            />
+          </div>
 
           {/* Collapse Part */}
           <div
             className="collapse navbar-collapse justify-content-end"
-            id="collapsibleNavbar"
+            // id="collapsibleNavbar"
           >
             {/* Unordered List */}
             <ul className="navbar-nav">
@@ -428,7 +440,7 @@ const Navbar = () => {
                             {/* Divider */}
                             <Divider style={{ backgroundColor: "white" }} />
 
-                            {/* Menu Item LogOut*/}
+                            {/* Menu Item LogOut */}
                             <MenuItem
                               onClick={() => {
                                 handleClose();

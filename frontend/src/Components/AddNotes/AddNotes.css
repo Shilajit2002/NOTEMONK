@@ -182,7 +182,7 @@
 }
 
 /* Media Query for Responsive */
-@media only screen and (max-width: 353px) {
+@media only screen and (max-width: 369px) {
   .addNoteBox {
     padding-top: 150px;
   }

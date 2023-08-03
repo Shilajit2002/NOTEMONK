@@ -8,17 +8,43 @@
   background: linear-gradient(to right, #181712, #15140f, #15140f);
 }
 
+/* TabPanel */
 .profileInfoMainBox .css-19kzrtu {
   padding: 0px;
   margin-left: 25px;
 }
 
+/* Tabs */
 .profileInfoMainBox .tabs {
   font-weight: 510;
   letter-spacing: 1px;
 }
 
+/* Tab Selection Effect */
 .profileInfoMainBox .tabs--selected {
   background-color: #e203ff17;
   color: rgb(255, 255, 255);
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 991px) {
+  .profileInfoMainBox .MuiTabs-root {
+    position: static;
+    top: none;
+    left: none;
+    bottom: none;
+  }
+
+  /* TabPanel */
+  .profileInfoMainBox .css-19kzrtu {
+    padding: 0px;
+    margin-left: 0px;
+  }
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 369px) {
+  .profileInfoMainBox {
+    padding-top: 40px;
+  }
 }

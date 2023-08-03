@@ -722,7 +722,7 @@ const EditNote = () => {
                 {/* Add Note Form Box */}
                 <div className="addNoteForm">
                   {/* Heading */}
-                  <h2>Edit your Note</h2>
+                  <h2>Edit Note</h2>
                   {/* Form */}
                   <form onSubmit={handleEditNote}>
                     {/* Title Box */}

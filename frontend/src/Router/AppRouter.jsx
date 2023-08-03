@@ -2,7 +2,7 @@
 import React from "react";
 
 /* ------------- React Router Dom ------------- */
-// Import Router
+// Import Router,Route,Routes
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 /* ------------- Components ------------- */
@@ -18,12 +18,12 @@ import SignIn from "../Components/SignIn/SignIn";
 import Profile from "../Components/Profile/Profile";
 // Import Dashboard Component
 import Dashboard from "../Components/Dashboard/Dashboard";
+// Import Search Friend Component
+import SearchFriend from "../Components/SearchFriend/SearchFriend";
 // Import All Notes Component
 import AllNotes from "../Components/AllNotes/AllNotes";
 // Import Add Notes Component
 import AddNotes from "../Components/AddNotes/AddNotes";
-// Import Single Note Component
-import SingleNote from "../Components/SingleNote/SingleNote";
 // Import Edit Note Component
 import EditNote from "../Components/EditNote/EditNote";
 // Import Profile Info Component
@@ -50,16 +50,12 @@ const AppRouter = () => {
           <Route exact path="/profile/:id" element={<Profile />} />
           {/* Dashboard Route */}
           <Route exact path="/dashboard/:id" element={<Dashboard />} />
+          {/* Search Friend Route for Responsive */}
+          <Route exact path="/search-friend/:id" element={<SearchFriend />} />
           {/* All Notes Route */}
           <Route exact path="/all-notes/:id" element={<AllNotes />} />
           {/* Add Notes Route */}
           <Route exact path="/add-notes/:id" element={<AddNotes />} />
-          {/* Single Note Route */}
-          <Route
-            exact
-            path="/single-note/:id/note/:note_id"
-            element={<SingleNote />}
-          />
           {/* Edit Note Route */}
           <Route
             exact
