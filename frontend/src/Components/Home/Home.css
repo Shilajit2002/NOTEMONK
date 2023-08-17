@@ -221,6 +221,9 @@
 
 /* Media Query for Responsive */
 @media only screen and (max-width: 1033px) {
+  .homebox2 {
+    min-height: 50vh;
+  }
   /* HomeBox2 Right Container */
   .homebox2 .enjoyRightContainer {
     display: none;
@@ -229,5 +232,53 @@
   /* HomeBox2 Left Container */
   .homebox2 .enjoyLeftContainer {
     width: 80%;
+  }
+}
+
+/* Home Box 3 */
+.homebox3 {
+  width: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 50px;
+}
+
+/* Carousel Image */
+.homebox3 #carouselExampleIndicators .img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+/* Carousel Heading */
+.homebox3 #carouselExampleIndicators h3 {
+  text-align: center;
+  margin: 30px 0px 50px 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Media Query for Responsive */
+@media only screen and (max-width: 425px) {
+  .homebox3 #carouselExampleIndicators .img {
+    width: 250px;
+    height: 250px;
   }
 }

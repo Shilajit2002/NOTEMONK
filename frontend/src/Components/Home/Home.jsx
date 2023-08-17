@@ -10,6 +10,12 @@ import homeBackVid from "./Assets/homeBack.mp4";
 import logo from "../../Logo/logo.png";
 // Note Image
 import noteImg from "./Assets/note.jpg";
+// Create Note Image
+import createNoteImg from "./Assets/createNote.webp";
+// Share Note Image
+import shareNoteImg from "./Assets/shareNote.jpg";
+// Social Note Image
+import socialNoteImg from "./Assets/socialNote.jpg";
 
 /* ------------- React Router Dom ------------- */
 // UseNavigate & useLocation
@@ -163,6 +169,67 @@ const Home = () => {
               {/* Note Image */}
               <img src={noteImg} alt="NoteImage" />
             </div>
+          </div>
+        </div>
+
+        {/* Third Home Div */}
+        <div className="homebox3">
+          {/* Carousel */}
+          <div
+            id="carouselExampleIndicators"
+            className="carousel slide"
+            data-ride="carousel"
+            data-interval="3000"
+            data-pause="hover"
+          >
+            {/* Carousel Inner */}
+            <div className="carousel-inner">
+              {/* Carousel Item */}
+              <div className="carousel-item active">
+                {/* Create Note Image First */}
+                <img className="img" src={createNoteImg} alt="First slide" />
+                {/* Heading */}
+                <h3>Crafting Your Ideas: The Power of Note Creation</h3>
+              </div>
+              {/* Carousel Item */}
+              <div className="carousel-item">
+                {/* Share Note Image First */}
+                <img className="img" src={shareNoteImg} alt="Second slide" />
+                {/* Heading */}
+                <h3>Passing the Torch of Knowledge: Share Your Notes </h3>
+              </div>
+              {/* Carousel Item */}
+              <div className="carousel-item">
+                {/* Social Note Image First */}
+                <img className="img" src={socialNoteImg} alt="Third slide" />
+                {/* Heading */}
+                <h3>Expanding Horizons: Connecting Through Shared Notes</h3>
+              </div>
+            </div>
+            {/* Previous Icon */}
+            <a
+              className="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
+            {/* Next Icon */}
+            <a
+              className="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </a>
           </div>
         </div>
       </div>

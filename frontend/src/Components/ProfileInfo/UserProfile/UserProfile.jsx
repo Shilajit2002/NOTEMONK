@@ -103,7 +103,7 @@ const UserProfile = (props) => {
 
   // UseEffect for Converting Image and Follow
   useEffect(() => {
-    // If presnent then do this
+    // If present then do this
     if (
       Cookies.get("token") &&
       Cookies.get("userid") &&
@@ -141,63 +141,65 @@ const UserProfile = (props) => {
     const token = Cookies.get("token");
     const userid = Cookies.get("userid");
 
-    // If token and userid present
-    if (token && userid) {
-      // If userid and params id match
-      setOpen(true);
-      // Axios Post Request from Backend
-      axios
-        .post(
-          `http://localhost:8000/api/followings/following/${userid}`,
-          { _id: follId },
-          {
-            headers: {
-              Authorization: `${token}`,
-            },
-          }
-        )
-        .then((res) => {
-          // Set the Following Details of the User
-          // console.log(res.data);
-          let val = res.data[1].followerArr;
-          const newVal = val.filter((v) => v.follower_user_id === userid);
-          // console.log(newVal);
-
-          setFollow(newVal);
-          setOpen(false);
-        })
-        .catch((err) => {
-          // console.log(err);
-          Swal.fire({
-            icon: "warning",
-            title: `You are not authenticated !!`,
-            confirmButtonText: "Ok",
-          }).then((result) => {
-            if (result.isConfirmed) {
-              Cookies.remove("token");
-              Cookies.remove("userid");
-              window.location.href = `/signin`;
-            } else {
-              Cookies.remove("token");
-              Cookies.remove("userid");
-              window.location.href = `/signin`;
+    if (props.userAllDetails[0]._id !== Cookies.get("userid")) {
+      // If token and userid present
+      if (token && userid) {
+        // If userid and params id match
+        setOpen(true);
+        // Axios Post Request from Backend
+        axios
+          .post(
+            `http://localhost:8000/api/followings/following/${userid}`,
+            { _id: follId },
+            {
+              headers: {
+                Authorization: `${token}`,
+              },
             }
+          )
+          .then((res) => {
+            // Set the Following Details of the User
+            // console.log(res.data);
+            let val = res.data[1].followerArr;
+            const newVal = val.filter((v) => v.follower_user_id === userid);
+            // console.log(newVal);
+
+            setFollow(newVal);
+            setOpen(false);
+          })
+          .catch((err) => {
+            // console.log(err);
+            Swal.fire({
+              icon: "warning",
+              title: `You are not authenticated !!`,
+              confirmButtonText: "Ok",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Cookies.remove("token");
+                Cookies.remove("userid");
+                window.location.href = `/signin`;
+              } else {
+                Cookies.remove("token");
+                Cookies.remove("userid");
+                window.location.href = `/signin`;
+              }
+            });
           });
+      }
+      // If userid and params id not match
+      else {
+        Swal.fire({
+          icon: "warning",
+          title: `You can only view your own account !!`,
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = `/dashboard/${userid}`;
+          } else {
+            window.location.href = `/dashboard/${userid}`;
+          }
         });
-    }
-    // If userid and params id not match
-    else {
-      Swal.fire({
-        icon: "warning",
-        title: `You can only view your own account !!`,
-        confirmButtonText: "Ok",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          window.location.href = `/dashboard/${userid}`;
-        } else {
-          window.location.href = `/dashboard/${userid}`;
-        }
-      });
+      }
     }
   };
 
@@ -335,84 +337,92 @@ const UserProfile = (props) => {
                 </div>
                 {/* Fol Button Box */}
                 <div className="folButtonBox">
-                  {/* If follow present then do this */}
-                  {follow && follow.length !== 0 && !open ? (
+                  {props.userAllDetails[0]._id !== Cookies.get("userid") ? (
                     <>
-                      {/* If acceptence is true then Show Unfollow Button*/}
-                      {follow[0].accept ? (
+                      {/* If follow present then do this */}
+                      {follow && follow.length !== 0 && !open ? (
                         <>
-                          {/* UnFollow Button */}
-                          <Button
-                            variant="contained"
-                            color="error"
-                            onClick={() => {
-                              followUserProfileFunc(
-                                props.userAllDetails[0]._id
-                              );
-                            }}
-                            size="small"
-                          >
-                            Unfollow
-                          </Button>
+                          {/* If acceptence is true then Show Unfollow Button*/}
+                          {follow[0].accept ? (
+                            <>
+                              {/* UnFollow Button */}
+                              <Button
+                                variant="contained"
+                                color="error"
+                                onClick={() => {
+                                  followUserProfileFunc(
+                                    props.userAllDetails[0]._id
+                                  );
+                                }}
+                                size="small"
+                              >
+                                Unfollow
+                              </Button>
+                            </>
+                          ) : (
+                            <>
+                              {/* If acceptence is false then show Pending Button and Withdraw Button */}
+                              {/* Pending Button */}
+                              <Button
+                                variant="outlined"
+                                color="secondary"
+                                size="small"
+                                startIcon={<MoreHorizIcon />}
+                                sx={{
+                                  m: 1,
+                                }}
+                              >
+                                Pending
+                              </Button>
+                              {/* Withdraw Button */}
+                              <Button
+                                variant="contained"
+                                color="warning"
+                                size="small"
+                                onClick={() => {
+                                  followUserProfileFunc(
+                                    props.userAllDetails[0]._id
+                                  );
+                                }}
+                                sx={{
+                                  m: 1,
+                                }}
+                              >
+                                Withdraw
+                              </Button>
+                            </>
+                          )}
                         </>
                       ) : (
                         <>
-                          {/* If acceptence is false then show Pending Button and Withdraw Button */}
-                          {/* Pending Button */}
-                          <Button
-                            variant="outlined"
-                            color="secondary"
-                            size="small"
-                            startIcon={<MoreHorizIcon />}
-                            sx={{
-                              m: 1,
-                            }}
-                          >
-                            Pending
-                          </Button>
-                          {/* Withdraw Button */}
-                          <Button
-                            variant="contained"
-                            color="warning"
-                            size="small"
-                            onClick={() => {
-                              followUserProfileFunc(
-                                props.userAllDetails[0]._id
-                              );
-                            }}
-                            sx={{
-                              m: 1,
-                            }}
-                          >
-                            Withdraw
-                          </Button>
+                          {/* Else Show Follow Button */}
+                          {!open ? (
+                            <Button
+                              variant="contained"
+                              onClick={() => {
+                                followUserProfileFunc(
+                                  props.userAllDetails[0]._id
+                                );
+                              }}
+                              size="small"
+                            >
+                              Follow
+                            </Button>
+                          ) : (
+                            // If Open true then show Circular Progress
+                            // Circular Progress Button
+                            <Button variant="text" size="small">
+                              <CircularProgress
+                                color="secondary"
+                                size={"1.435rem"}
+                              />
+                            </Button>
+                          )}
                         </>
                       )}
                     </>
                   ) : (
-                    <>
-                      {/* Else Show Follow Button */}
-                      {!open ? (
-                        <Button
-                          variant="contained"
-                          onClick={() => {
-                            followUserProfileFunc(props.userAllDetails[0]._id);
-                          }}
-                          size="small"
-                        >
-                          Follow
-                        </Button>
-                      ) : (
-                        // If Open true then show Circular Progress
-                        // Circular Progress Button
-                        <Button variant="text" size="small">
-                          <CircularProgress
-                            color="secondary"
-                            size={"1.435rem"}
-                          />
-                        </Button>
-                      )}
-                    </>
+                    <></>
                   )}
                 </div>
 

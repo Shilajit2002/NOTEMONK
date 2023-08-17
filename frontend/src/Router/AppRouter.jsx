@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 // Import Home Component
 import Home from "../Components/Home/Home";
+// Import About Component
+import About from "../Components/About/About";
 // Import SignUp Component
 import SignUp from "../Components/SignUp/SignUp";
 // Import SignIn Component
@@ -30,6 +32,8 @@ import EditNote from "../Components/EditNote/EditNote";
 import ProfileInfo from "../Components/ProfileInfo/ProfileInfo";
 // Import User Single Note Component
 import UserSingleNote from "../Components/UserSingleNote/UserSingleNote";
+// Import Footer Component
+import Footer from "../Components/Footer/Footer";
 // Import NotFound Component
 import NotFound from "../Components/NotFound/NotFound";
 
@@ -42,6 +46,8 @@ const AppRouter = () => {
         <Routes>
           {/* Home Route */}
           <Route exact path="/" element={<Home />} />
+          {/* About Route */}
+          <Route exact path="/about" element={<About />} />
           {/* SignUp Route */}
           <Route exact path="/signup" element={<SignUp />} />
           {/* SignIn Route */}
@@ -77,6 +83,8 @@ const AppRouter = () => {
           {/* Not Found Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        {/* Footer Route */}
+        <Footer />
       </Router>
     </>
   );
