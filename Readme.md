@@ -1,4 +1,4 @@
-<h2 align="center">MOTE MONK</h2>
+<h2 align="center">NOTE MONK</h2>
 
 ## Tech Stack
 
