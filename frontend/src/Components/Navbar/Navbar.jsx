@@ -24,6 +24,10 @@ import Cookies from "js-cookie";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- MUI Structure ------------- */
 // Skeleton
 import Skeleton from "@mui/material/Skeleton";
@@ -99,7 +103,7 @@ const Navbar = () => {
     if (token && userid) {
       // Get Details user from backend
       axios
-        .get(`http://localhost:8000/api/users/user/${userid}`, {
+        .get(`${baseUrl}/api/users/user/${userid}`, {
           headers: {
             Authorization: `${token}`,
           },

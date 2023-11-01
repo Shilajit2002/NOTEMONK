@@ -18,6 +18,10 @@ import PropTypes from "prop-types";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseParams
 import { useParams } from "react-router-dom";
@@ -110,7 +114,7 @@ const ProfileInfo = () => {
       // Axios Get Request from Backend
       axios
         .get(
-          `http://localhost:8000/api/allUser/all-user-prof/${userid}/${id}`,
+          `${baseUrl}/api/allUser/all-user-prof/${userid}/${id}`,
           {
             headers: {
               Authorization: `${token}`,

@@ -15,6 +15,10 @@ import SignIn from "../SignIn/SignIn";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseNavigate & UseParams
 import { useNavigate, useParams } from "react-router-dom";
@@ -103,7 +107,7 @@ const Profile = () => {
   // UseEffect for Get All the Countries from Database
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/codes/allcountrycode")
+      .get(`${baseUrl}/api/codes/allcountrycode`)
       .then((res) => {
         // Set the Countries
         setCountries(res.data);
@@ -258,7 +262,7 @@ const Profile = () => {
       if (userid === id) {
         // Axios Get Request from Backend
         axios
-          .get(`http://localhost:8000/api/users/user/${userid}`, {
+          .get(`${baseUrl}/api/users/user/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -339,7 +343,7 @@ const Profile = () => {
       setOpen(true);
       // Send to the Backend of form data for Edit
       axios
-        .patch(`http://localhost:8000/api/users/user/${id}`, userdetails, {
+        .patch(`${baseUrl}/api/users/user/${id}`, userdetails, {
           headers: {
             Authorization: `${Cookies.get("token")}`,
           },
@@ -352,15 +356,11 @@ const Profile = () => {
 
             // Send data backend for image upload
             axios
-              .post(
-                `http://localhost:8000/api/profiles/upload/${id}`,
-                formData,
-                {
-                  headers: {
-                    Authorization: `${Cookies.get("token")}`,
-                  },
-                }
-              )
+              .post(`${baseUrl}/api/profiles/upload/${id}`, formData, {
+                headers: {
+                  Authorization: `${Cookies.get("token")}`,
+                },
+              })
               .then((res) => {
                 setOpen(false);
                 navigate(`/profile/${Cookies.get("userid")}`);
@@ -410,7 +410,7 @@ const Profile = () => {
   const handleDeleteUser = () => {
     // Delete request for delete user details
     axios
-      .delete(`http://localhost:8000/api/users/user/${id}`, {
+      .delete(`${baseUrl}/api/users/user/${id}`, {
         headers: {
           Authorization: `${Cookies.get("token")}`,
         },

@@ -13,6 +13,10 @@ import ViewNotes from "../ViewNotes/ViewNotes";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseParams
 import { useParams } from "react-router-dom";
@@ -54,14 +58,11 @@ const UserSingleNote = () => {
       // If userid and params id match
       // Axios Get Request from Backend
       axios
-        .get(
-          `http://localhost:8000/api/allUser/note-user/${userid}/${id}/${note_id}`,
-          {
-            headers: {
-              Authorization: `${token}`,
-            },
-          }
-        )
+        .get(`${baseUrl}/api/allUser/note-user/${userid}/${id}/${note_id}`, {
+          headers: {
+            Authorization: `${token}`,
+          },
+        })
         .then((res) => {
           // console.log(res.data);
           // Set the Notes Details of the User

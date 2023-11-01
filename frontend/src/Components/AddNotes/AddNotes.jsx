@@ -19,6 +19,10 @@ import { useNavigate, useParams } from "react-router-dom";
 // Cookies
 import Cookies from "js-cookie";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- MUI Component ------------- */
 // TextField
 import TextField from "@mui/material/TextField";
@@ -268,7 +272,7 @@ const AddNotes = () => {
       if (userid === id) {
         //  Get all Tagnames from Backend
         axios
-          .get(`http://localhost:8000/api/tags/alltagnames/${userid}`, {
+          .get(`${baseUrl}/api/tags/alltagnames/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -370,13 +374,13 @@ const AddNotes = () => {
 
           // Send to the Backend of Add Note data
           axios
-            .post(`http://localhost:8000/api/notes/add-note/${userid}`, note, {
+            .post(`${baseUrl}/api/notes/add-note/${userid}`, note, {
               headers: {
                 Authorization: `${token}`,
               },
             })
             .then((req) => {
-              if (selectedFiles !== []) {
+              if (selectedFiles.length !== 0) {
                 const formData = new FormData();
                 selectedFiles.forEach((file, index) => {
                   formData.append("files", file);
@@ -385,7 +389,7 @@ const AddNotes = () => {
                 // Send data backend for Note File upload
                 axios
                   .post(
-                    `http://localhost:8000/api/notes/add-note-files/${userid}`,
+                    `${baseUrl}/api/notes/add-note-files/${userid}`,
                     formData,
                     {
                       headers: {
@@ -573,7 +577,7 @@ const AddNotes = () => {
                   {/* Preview Button */}
                   <Button
                     variant="contained"
-                    color='warning'
+                    color="warning"
                     style={{
                       marginTop: "10px",
                       color: "white",

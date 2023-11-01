@@ -12,6 +12,10 @@ import SignIn from "../SignIn/SignIn";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseNavigate && UseParams
 import { useNavigate, useParams } from "react-router-dom";
@@ -131,7 +135,7 @@ const EditNote = () => {
       if (userid === id) {
         // Axios Get Request from Backend
         axios
-          .get(`http://localhost:8000/api/notes/note/${userid}/${note_id}`, {
+          .get(`${baseUrl}/api/notes/note/${userid}/${note_id}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -338,7 +342,7 @@ const EditNote = () => {
       if (userid === id) {
         //  Get all Tagnames from Backend
         axios
-          .get(`http://localhost:8000/api/tags/alltagnames/${userid}`, {
+          .get(`${baseUrl}/api/tags/alltagnames/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -566,15 +570,11 @@ const EditNote = () => {
 
           // Send to the Backend of Edit Note data
           axios
-            .patch(
-              `http://localhost:8000/api/notes/edit-note/${userid}`,
-              noteEdit,
-              {
-                headers: {
-                  Authorization: `${token}`,
-                },
-              }
-            )
+            .patch(`${baseUrl}/api/notes/edit-note/${userid}`, noteEdit, {
+              headers: {
+                Authorization: `${token}`,
+              },
+            })
             .then((req) => {
               const formData = new FormData();
 
@@ -599,7 +599,7 @@ const EditNote = () => {
               // Send data backend for Note File Edit
               axios
                 .patch(
-                  `http://localhost:8000/api/notes/edit-note-files/${userid}/${note_id}`,
+                  `${baseUrl}/api/notes/edit-note-files/${userid}/${note_id}`,
                   formData,
                   {
                     headers: {

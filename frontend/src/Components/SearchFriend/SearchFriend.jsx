@@ -11,6 +11,10 @@ import SignIn from "../SignIn/SignIn";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseNavigate & UseParams
 import { useNavigate, useParams } from "react-router-dom";
@@ -87,7 +91,7 @@ const SearchFriend = () => {
       if (userid === id) {
         // Axios Get Request from Backend
         axios
-          .get(`http://localhost:8000/api/searches/all-users/${userid}`, {
+          .get(`${baseUrl}/api/searches/all-users/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -194,7 +198,7 @@ const SearchFriend = () => {
       {/* If Token and UserId present then open dashboard */}
       {Cookies.get("token") && Cookies.get("userid") ? (
         <>
-        {/* Search Friend Main Box */}
+          {/* Search Friend Main Box */}
           <div className="searchFriendMainBox">
             {/* Dashboard Buttton */}
             <Button

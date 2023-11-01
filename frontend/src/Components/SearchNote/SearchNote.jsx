@@ -10,10 +10,6 @@ import noteImg from "./Assets/noteImg.jpg";
 // SignIn Page
 import SignIn from "../SignIn/SignIn";
 
-/* ------------- Fetch ------------- */
-// Axios
-import axios from "axios";
-
 /* ------------- React Router Dom ------------- */
 // UseNavigate & UseParams
 import { useNavigate, useParams } from "react-router-dom";
@@ -60,7 +56,7 @@ import Box from "@mui/material/Box";
 // Avatar
 import Avatar from "@mui/material/Avatar";
 // Button
-import { Button, Icon } from "@mui/material";
+import { Button } from "@mui/material";
 // Dialog
 import Dialog from "@mui/material/Dialog";
 // Dialog Content
@@ -69,10 +65,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 // Dialog Title
 import DialogTitle from "@mui/material/DialogTitle";
-
-/* ------------- Alerts ------------- */
-// Swal
-import Swal from "sweetalert2";
 
 /* ------------- React Share ------------- */
 import {

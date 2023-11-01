@@ -20,6 +20,10 @@ import SearchNote from "../SearchNote/SearchNote";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseNavigate & UseParams
 import { useNavigate, useParams } from "react-router-dom";
@@ -144,7 +148,7 @@ const Dashboard = () => {
       if (userid === id) {
         // Axios Get Request from Backend
         axios
-          .get(`http://localhost:8000/api/searches/all-users/${userid}`, {
+          .get(`${baseUrl}/api/searches/all-users/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -222,7 +226,7 @@ const Dashboard = () => {
           // Send to the Backend of Search Note data
           axios
             .post(
-              `http://localhost:8000/api/searches/all-users-notes/${userid}`,
+              `${baseUrl}/api/searches/all-users-notes/${userid}`,
               searchNote,
               {
                 headers: {

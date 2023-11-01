@@ -6,20 +6,32 @@ const router = new express.Router();
 const jwt = require('jsonwebtoken');
 // Import bcryptjs
 const bcryptjs = require('bcryptjs');
+
 // Import User Collection/Model
 const User = require("../Model/user");
 // Import Profile Collection/Model
 const Profile = require("../Model/profile");
+
 // Import Following Collection/Model
 const Following = require("../Model/following");
 // Import Follower Collection/Model
 const Follower = require("../Model/follower");
+
 // Import Note Collection/Model
 const Note = require("../Model/note");
 // Import Search Note Collection/Model
 const SearchNote = require("../Model/searchNote");
+
 // Import Authentication
 const auth = require("../Middleware/auth");
+
+// Hash Password Func
+const hashPassword = async (ps) => {
+    // Generating the Salt
+    const secPass = await bcryptjs.genSalt(Number(process.env.SALT));
+    // Hashing the Password
+    return await bcryptjs.hash(ps, secPass);
+}
 
 // SIGN UP API
 router.post("/register", async (req, res) => {
@@ -48,8 +60,8 @@ router.post("/register", async (req, res) => {
                     res.status(409).send("User Already Registered !!");
                 }
                 else {
-                    // Hash the Password
-                    const passwordHash = await bcryptjs.hash(req.body.password, 10);
+                    // Call hashPassword Func
+                    const newPass = await hashPassword(password);
 
                     // Set the Collection Field with Data
                     user = new User({
@@ -57,7 +69,7 @@ router.post("/register", async (req, res) => {
                         lastname: req.body.lastname,
                         username: req.body.username,
                         email: req.body.email,
-                        password: passwordHash,
+                        password: newPass,
                         country: req.body.country,
                         code: req.body.code,
                         phone: req.body.phone
@@ -75,6 +87,16 @@ router.post("/register", async (req, res) => {
         res.status(400).send(`${error}`);
     }
 })
+
+// Create Token Func
+const createToken = (u) => {
+    return jwt.sign({ id: u._id }, process.env.SECRET_KEY,
+        {
+            // Token expires by 365 days or 1 after year
+            expiresIn: "365d"
+        }
+    );
+}
 
 // SIGN IN API
 router.post("/login", async (req, res) => {
@@ -109,12 +131,8 @@ router.post("/login", async (req, res) => {
                 // If the Password is Correct
                 else {
                     // Create a token by secret key
-                    const token = jwt.sign({ id: logUser._id }, process.env.SECRET_KEY,
-                        {
-                            // Token expires by 365 days or 1 after year
-                            expiresIn: "365d"
-                        }
-                    );
+                    const token = createToken(logUser);
+                    
                     // Set Ok Status
                     res.status(200).json({ token, userid: logUser._id })
                 }

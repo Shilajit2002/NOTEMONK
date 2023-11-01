@@ -7,6 +7,10 @@ import "./SignUp.css";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseNavigate
 import { useNavigate } from "react-router-dom";
@@ -61,7 +65,7 @@ const SignUp = () => {
   // UseEffect for Get All the Countries from Database
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/codes/allcountrycode")
+      .get(`${baseUrl}/api/codes/allcountrycode`)
       .then((res) => {
         // Set the Countries
         setCountries(res.data);
@@ -208,7 +212,7 @@ const SignUp = () => {
     ) {
       // Send to the Backend of User Form data
       axios
-        .post("http://localhost:8000/api/users/register", user)
+        .post(`${baseUrl}/api/users/register`, user)
         .then((req) => {
           // If Success then Set User Null
           setUser({

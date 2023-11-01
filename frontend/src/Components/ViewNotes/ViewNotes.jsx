@@ -12,6 +12,10 @@ import { useNavigate, useParams } from "react-router-dom";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- Storage ------------- */
 // Cookies
 import Cookies from "js-cookie";
@@ -215,7 +219,7 @@ const ViewNotes = (props) => {
 
             // Delete request for delete perticular note details
             axios
-              .delete(`http://localhost:8000/api/notes/delete-note/${id}`, {
+              .delete(`${baseUrl}/api/notes/delete-note/${id}`, {
                 headers: {
                   Authorization: `${Cookies.get("token")}`,
                 },

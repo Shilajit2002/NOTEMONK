@@ -13,6 +13,10 @@ import ViewNotes from "../ViewNotes/ViewNotes";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- React Router Dom ------------- */
 // UseParams
 import { useParams } from "react-router-dom";
@@ -65,7 +69,7 @@ const AllNotes = () => {
       if (userid === id) {
         // Axios Get Request from Backend
         axios
-          .get(`http://localhost:8000/api/notes/all-note/${userid}`, {
+          .get(`${baseUrl}/api/notes/all-note/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -179,7 +183,7 @@ const AllNotes = () => {
 
             // Delete request for delete all notes details
             axios
-              .delete(`http://localhost:8000/api/notes/delete-all-note/${id}`, {
+              .delete(`${baseUrl}/api/notes/delete-all-note/${id}`, {
                 headers: {
                   Authorization: `${Cookies.get("token")}`,
                 },

@@ -7,6 +7,10 @@ import "./Following.css";
 // Axios
 import axios from "axios";
 
+/* ------------- Backend Url ------------- */
+// Base URL
+import baseUrl from "../../Helper/BaseUrl";
+
 /* ------------- Components ------------- */
 // SignIn Page
 import SignIn from "../SignIn/SignIn";
@@ -75,7 +79,7 @@ const Following = () => {
       if (userid === id) {
         // Axios Get Request from Backend
         axios
-          .get(`http://localhost:8000/api/followings/following/${userid}`, {
+          .get(`${baseUrl}/api/followings/following/${userid}`, {
             headers: {
               Authorization: `${token}`,
             },
@@ -233,7 +237,7 @@ const Following = () => {
         // Axios Post Request from Backend
         axios
           .post(
-            `http://localhost:8000/api/followings/following/${userid}`,
+            `${baseUrl}/api/followings/following/${userid}`,
             { _id: follId },
             {
               headers: {
